@@ -1,0 +1,445 @@
+1683386528989|INFO|org.arl.unet.UnetBoot@1:doInvoke|fjage Build: fjage-1.9.1/37c49259/5-09-2021_13:26:12
+1683386529058|INFO|org.arl.unet.UnetBoot@1:doInvoke|UnetBoot: [samples/topo.groovy]
+1683386529186|INFO|org.arl.fjage.remote.EnumTypeAdapter@1:<clinit>|Groovy detected, using GroovyClassLoader
+1683386529222|INFO|org.arl.fjage.remote.MessageAdapterFactory@1:<clinit>|Groovy detected, using GroovyClassLoader
+1683386530070|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1110
+1683386530082|INFO|org.arl.fjage.connectors.TcpServer@13:run|Listening on port 1110
+1683386530143|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 10
+1683386530174|INFO|Script1@1:doInvoke|Starting web interface on port null:8090
+1683386530308|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1683386530311|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1683386530315|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1683386530316|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1683386530317|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1683386530317|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1683386530331|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1683386530396|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8090
+1683386530398|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://10.188.42.7:8090/ws
+1683386530401|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1683386530963|INFO|Script1@1:doInvoke|Created static node 10 (10) @ [0, 0, 0]
+1683386530964|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1101
+1683386530964|INFO|org.arl.fjage.connectors.TcpServer@27:run|Listening on port 1101
+1683386530965|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 1
+1683386530965|INFO|Script1@1:doInvoke|Starting web interface on port null:8081
+1683386530967|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1683386530967|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1683386530968|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1683386530969|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1683386530970|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1683386530971|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1683386530971|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1683386530975|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8081
+1683386530976|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://10.188.42.7:8081/ws
+1683386530976|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1683386531133|INFO|Script1@1:doInvoke|Created static node 1 (1) @ [121, 137, -10]
+1683386531134|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1102
+1683386531134|INFO|org.arl.fjage.connectors.TcpServer@40:run|Listening on port 1102
+1683386531135|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 2
+1683386531136|INFO|Script1@1:doInvoke|Starting web interface on port null:8082
+1683386531138|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1683386531139|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1683386531142|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1683386531143|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1683386531144|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1683386531145|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1683386531145|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1683386531149|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8082
+1683386531150|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://10.188.42.7:8082/ws
+1683386531150|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1683386531304|INFO|Script1@1:doInvoke|Created static node 2 (arp) @ [350, -232, -15]
+1683386531305|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1103
+1683386531306|INFO|org.arl.fjage.connectors.TcpServer@53:run|Listening on port 1103
+1683386531306|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 3
+1683386531307|INFO|Script1@1:doInvoke|Starting web interface on port null:8083
+1683386531309|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1683386531309|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1683386531310|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1683386531311|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1683386531311|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1683386531311|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1683386531312|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1683386531315|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8083
+1683386531316|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://10.188.42.7:8083/ws
+1683386531316|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1683386531453|INFO|Script1@1:doInvoke|Created static node 3 (arp) @ [500, 140, -5]
+1683386531454|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1104
+1683386531454|INFO|org.arl.fjage.connectors.TcpServer@66:run|Listening on port 1104
+1683386531454|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 4
+1683386531455|INFO|Script1@1:doInvoke|Starting web interface on port null:8084
+1683386531456|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1683386531456|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1683386531457|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1683386531458|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1683386531458|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1683386531459|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1683386531459|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1683386531462|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8084
+1683386531462|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://10.188.42.7:8084/ws
+1683386531463|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1683386531576|INFO|Script1@1:doInvoke|Created static node 4 (arp) @ [601, 120, -5]
+1683386531602|INFO|Script1@1:doInvoke| --- BEGIN SIMULATION #1 ---
+1683386531607|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
+1683386531609|INFO|org.arl.fjage.shell.ShellAgent/10@84:init|Agent websh init
+1683386531609|INFO|org.arl.unet.bb.BasebandSignalMonitor/10@82:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 10
+1683386531609|INFO|org.arl.unet.wormhole.Wormhole/10@85:init|Loading agent wh v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.wormhole.Wormhole] on 10
+1683386531609|INFO|org.arl.unet.link.ReliableLink/10@81:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 10
+1683386531609|INFO|org.arl.unet.remote.RemoteControl/10@79:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 10
+1683386531609|INFO|org.arl.unet.net.Router/10@80:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 10
+1683386531610|INFO|org.arl.unet.addr.AddressResolution/10@86:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 10
+1683386531610|INFO|org.arl.unet.mac.CSMA/10@87:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 10
+1683386531611|INFO|org.arl.unet.net.RouteDiscoveryProtocol/10@89:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 10
+1683386531611|INFO|org.arl.unet.sim.HalfDuplexModem/10@88:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 10
+1683386531612|INFO|org.arl.unet.nodeinfo.NodeInfo/10@90:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 10
+1683386531612|INFO|org.arl.unet.transport.SWTransport/10@91:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 10
+1683386531613|INFO|org.arl.unet.sim.SimulationAgent/10@94:doInvoke|Loading simulator : SimulationAgent
+1683386531613|INFO|org.arl.unet.localization.Ranging/10@93:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 10
+1683386531717|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
+1683386531820|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
+1683386531821|INFO|org.arl.unet.remote.RemoteControl/1@95:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 1
+1683386531821|INFO|org.arl.unet.net.Router/1@96:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 1
+1683386531821|INFO|org.arl.unet.bb.BasebandSignalMonitor/1@98:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 1
+1683386531821|INFO|org.arl.unet.link.ReliableLink/1@97:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 1
+1683386531821|INFO|org.arl.fjage.shell.ShellAgent/1@100:init|Agent websh init
+1683386531822|INFO|org.arl.unet.wormhole.Wormhole/1@101:init|Loading agent wh v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.wormhole.Wormhole] on 1
+1683386531822|INFO|org.arl.unet.addr.AddressResolution/1@102:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 1
+1683386531822|INFO|org.arl.unet.mac.CSMA/1@103:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 1
+1683386531822|INFO|org.arl.unet.sim.HalfDuplexModem/1@105:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 1
+1683386531822|INFO|org.arl.unet.net.RouteDiscoveryProtocol/1@106:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 1
+1683386531822|INFO|org.arl.unet.nodeinfo.NodeInfo/1@107:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 1
+1683386531822|INFO|org.arl.unet.transport.SWTransport/1@108:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 1
+1683386531822|INFO|org.arl.unet.localization.Ranging/1@109:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 1
+1683386531822|INFO|org.arl.unet.sim.SimulationAgent/1@110:doInvoke|Loading simulator : SimulationAgent
+1683386531926|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
+1683386532031|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
+1683386532032|INFO|org.arl.unet.net.Router/2@112:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 2
+1683386532032|INFO|org.arl.unet.link.ReliableLink/2@113:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 2
+1683386532032|INFO|org.arl.unet.remote.RemoteControl/2@111:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 2
+1683386532032|INFO|org.arl.unet.bb.BasebandSignalMonitor/2@114:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 2
+1683386532032|INFO|org.arl.fjage.shell.ShellAgent/2@116:init|Agent websh init
+1683386532033|INFO|org.arl.unet.wormhole.Wormhole/2@117:init|Loading agent wh v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.wormhole.Wormhole] on 2
+1683386532033|INFO|org.arl.unet.addr.AddressResolution/2@118:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 2
+1683386532033|INFO|org.arl.unet.mac.CSMA/2@120:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 2
+1683386532033|INFO|org.arl.unet.sim.HalfDuplexModem/2@121:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 2
+1683386532033|INFO|org.arl.unet.net.RouteDiscoveryProtocol/2@122:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 2
+1683386532033|INFO|org.arl.unet.nodeinfo.NodeInfo/2@123:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 2
+1683386532033|INFO|org.arl.unet.transport.SWTransport/2@124:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 2
+1683386532033|INFO|org.arl.unet.localization.Ranging/2@125:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 2
+1683386532034|INFO|org.arl.unet.sim.SimulationAgent/2@126:doInvoke|Loading simulator : SimulationAgent
+1683386532138|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
+1683386532243|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
+1683386532244|INFO|org.arl.unet.remote.RemoteControl/3@127:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 3
+1683386532245|INFO|org.arl.unet.net.Router/3@128:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 3
+1683386532245|INFO|org.arl.unet.link.ReliableLink/3@129:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 3
+1683386532245|INFO|org.arl.unet.bb.BasebandSignalMonitor/3@130:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 3
+1683386532245|INFO|org.arl.fjage.shell.ShellAgent/3@132:init|Agent websh init
+1683386532245|INFO|org.arl.unet.wormhole.Wormhole/3@133:init|Loading agent wh v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.wormhole.Wormhole] on 3
+1683386532246|INFO|org.arl.unet.addr.AddressResolution/3@134:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 3
+1683386532246|INFO|org.arl.unet.mac.CSMA/3@135:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 3
+1683386532246|INFO|org.arl.unet.sim.HalfDuplexModem/3@137:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 3
+1683386532246|INFO|org.arl.unet.net.RouteDiscoveryProtocol/3@138:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 3
+1683386532247|INFO|org.arl.unet.nodeinfo.NodeInfo/3@139:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 3
+1683386532247|INFO|org.arl.unet.transport.SWTransport/3@140:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 3
+1683386532247|INFO|org.arl.unet.localization.Ranging/3@141:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 3
+1683386532247|INFO|org.arl.unet.sim.SimulationAgent/3@142:doInvoke|Loading simulator : SimulationAgent
+1683386532351|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
+1683386532456|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
+1683386532457|INFO|org.arl.unet.remote.RemoteControl/4@143:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 4
+1683386532458|INFO|org.arl.unet.link.ReliableLink/4@145:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 4
+1683386532457|INFO|org.arl.unet.net.Router/4@144:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 4
+1683386532458|INFO|org.arl.fjage.shell.ShellAgent/4@148:init|Agent websh init
+1683386532458|INFO|org.arl.unet.bb.BasebandSignalMonitor/4@146:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 4
+1683386532459|INFO|org.arl.unet.wormhole.Wormhole/4@149:init|Loading agent wh v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.wormhole.Wormhole] on 4
+1683386532459|INFO|org.arl.unet.addr.AddressResolution/4@150:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 4
+1683386532459|INFO|org.arl.unet.mac.CSMA/4@151:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 4
+1683386532459|INFO|org.arl.unet.sim.HalfDuplexModem/4@153:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 4
+1683386532459|INFO|org.arl.unet.net.RouteDiscoveryProtocol/4@154:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 4
+1683386532460|INFO|org.arl.unet.nodeinfo.NodeInfo/4@155:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 4
+1683386532460|INFO|org.arl.unet.transport.SWTransport/4@156:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 4
+1683386532460|INFO|org.arl.unet.localization.Ranging/4@157:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 4
+1683386532460|INFO|org.arl.unet.sim.SimulationAgent/4@158:doInvoke|Loading simulator : SimulationAgent
+1683386532564|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
+1683386532669|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
+1683386532669|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
+1683386532669|INFO|org.arl.unet.remote.RemoteControl/10@79:startup|Using transport for communication
+1683386532670|INFO|org.arl.unet.nodeinfo.NodeInfo/10@90:obtainAddress|Node name is 10, address is 10, address size is 8 bits
+1683386532670|INFO|org.arl.unet.remote.RemoteControl/1@95:startup|Using transport for communication
+1683386532669|INFO|org.arl.unet.link.ReliableLink/10@81:startup|No PHY specified, auto detecting...
+1683386532670|INFO|org.arl.unet.remote.RemoteControl/10@79:startup|Using websh for command exec
+1683386532670|INFO|org.arl.unet.link.ReliableLink/1@97:startup|No PHY specified, auto detecting...
+1683386532670|INFO|org.arl.unet.nodeinfo.NodeInfo/1@107:obtainAddress|Node name is 1, address is 1, address size is 8 bits
+1683386532671|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
+1683386532670|INFO|org.arl.unet.localization.Ranging/1@109:startup|No PHY specified, auto detecting...
+1683386532673|INFO|org.arl.unet.remote.RemoteControl/2@111:startup|Using transport for communication
+1683386532673|INFO|org.arl.unet.remote.RemoteControl/1@95:startup|Using websh for command exec
+1683386532673|INFO|org.arl.unet.remote.RemoteControl/2@111:startup|Using websh for command exec
+1683386532672|INFO|org.arl.unet.link.ReliableLink/2@113:startup|No PHY specified, auto detecting...
+1683386532674|INFO|org.arl.unet.link.ReliableLink/2@113:startup|Using agent 'phy' for PHY
+1683386532674|INFO|org.arl.unet.link.ReliableLink/2@113:startup|No MAC specified, auto detecting...
+1683386532674|INFO|org.arl.unet.link.ReliableLink/2@113:startup|Using agent 'mac' for MAC
+1683386532673|INFO|org.arl.unet.localization.Ranging/2@125:startup|No PHY specified, auto detecting...
+1683386532673|INFO|org.arl.unet.nodeinfo.NodeInfo/2@123:obtainAddress|Node name is 2, address is 2, address size is 8 bits
+1683386532672|INFO|org.arl.unet.transport.SWTransport/2@124:startup|Using router for communication
+1683386532672|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
+1683386532677|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
+1683386532672|INFO|org.arl.unet.transport.SWTransport/1@108:startup|Using router for communication
+1683386532678|INFO|org.arl.unet.remote.RemoteControl/3@127:startup|Using transport for communication
+1683386532678|INFO|org.arl.unet.nodeinfo.NodeInfo/3@139:obtainAddress|Node name is 3, address is 3, address size is 8 bits
+1683386532679|INFO|org.arl.unet.transport.SWTransport/3@140:startup|Using router for communication
+1683386532679|INFO|org.arl.unet.localization.Ranging/4@157:startup|No PHY specified, auto detecting...
+1683386532679|INFO|org.arl.unet.link.ReliableLink/4@145:startup|No PHY specified, auto detecting...
+1683386532679|INFO|org.arl.unet.nodeinfo.NodeInfo/4@155:obtainAddress|Node name is 4, address is 4, address size is 8 bits
+1683386532679|INFO|org.arl.unet.transport.SWTransport/4@156:startup|Using router for communication
+1683386532671|INFO|org.arl.unet.localization.Ranging/10@93:startup|No PHY specified, auto detecting...
+1683386532680|INFO|org.arl.unet.localization.Ranging/10@93:startup|Using agent 'phy' for PHY
+1683386532680|INFO|org.arl.unet.localization.Ranging/10@93:startup|No MAC specified, auto detecting...
+1683386532681|INFO|org.arl.unet.localization.Ranging/10@93:startup|Using agent 'mac' for MAC
+1683386532671|INFO|org.arl.unet.transport.SWTransport/10@91:startup|Using router for communication
+1683386532671|INFO|org.arl.unet.link.ReliableLink/1@97:startup|Using agent 'phy' for PHY
+1683386532671|INFO|org.arl.unet.link.ReliableLink/10@81:startup|Using agent 'phy' for PHY
+1683386532687|INFO|org.arl.unet.link.ReliableLink/10@81:startup|No MAC specified, auto detecting...
+1683386532687|INFO|org.arl.unet.link.ReliableLink/10@81:startup|Using agent 'mac' for MAC
+1683386532686|INFO|org.arl.unet.link.ReliableLink/1@97:startup|No MAC specified, auto detecting...
+1683386532687|INFO|org.arl.unet.link.ReliableLink/1@97:startup|Using agent 'mac' for MAC
+1683386532679|INFO|org.arl.unet.link.ReliableLink/4@145:startup|Using agent 'phy' for PHY
+1683386532688|INFO|org.arl.unet.link.ReliableLink/4@145:startup|No MAC specified, auto detecting...
+1683386532688|INFO|org.arl.unet.link.ReliableLink/4@145:startup|Using agent 'mac' for MAC
+1683386532679|INFO|org.arl.unet.localization.Ranging/4@157:startup|Using agent 'phy' for PHY
+1683386532688|INFO|org.arl.unet.localization.Ranging/4@157:startup|No MAC specified, auto detecting...
+1683386532688|INFO|org.arl.unet.localization.Ranging/4@157:startup|Using agent 'mac' for MAC
+1683386532679|INFO|org.arl.unet.remote.RemoteControl/4@143:startup|Using transport for communication
+1683386532690|INFO|org.arl.unet.remote.RemoteControl/4@143:startup|Using websh for command exec
+1683386532678|INFO|org.arl.unet.remote.RemoteControl/3@127:startup|Using websh for command exec
+1683386532678|INFO|org.arl.unet.localization.Ranging/3@141:startup|No PHY specified, auto detecting...
+1683386532692|INFO|org.arl.unet.localization.Ranging/3@141:startup|Using agent 'phy' for PHY
+1683386532692|INFO|org.arl.unet.localization.Ranging/3@141:startup|No MAC specified, auto detecting...
+1683386532692|INFO|org.arl.unet.localization.Ranging/3@141:startup|Using agent 'mac' for MAC
+1683386532678|INFO|org.arl.unet.link.ReliableLink/3@129:startup|No PHY specified, auto detecting...
+1683386532694|INFO|org.arl.unet.link.ReliableLink/3@129:startup|Using agent 'phy' for PHY
+1683386532694|INFO|org.arl.unet.link.ReliableLink/3@129:startup|No MAC specified, auto detecting...
+1683386532694|INFO|org.arl.unet.link.ReliableLink/3@129:startup|Using agent 'mac' for MAC
+1683386532675|INFO|org.arl.unet.localization.Ranging/2@125:startup|Using agent 'phy' for PHY
+1683386532673|INFO|org.arl.unet.localization.Ranging/1@109:startup|Using agent 'phy' for PHY
+1683386532696|INFO|org.arl.unet.localization.Ranging/1@109:startup|No MAC specified, auto detecting...
+1683386532696|INFO|org.arl.unet.localization.Ranging/1@109:startup|Using agent 'mac' for MAC
+1683386532695|INFO|org.arl.unet.localization.Ranging/2@125:startup|No MAC specified, auto detecting...
+1683386532698|INFO|org.arl.unet.localization.Ranging/2@125:startup|Using agent 'mac' for MAC
+1683386607867|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.58135
+1683386607875|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.58136
+1683386607879|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.58137
+1683386607882|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.58138
+1683386607886|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.58139
+1683386614033|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58140
+1683386614036|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58141
+1683386614040|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58142
+1683386614044|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58143
+1683386614047|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58144
+1683386614052|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58145
+1683386614057|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58146
+1683386615693|INFO|org.arl.unet.sim.SimulationMasterContainer@66:connected|Incoming connection tcp:///127.0.0.1:1104//127.0.0.1.58147
+1683386615696|INFO|org.arl.unet.sim.SimulationMasterContainer@66:connected|Incoming connection tcp:///127.0.0.1:1104//127.0.0.1.58148
+1683386615700|INFO|org.arl.unet.sim.SimulationMasterContainer@66:connected|Incoming connection tcp:///127.0.0.1:1104//127.0.0.1.58149
+1683386615704|INFO|org.arl.unet.sim.SimulationMasterContainer@66:connected|Incoming connection tcp:///127.0.0.1:1104//127.0.0.1.58150
+1683386615708|INFO|org.arl.unet.sim.SimulationMasterContainer@66:connected|Incoming connection tcp:///127.0.0.1:1104//127.0.0.1.58151
+1683386615712|INFO|org.arl.unet.sim.SimulationMasterContainer@66:connected|Incoming connection tcp:///127.0.0.1:1104//127.0.0.1.58152
+1683386619117|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58153
+1683386619121|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58154
+1683386619129|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58155
+1683386619134|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58156
+1683386619139|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58157
+1683386619143|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58158
+1683386619148|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58159
+1683386621412|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58160
+1683386621415|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58161
+1683386621419|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58162
+1683386621425|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58163
+1683386621430|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58164
+1683386621437|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58165
+1683386621442|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58166
+1683386644120|WARNING|org.arl.fjage.remote.ConnectionHandler@192:run|Bad JSON request: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a name but was NUMBER at line 1 column 263 path $.message.data.data in {"action": "send", "relay": true, "message": { "clazz": "org.arl.unet.DatagramReq", "data": {"msgID":"6048a81e-f63a-41b8-be28-ee94c3a8cb5e","perf":"REQUEST","recipient":"transport","sender":"PythonGW-6cd2e5fd-971a-4d53-a129-1b70fc24db8c","inReplyTo":null,"data":1683386644.118345,"to":4,"protocol":40,"reliability":false} }}
+1683386660130|WARNING|org.arl.fjage.remote.ConnectionHandler@192:run|Bad JSON request: com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a name but was NUMBER at line 1 column 263 path $.message.data.data in {"action": "send", "relay": true, "message": { "clazz": "org.arl.unet.DatagramReq", "data": {"msgID":"28b10dd3-cbe5-4afe-9f62-068a30f14b12","perf":"REQUEST","recipient":"transport","sender":"PythonGW-6cd2e5fd-971a-4d53-a129-1b70fc24db8c","inReplyTo":null,"data":1683386660.129036,"to":4,"protocol":40,"reliability":false} }}
+1683386672422|INFO|org.arl.unet.sim.SimulationMasterContainer@174:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58140 closed
+1683386672423|INFO|org.arl.unet.sim.SimulationMasterContainer@186:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58144 closed
+1683386672424|INFO|org.arl.unet.sim.SimulationMasterContainer@180:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58142 closed
+1683386672425|INFO|org.arl.unet.sim.SimulationMasterContainer@177:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58141 closed
+1683386672425|INFO|org.arl.unet.sim.SimulationMasterContainer@183:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58143 closed
+1683386672426|INFO|org.arl.unet.sim.SimulationMasterContainer@189:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58145 closed
+1683386672427|INFO|org.arl.unet.sim.SimulationMasterContainer@192:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58146 closed
+1683386673515|INFO|org.arl.unet.sim.SimulationMasterContainer@239:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58160 closed
+1683386673515|INFO|org.arl.unet.sim.SimulationMasterContainer@242:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58161 closed
+1683386673515|INFO|org.arl.unet.sim.SimulationMasterContainer@248:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58163 closed
+1683386673516|INFO|org.arl.unet.sim.SimulationMasterContainer@257:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58166 closed
+1683386673515|INFO|org.arl.unet.sim.SimulationMasterContainer@245:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58162 closed
+1683386673516|INFO|org.arl.unet.sim.SimulationMasterContainer@254:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58165 closed
+1683386673516|INFO|org.arl.unet.sim.SimulationMasterContainer@251:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58164 closed
+1683386674565|INFO|org.arl.unet.sim.SimulationMasterContainer@218:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58153 closed
+1683386674565|INFO|org.arl.unet.sim.SimulationMasterContainer@224:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58155 closed
+1683386674565|INFO|org.arl.unet.sim.SimulationMasterContainer@233:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58158 closed
+1683386674565|INFO|org.arl.unet.sim.SimulationMasterContainer@221:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58154 closed
+1683386674565|INFO|org.arl.unet.sim.SimulationMasterContainer@227:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58156 closed
+1683386674565|INFO|org.arl.unet.sim.SimulationMasterContainer@236:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58159 closed
+1683386674565|INFO|org.arl.unet.sim.SimulationMasterContainer@230:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58157 closed
+1683386675745|INFO|org.arl.unet.sim.SimulationMasterContainer@200:connectionClosed|Connection tcp:///127.0.0.1:1104//127.0.0.1.58147 closed
+1683386675745|INFO|org.arl.unet.sim.SimulationMasterContainer@206:connectionClosed|Connection tcp:///127.0.0.1:1104//127.0.0.1.58149 closed
+1683386675745|INFO|org.arl.unet.sim.SimulationMasterContainer@203:connectionClosed|Connection tcp:///127.0.0.1:1104//127.0.0.1.58148 closed
+1683386675745|INFO|org.arl.unet.sim.SimulationMasterContainer@212:connectionClosed|Connection tcp:///127.0.0.1:1104//127.0.0.1.58151 closed
+1683386675745|INFO|org.arl.unet.sim.SimulationMasterContainer@215:connectionClosed|Connection tcp:///127.0.0.1:1104//127.0.0.1.58152 closed
+1683386675745|INFO|org.arl.unet.sim.SimulationMasterContainer@209:connectionClosed|Connection tcp:///127.0.0.1:1104//127.0.0.1.58150 closed
+1683386677899|INFO|org.arl.unet.sim.SimulationMasterContainer@168:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.58138 closed
+1683386677900|INFO|org.arl.unet.sim.SimulationMasterContainer@162:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.58136 closed
+1683386677900|INFO|org.arl.unet.sim.SimulationMasterContainer@165:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.58137 closed
+1683386677904|INFO|org.arl.unet.sim.SimulationMasterContainer@159:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.58135 closed
+1683386677904|INFO|org.arl.unet.sim.SimulationMasterContainer@171:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.58139 closed
+1683386791190|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.58189
+1683386791194|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.58190
+1683386791197|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.58191
+1683386791200|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.58192
+1683386791203|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.58193
+1683386794300|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58194
+1683386794304|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58195
+1683386794307|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58196
+1683386794310|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58197
+1683386794314|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58198
+1683386794318|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58199
+1683386794324|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58200
+1683386795820|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58201
+1683386795827|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58202
+1683386795831|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58203
+1683386795836|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58204
+1683386795842|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58205
+1683386795846|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58206
+1683386795851|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58207
+1683386796926|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58208
+1683386796934|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58209
+1683386796946|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58210
+1683386796958|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58211
+1683386796969|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58212
+1683386796981|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58213
+1683386796994|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58214
+1683386800410|INFO|org.arl.unet.sim.SimulationMasterContainer@66:connected|Incoming connection tcp:///127.0.0.1:1104//127.0.0.1.58215
+1683386800414|INFO|org.arl.unet.sim.SimulationMasterContainer@66:connected|Incoming connection tcp:///127.0.0.1:1104//127.0.0.1.58216
+1683386800417|INFO|org.arl.unet.sim.SimulationMasterContainer@66:connected|Incoming connection tcp:///127.0.0.1:1104//127.0.0.1.58217
+1683386800422|INFO|org.arl.unet.sim.SimulationMasterContainer@66:connected|Incoming connection tcp:///127.0.0.1:1104//127.0.0.1.58218
+1683386800427|INFO|org.arl.unet.sim.SimulationMasterContainer@66:connected|Incoming connection tcp:///127.0.0.1:1104//127.0.0.1.58219
+1683386800431|INFO|org.arl.unet.sim.SimulationMasterContainer@66:connected|Incoming connection tcp:///127.0.0.1:1104//127.0.0.1.58220
+1683387142962|INFO|org.arl.unet.sim.SimulationMasterContainer@284:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58195 closed
+1683387142963|INFO|org.arl.unet.sim.SimulationMasterContainer@299:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58200 closed
+1683387142963|INFO|org.arl.unet.sim.SimulationMasterContainer@293:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58198 closed
+1683387142963|INFO|org.arl.unet.sim.SimulationMasterContainer@296:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58199 closed
+1683387142963|INFO|org.arl.unet.sim.SimulationMasterContainer@290:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58197 closed
+1683387142962|INFO|org.arl.unet.sim.SimulationMasterContainer@281:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58194 closed
+1683387142963|INFO|org.arl.unet.sim.SimulationMasterContainer@287:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58196 closed
+1683387144208|INFO|org.arl.unet.sim.SimulationMasterContainer@323:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58208 closed
+1683387144208|INFO|org.arl.unet.sim.SimulationMasterContainer@326:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58209 closed
+1683387144208|INFO|org.arl.unet.sim.SimulationMasterContainer@329:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58210 closed
+1683387144209|INFO|org.arl.unet.sim.SimulationMasterContainer@335:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58212 closed
+1683387144208|INFO|org.arl.unet.sim.SimulationMasterContainer@332:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58211 closed
+1683387144210|INFO|org.arl.unet.sim.SimulationMasterContainer@338:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58213 closed
+1683387144211|INFO|org.arl.unet.sim.SimulationMasterContainer@341:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58214 closed
+1683387145303|INFO|org.arl.unet.sim.SimulationMasterContainer@302:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58201 closed
+1683387145303|INFO|org.arl.unet.sim.SimulationMasterContainer@314:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58205 closed
+1683387145303|INFO|org.arl.unet.sim.SimulationMasterContainer@317:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58206 closed
+1683387145304|INFO|org.arl.unet.sim.SimulationMasterContainer@320:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58207 closed
+1683387145303|INFO|org.arl.unet.sim.SimulationMasterContainer@308:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58203 closed
+1683387145303|INFO|org.arl.unet.sim.SimulationMasterContainer@305:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58202 closed
+1683387145303|INFO|org.arl.unet.sim.SimulationMasterContainer@311:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58204 closed
+1683387146539|INFO|org.arl.unet.sim.SimulationMasterContainer@347:connectionClosed|Connection tcp:///127.0.0.1:1104//127.0.0.1.58216 closed
+1683387146539|INFO|org.arl.unet.sim.SimulationMasterContainer@350:connectionClosed|Connection tcp:///127.0.0.1:1104//127.0.0.1.58217 closed
+1683387146539|INFO|org.arl.unet.sim.SimulationMasterContainer@344:connectionClosed|Connection tcp:///127.0.0.1:1104//127.0.0.1.58215 closed
+1683387146540|INFO|org.arl.unet.sim.SimulationMasterContainer@356:connectionClosed|Connection tcp:///127.0.0.1:1104//127.0.0.1.58219 closed
+1683387146540|INFO|org.arl.unet.sim.SimulationMasterContainer@353:connectionClosed|Connection tcp:///127.0.0.1:1104//127.0.0.1.58218 closed
+1683387146540|INFO|org.arl.unet.sim.SimulationMasterContainer@359:connectionClosed|Connection tcp:///127.0.0.1:1104//127.0.0.1.58220 closed
+1683387283714|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58263
+1683387283717|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58264
+1683387283721|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58265
+1683387283724|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58266
+1683387283726|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58267
+1683387283730|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58268
+1683387283734|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58269
+1683387292098|INFO|org.arl.unet.sim.SimulationMasterContainer@365:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58263 closed
+1683387292098|INFO|org.arl.unet.sim.SimulationMasterContainer@368:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58264 closed
+1683387292099|INFO|org.arl.unet.sim.SimulationMasterContainer@380:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58268 closed
+1683387292099|INFO|org.arl.unet.sim.SimulationMasterContainer@383:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58269 closed
+1683387292099|INFO|org.arl.unet.sim.SimulationMasterContainer@377:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58267 closed
+1683387292099|INFO|org.arl.unet.sim.SimulationMasterContainer@374:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58266 closed
+1683387292098|INFO|org.arl.unet.sim.SimulationMasterContainer@371:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58265 closed
+1683387348255|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58317
+1683387348259|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58318
+1683387348273|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58319
+1683387348283|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58320
+1683387348294|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58321
+1683387348306|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58322
+1683387348317|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58323
+1683387368118|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58350
+1683387368122|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58351
+1683387368133|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58352
+1683387368144|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58353
+1683387368156|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58354
+1683387368168|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58355
+1683387368182|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.58356
+1683387371230|INFO|org.arl.unet.sim.SimulationMasterContainer@66:connected|Incoming connection tcp:///127.0.0.1:1104//127.0.0.1.58357
+1683387371234|INFO|org.arl.unet.sim.SimulationMasterContainer@66:connected|Incoming connection tcp:///127.0.0.1:1104//127.0.0.1.58358
+1683387371238|INFO|org.arl.unet.sim.SimulationMasterContainer@66:connected|Incoming connection tcp:///127.0.0.1:1104//127.0.0.1.58359
+1683387371242|INFO|org.arl.unet.sim.SimulationMasterContainer@66:connected|Incoming connection tcp:///127.0.0.1:1104//127.0.0.1.58360
+1683387371246|INFO|org.arl.unet.sim.SimulationMasterContainer@66:connected|Incoming connection tcp:///127.0.0.1:1104//127.0.0.1.58361
+1683387371250|INFO|org.arl.unet.sim.SimulationMasterContainer@66:connected|Incoming connection tcp:///127.0.0.1:1104//127.0.0.1.58362
+1683387373474|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58363
+1683387378485|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58364
+1683387378492|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58365
+1683387378498|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58366
+1683387378504|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58367
+1683387378508|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58368
+1683387378512|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58369
+1683387450944|INFO|org.arl.unet.sim.SimulationMasterContainer@475:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58363 closed
+1683387450944|INFO|org.arl.unet.sim.SimulationMasterContainer@478:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58364 closed
+1683387450944|INFO|org.arl.unet.sim.SimulationMasterContainer@484:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58366 closed
+1683387450944|INFO|org.arl.unet.sim.SimulationMasterContainer@487:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58367 closed
+1683387450944|INFO|org.arl.unet.sim.SimulationMasterContainer@481:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58365 closed
+1683387450945|INFO|org.arl.unet.sim.SimulationMasterContainer@490:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58368 closed
+1683387450945|INFO|org.arl.unet.sim.SimulationMasterContainer@493:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58369 closed
+1683387452295|INFO|org.arl.unet.sim.SimulationMasterContainer@401:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58317 closed
+1683387452296|INFO|org.arl.unet.sim.SimulationMasterContainer@407:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58319 closed
+1683387452295|INFO|org.arl.unet.sim.SimulationMasterContainer@404:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58318 closed
+1683387452297|INFO|org.arl.unet.sim.SimulationMasterContainer@413:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58321 closed
+1683387452297|INFO|org.arl.unet.sim.SimulationMasterContainer@416:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58322 closed
+1683387452297|INFO|org.arl.unet.sim.SimulationMasterContainer@419:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58323 closed
+1683387452296|INFO|org.arl.unet.sim.SimulationMasterContainer@410:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58320 closed
+1683387454302|INFO|org.arl.unet.sim.SimulationMasterContainer@439:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58351 closed
+1683387454302|INFO|org.arl.unet.sim.SimulationMasterContainer@445:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58353 closed
+1683387454302|INFO|org.arl.unet.sim.SimulationMasterContainer@442:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58352 closed
+1683387454302|INFO|org.arl.unet.sim.SimulationMasterContainer@451:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58355 closed
+1683387454303|INFO|org.arl.unet.sim.SimulationMasterContainer@454:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58356 closed
+1683387454302|INFO|org.arl.unet.sim.SimulationMasterContainer@436:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58350 closed
+1683387454302|INFO|org.arl.unet.sim.SimulationMasterContainer@448:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.58354 closed
+1683387458901|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58386
+1683387458905|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58387
+1683387458909|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58388
+1683387458913|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58389
+1683387458916|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58390
+1683387458921|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58391
+1683387458926|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.58392
+1683387526531|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58397
+1683387526536|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58398
+1683387526549|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58399
+1683387526560|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58400
+1683387526572|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58401
+1683387526585|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58402
+1683387526597|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.58403
+1683387559097|INFO|org.arl.unet.sim.SimulationMasterContainer@524:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58397 closed
+1683387559098|INFO|org.arl.unet.sim.SimulationMasterContainer@527:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58398 closed
+1683387559098|INFO|org.arl.unet.sim.SimulationMasterContainer@539:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58402 closed
+1683387559098|INFO|org.arl.unet.sim.SimulationMasterContainer@533:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58400 closed
+1683387559098|INFO|org.arl.unet.sim.SimulationMasterContainer@536:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58401 closed
+1683387559098|INFO|org.arl.unet.sim.SimulationMasterContainer@530:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58399 closed
+1683387559098|INFO|org.arl.unet.sim.SimulationMasterContainer@542:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.58403 closed
+1683387560884|INFO|org.arl.unet.sim.SimulationMasterContainer@503:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58386 closed
+1683387560884|INFO|org.arl.unet.sim.SimulationMasterContainer@509:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58388 closed
+1683387560884|INFO|org.arl.unet.sim.SimulationMasterContainer@506:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58387 closed
+1683387560884|INFO|org.arl.unet.sim.SimulationMasterContainer@521:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58392 closed
+1683387560884|INFO|org.arl.unet.sim.SimulationMasterContainer@518:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58391 closed
+1683387560884|INFO|org.arl.unet.sim.SimulationMasterContainer@512:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58389 closed
+1683387560884|INFO|org.arl.unet.sim.SimulationMasterContainer@515:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.58390 closed
+1683387562143|INFO|org.arl.unet.sim.SimulationMasterContainer@269:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.58190 closed
+1683387562144|INFO|org.arl.unet.sim.SimulationMasterContainer@272:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.58191 closed
+1683387562143|INFO|org.arl.unet.sim.SimulationMasterContainer@275:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.58192 closed
+1683387562148|INFO|org.arl.unet.sim.SimulationMasterContainer@266:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.58189 closed
+1683387562148|INFO|org.arl.unet.sim.SimulationMasterContainer@278:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.58193 closed

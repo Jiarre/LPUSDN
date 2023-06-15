@@ -1,0 +1,98 @@
+1682588255695|INFO|org.arl.unet.UnetBoot@1:doInvoke|fjage Build: fjage-1.9.1/37c49259/5-09-2021_13:26:12
+1682588255822|INFO|org.arl.unet.UnetBoot@1:doInvoke|UnetBoot: [samples/topo.groovy]
+1682588256003|INFO|org.arl.fjage.remote.EnumTypeAdapter@1:<clinit>|Groovy detected, using GroovyClassLoader
+1682588256054|INFO|org.arl.fjage.remote.MessageAdapterFactory@1:<clinit>|Groovy detected, using GroovyClassLoader
+1682588257148|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1110
+1682588257222|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 10
+1682588257269|INFO|Script1@1:doInvoke|Starting web interface on port null:8090
+1682588257281|INFO|org.arl.fjage.connectors.TcpServer@13:run|Listening on port 1110
+1682588257455|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1682588257459|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1682588257466|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1682588257467|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1682588257468|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1682588257469|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1682588257483|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1682588257561|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8090
+1682588257562|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.132:8090/ws
+1682588257567|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1682588258103|INFO|Script1@1:doInvoke|Created static node 10 (10) @ [0, 0, 0]
+1682588258104|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1101
+1682588258104|INFO|org.arl.fjage.connectors.TcpServer@27:run|Listening on port 1101
+1682588258105|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 1
+1682588258106|INFO|Script1@1:doInvoke|Starting web interface on port null:8081
+1682588258108|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1682588258109|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1682588258110|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1682588258112|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1682588258112|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1682588258113|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1682588258113|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1682588258118|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8081
+1682588258119|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.132:8081/ws
+1682588258120|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1682588258297|INFO|Script1@1:doInvoke|Created static node 1 (1) @ [-1000, 0, -15]
+1682588258298|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1102
+1682588258298|INFO|org.arl.fjage.connectors.TcpServer@40:run|Listening on port 1102
+1682588258299|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 2
+1682588258300|INFO|Script1@1:doInvoke|Starting web interface on port null:8082
+1682588258302|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1682588258302|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1682588258303|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1682588258307|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1682588258307|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1682588258308|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1682588258309|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1682588258313|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8082
+1682588258314|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.132:8082/ws
+1682588258314|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1682588258491|INFO|Script1@1:doInvoke|Created static node 2 (arp) @ [0, -1000, -15]
+1682588258492|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1103
+1682588258492|INFO|org.arl.fjage.connectors.TcpServer@53:run|Listening on port 1103
+1682588258493|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 3
+1682588258494|INFO|Script1@1:doInvoke|Starting web interface on port null:8083
+1682588258496|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1682588258497|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1682588258498|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1682588258500|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1682588258500|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1682588258501|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1682588258501|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1682588258507|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8083
+1682588258508|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.132:8083/ws
+1682588258508|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1682588258691|INFO|Script1@1:doInvoke|Created static node 3 (arp) @ [0, -1000, 30]
+1682588258692|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1104
+1682588258692|INFO|org.arl.fjage.connectors.TcpServer@66:run|Listening on port 1104
+1682588258693|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 4
+1682588258694|INFO|Script1@1:doInvoke|Starting web interface on port null:8084
+1682588258695|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1682588258696|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1682588258697|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1682588258699|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1682588258699|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1682588258700|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1682588258700|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1682588258705|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8084
+1682588258706|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.132:8084/ws
+1682588258706|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1682588258832|INFO|Script1@1:doInvoke|Created static node 4 (arp) @ [1000, 0, -15]
+1682588258870|WARNING|org.arl.fjage.shell.GroovyScriptEngine@1:error|Groovy execution failed
+
+Unknown command or property: uwlink
+Stack trace: ...
+   org.arl.fjage.shell.BaseGroovyScript.propertyMissing(BaseGroovyScript.groovy:668) ...
+   topo$_run_closure1.doCall(topo.groovy:32)
+   topo$_run_closure1.doCall(topo.groovy) ...
+   org.arl.unet.sim.initrc$_run_closure11.doCall(initrc.groovy:418)
+   org.arl.unet.sim.initrc$_run_closure11.doCall(initrc.groovy) ...
+   topo.run(topo.groovy:24) ...
+   org.arl.fjage.shell.GroovyScriptEngine.exec(GroovyScriptEngine.java:215) ...
+   org.arl.unet.boot.sim.exec(sim.groovy:41)
+   org.arl.unet.boot.sim$exec$0.call(Unknown Source) ...
+   org.arl.unet.UnetBoot.run(UnetBoot.groovy:184) ...
+   org.arl.unet.UnetBoot.main(UnetBoot.groovy)
+
+1682588297218|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.62637
+1682588350850|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.62702
+1682588370016|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.62703
