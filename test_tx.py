@@ -10,9 +10,9 @@ import threading
 socket = UnetSocket("localhost",1101)
 
 gw = socket.getGateway()
-phy = gw.agentForService(Services.PHYSICAL)
+uwlink = gw.agentForService("org.arl.unet.Services.LINK")
+phy = gw.agentForService("org.arl.unet.Services.PHYSICAL")
 
-tx = DatagramReq(to=0,data="kok",protocol=33,reliability=False)
-print(tx)
+phy[2] << TxFrameReq(to=2,data=[32],protocol=33)
 
 

@@ -97,7 +97,7 @@ def garbage_collector():
 
 threading.Thread(target=sample_receive).start()
 control_socket.send(DatagramReq(data="sink",to=10,protocol=33,reliable=True))
-control_socket.send(DatagramReq(data=''.join([str(x) + "$" for x in  location]),to=10,protocol=33,reliable=True))
+#control_socket.send(DatagramReq(data=''.join([str(x) + "$" for x in  location]),to=10,protocol=33,reliable=True))
 
 while True:
     char = input()
