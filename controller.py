@@ -12,62 +12,21 @@ sinks = []
 G = nx.Graph()
 socket = UnetSocket("localhost",int(sys.argv[1]))
 hello_socket = UnetSocket("localhost",int(sys.argv[1]))
-adj_socket = UnetSocket("localhost",int(sys.argv[1]))
+flow_socket = UnetSocket("localhost",int(sys.argv[1]))
 end_socket = UnetSocket("localhost",int(sys.argv[1]))
 notification_socket = UnetSocket("localhost",int(sys.argv[1]))
+
 phy = socket.agentForService(Services.PHYSICAL)
+uwlink = socket.agentForService(Services.LINK)
+
 #phy[1].dataRate = 512
 
 
 ## UTILS
-def next_hops():
-    global auvs,sinks
-    while True:
-        time.sleep(5)
-        try:      
-            for e in auvs:
-                if "next_hops" not in auvs[e]:
-                    auvs[e]["next_hops"] = set()
-                tmp = set()
-                for s in sinks:
-                    if e not in sinks:
-                        if nx.has_path(G,source=e,target=s):
-                            try:        
-                                paths = nx.shortest_simple_paths(G, e, s)
-                                for counter, path in enumerate(paths):
-                                    tmp.add(path[1])
-                                    if path[1] == s:
-                                        tmp.add(s)
-                                        break
-                                    if counter == 1:
-                                        break
-
-                                print(f"[Controller] Shortest path from {e} to {s}: {auvs[e]['next_hops']}")
-                            except e:
-                                print(f"Skipping cycle {e} -> {s}")
-                if tmp != auvs[e]["next_hops"]:
-                    print(f"Next hop {e} -> {s} updated from {auvs[e]['next_hops']} to {tmp} ")
-                    auvs[e]["next_hops"] = tmp
-                    notification_socket.send(DatagramReq(data=list(tmp),to=e,protocol=36,reliability=True))
-        except e:
-            print("Eccezione (il dizionario ha cambiato dimensione?")
-        finally:
-            print("finally")
 
 
-def euclidean(a_loc, b_loc):
-    x1 = float(a_loc[0])
-    x2 = float(b_loc[0])
 
-    y1 = float(a_loc[1])
-    y2 = float(b_loc[1])
 
-    z1 = float(a_loc[2])
-    z2 = float(b_loc[2])
-
-    tmp = (x2-x1)**2 + (y2-y1)**2 + (z2-z1)**2
-
-    return math.sqrt(tmp)
  
 
 ## Lifecycles
@@ -92,27 +51,52 @@ def end():
 
             print(auvs)
 
-def garbage_collector():
+def msg_unzipper(msg):
+    from_ = None
+    
+    if hasattr(msg, 'from'):
+        from_ = msg[0]
+    return msg[0],msg[1],msg[2],msg[3]
+    
+    
+def proto40():
+    if sinks:
+        action = sinks[0]
+    else:
+        action = "DUMP"
+    return [action]
+
+
+def flow_generator():
+    flow_socket.bind(34)
     while True:
-        time.sleep(1)
-        try:
-            for e in auvs:
-                auvs[e]["heartbeat"]+=1
-                print(f"Node {e} hb {auvs[e]['heartbeat']}")
-                if auvs[e]["heartbeat"]>10:
-                    auvs.pop(e)
-                    G.remove_node(e)
-                    print(f"Node {e} removed from the network")
-        except:
-            print("Skipping this cycle")
+        req = flow_socket.receive()
+        sender = req.from_
+        fr,to,proto,reliable = msg_unzipper(req.data)
+        # LOGIC FOR FLOW CREATION
+        # Example -> Create flow to reach sinks with alias name 99
+        # Decide for a sink with a certain policy
+        action = "DUMP"
+        if proto == 40:
+            action = proto40()
+            print(action)
+            flow_socket.send(DatagramReq(to=req.from_,protocol=34,data=action,reliability=True))
+            
+
+
         
 
-
+def connect():
+    for e in auvs:
+        for k in auvs:
+            if not G.has_edge(e,k):
+                G.add_edge(e,k)
 def hello():
     hello_socket.bind(33)
     while True:
+        print("waiting for hello")
         msg = hello_socket.receive()
-        print("hello")
+        print("hello received")
         snd = msg.from_
         #print(f"[{snd}] Hello")
         if msg.protocol == 33:
@@ -123,6 +107,7 @@ def hello():
                 print(G.nodes)
             auvs[snd]["heartbeat"] = 0
             if msg.data != []:
+                print(msg.data)
                 tmp = bytearray(msg.data)
                 tmp = str(tmp,"utf-8")
                 if tmp == 'auv':
@@ -134,66 +119,10 @@ def hello():
                     auvs[snd]["next_hops"]=set() 
                     sinks.append(snd)
                     print("[CONTROLLER] A Sink joined the network")
-                if "$" in tmp:
-                    auvs[snd]["location"] = tmp.split("$")
-                    print(auvs[snd]["location"])
+                if tmp == 'sink' or tmp == 'auv':
+                    connect()
+
           
-
-
-def adj():
-    adj_socket.bind(35)
-    while True:
-        msg = adj_socket.receive()
-        snd = msg.from_  
-        print(f"[{snd}] Neighbour update received")
-        if msg.protocol == 35:
-            #print(f"[{msg.from_}] Adj update")
-            if snd in auvs:
-                auvs[snd]["neighbours"] = msg.data
-                for e in msg.data:
-                    if e in auvs:
-                        if not G.has_edge(snd,e):
-                            G.add_edge(snd,e)
-                        if "location" in auvs[e] and "location" in auvs[snd]:
-                            distance = euclidean(auvs[snd]["location"],auvs[e]["location"])
-                            if distance > 400:
-                                G.remove_edge(snd,e)
-                            else:
-
-                                print(f"{e} -> {snd}: {distance}")
-                                G[e][snd]["weight"] = distance
-                                G[snd][e]["weight"] = distance
-
-                print("Graph edges updated")
-                print(G.edges)
-                auvs[snd]["heartbeat"] = 0
-
-
-def loc():
-    while True:
-        time.sleep(5)
-        try:
-            for i in auvs:
-                for j in auvs:
-                    if i!=j and "location" in auvs[i] and "location" in auvs[j]:
-                       
-                        if not G.has_edge(i,j):
-                            G.add_edge(i,j)
-                        
-                        distance = euclidean(auvs[i]["location"],auvs[j]["location"])
-                        print(f"{i} -> {j}: {distance}")
-                        if distance > 450:
-                            G.remove_edge(i,j)
-                        else:
-                            G[i][j]["weight"] = distance
-                            G[j][i]["weight"] = distance
-                        print(G.edges)
-                        
-        except e:
-            print("Error")
-
-
-
 
             
     
@@ -201,9 +130,10 @@ def loc():
 
 
 threading.Thread(target=hello).start()
-threading.Thread(target=loc).start()
+#threading.Thread(target=loc).start()
 threading.Thread(target=end).start()
-threading.Thread(target=next_hops).start()
+threading.Thread(target=flow_generator).start()
+#threading.Thread(target=next_hops).start()
 
 while True:
     char = input()
