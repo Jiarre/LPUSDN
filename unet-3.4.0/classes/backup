@@ -1,19 +1,13 @@
-import org.arl.fjage.*
-import org.arl.unet.*
-import org.arl.fjage.param.Parameter
+enum Params implements Parameter {        
+    controller_address,
+    flow_table,
+    cached_flows,
+    quarantine_flowtable,
+    buffer
+    }
 
-class USDNKernel extends UnetAgent {
-    
-    enum Params implements Parameter {        
-        controller_address,
-        flow_table,
-        cached_flows,
-        quarantine_flowtable,
-        buffer
-        }
-
-      final String title = 'Underwater SDN Kernel'        
-      final String description = 'Handles flow table for SDN communication'
+  final String title = 'Underwater SDN Kernel'        
+  final String description = 'Handles flow table for SDN communication'
     
     int controller_address = 10;
     int ID = 0;
@@ -23,16 +17,13 @@ class USDNKernel extends UnetAgent {
     def buffer = [:]
     
     //flow_table.add(default_entry);
- int getAction(int id){
+ int getAction(int uuid){
      for(e in flow_table){
-         if(id==e[0]){
+         if(uuid==e[0]){
              return e[5]
          }
      }
  }
- 
- 
-    
   ArrayList getMask(msg){
       def msg_mask = [-1,-1,-1,-1]
       if(msg.hasProperty('from') && msg.from){
@@ -99,59 +90,19 @@ class USDNKernel extends UnetAgent {
   }
     @Override
   void startup() {
+    // subscribe to all agents that provide the datagram service
     subscribeForService(Services.DATAGRAM)
     subscribeForService(Services.LINK)
   }
 
   @Override
   Message processRequest(Message msg) {
-    if(msg instanceof DatagramReq){
-        return sendDatagram(msg)
+    if(msg instanceof GetRouteReq){
+        RouteRsp rsp = new RouteRsp(msg)
+        println(flow_table)
+        return new Message(msg,Performative.AGREE)
     }
     if(msg instanceof DatagramReq){
-        print(msg)
-    }
-    
-    return null
-
-  }
-  @Override
-  void processMessage(Message msg) {
-    def link = agentForService(org.arl.unet.Services.LINK)
-    def node = agentForService(Services.NODE_INFO)
-    //Protocols:
-    //. 34: update controller on a link situation
-    //  35: new flow
-    //  36: delete flow
-    //  37: delete all flows with an action
-    //  38: update action of a flow
-    if(msg instanceof LinkStatusNtf || msg instanceof DatagramFailureNtf) {
-        print(msg)
-    }
-    
-    if (msg instanceof DatagramNtf && msg.protocol == 35) {
-         newFlow(msg)
-    }
-    if (msg instanceof DatagramNtf && msg.protocol == 36) {
-         deleteFlow(msg)
-    }
-    if (msg instanceof DatagramNtf && msg.protocol == 37) {
-         deleteAllFlowsWithAction(msg)
-    }
-    if (msg instanceof DatagramNtf && msg.protocol == 38) {
-         updateFlow(msg)
-    }
-    if (msg instanceof DatagramNtf){
-        if(node.address != msg.to){
-            forward(msg)
-        }
-        
-    }
-    
-    return null
-  }
-  
-  Message sendDatagram(msg){
         def link = agentForService(org.arl.unet.Services.LINK)
         ArrayList mask = getMask(msg)
         int id = isInCache(mask)
@@ -159,20 +110,17 @@ class USDNKernel extends UnetAgent {
             if(buffer[id]){
                 buffer[id].add(msg)
             }
-            
+            else{
+                buffer[id] = new ArrayList<DatagramReq>()
+                buffer[id].add(msg)
+            }
             return new Message(msg,Performative.REFUSE)
         }
-        
-        
-        
         def action = match(mask)
- 
+        println(action)
+        println(mask)
         if(action == controller_address){
             ID++
-            if(id == -1){
-                buffer[ID] = new ArrayList<DatagramReq>()
-                buffer[ID].add(msg)
-            }
             ArrayList cached = mask.plus(0,ID)
             cached_flows.add(cached)
             link << new DatagramReq(to:controller_address,protocol:33,reliability:true,data:cached)
@@ -181,11 +129,19 @@ class USDNKernel extends UnetAgent {
             link << msg
         }
         return new Message(msg,Performative.AGREE)
+    }
+    return null
+
   }
   
-  void newFlow(msg){
-        def link = agentForService(org.arl.unet.Services.LINK)
-
+  @Override
+  void processMessage(Message msg) {
+    def link = agentForService(org.arl.unet.Services.LINK)
+    //Protocols:
+    //  35: new flow
+    //  36: delete flow
+    //  37: generate flow
+    if (msg instanceof DatagramNtf && msg.protocol == 35) {
         def reply = msg.data.toList()
         def flow = []
         int id = reply[0]
@@ -209,59 +165,10 @@ class USDNKernel extends UnetAgent {
             }
             buffer.remove(id)
         }
+    }
+    return null
   }
-  
-  void deleteFlow(msg){
-      int idToDelete = msg.data.toList()[0]
-      def flow_to_delete = []
-      for(flow in flow_table){
-          if(idToDelete == flow[0] ){
-              flow_to_delete = flow
-              break
-          }
-      }
-      if(!flow_to_delete.isEmpty()){
-          flow_table.remove(flow_to_delete)
-      }
-  }
-  
-  void deleteAllFlowsWithAction(msg){
-      int actionToDelete = msg.data.toList()[0]
-      def flows_to_delete = []
-      for(flow in flow_table){
-          if(actionToDelete == flow[5] ){
-              flows_to_delete.add(flow)
-          }
-      }
-      
-      if(!flows_to_delete.isEmpty()){
-          for(e in flows_to_delete){
-          flow_table.remove(e)
-            }
-      }
-
-  }
-  
-  void updateFlow(msg){
-      def reply = msg.data.toList()
-      int id = reply[0]
-      int action = reply[1]
-      def flag = false
-      for(flow in flow_table){
-          if(id == flow[0] ){
-              flow[5] = action
-              flag = true
-          }
-      }
-  }
-  void forward(msg){
-      sendDatagram(msg)
-  }
-  
 
   List<Parameter> getParameterList() {      
     allOf(Params)
   }
-    
-
-}
