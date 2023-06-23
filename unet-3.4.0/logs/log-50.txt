@@ -1,312 +1,485 @@
-1682351930011|INFO|org.arl.unet.UnetBoot@1:doInvoke|fjage Build: fjage-1.9.1/37c49259/5-09-2021_13:26:12
-1682351930102|INFO|org.arl.unet.UnetBoot@1:doInvoke|UnetBoot: [samples/topo.groovy]
-1682351930268|INFO|org.arl.fjage.remote.EnumTypeAdapter@1:<clinit>|Groovy detected, using GroovyClassLoader
-1682351930310|INFO|org.arl.fjage.remote.MessageAdapterFactory@1:<clinit>|Groovy detected, using GroovyClassLoader
-1682351931231|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1110
-1682351931245|INFO|org.arl.fjage.connectors.TcpServer@13:run|Listening on port 1110
-1682351931305|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 10
-1682351931335|INFO|Script1@1:doInvoke|Starting web interface on port null:8090
-1682351931465|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
-1682351931468|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
-1682351931473|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
-1682351931474|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
-1682351931475|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
-1682351931475|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
-1682351931487|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
-1682351931545|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8090
-1682351931546|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.125:8090/ws
-1682351931549|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
-1682351932124|INFO|Script1@1:doInvoke|Created static node 10 (10) @ [0, 0, 0]
-1682351932126|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1101
-1682351932126|INFO|org.arl.fjage.connectors.TcpServer@27:run|Listening on port 1101
-1682351932127|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 1
-1682351932128|INFO|Script1@1:doInvoke|Starting web interface on port null:8081
-1682351932130|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
-1682351932131|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
-1682351932132|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
-1682351932134|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
-1682351932134|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
-1682351932135|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
-1682351932135|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
-1682351932140|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8081
-1682351932141|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.125:8081/ws
-1682351932141|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
-1682351932298|INFO|Script1@1:doInvoke|Created static node 1 (1) @ [0, 0, -15]
-1682351932299|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1102
-1682351932299|INFO|org.arl.fjage.connectors.TcpServer@40:run|Listening on port 1102
-1682351932301|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 2
-1682351932302|INFO|Script1@1:doInvoke|Starting web interface on port null:8082
-1682351932303|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
-1682351932304|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
-1682351932305|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
-1682351932309|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
-1682351932309|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
-1682351932310|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
-1682351932311|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
-1682351932315|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8082
-1682351932316|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.125:8082/ws
-1682351932316|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
-1682351932490|INFO|Script1@1:doInvoke|Created static node 2 (arp) @ [0, 0, -15]
-1682351932491|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1103
-1682351932491|INFO|org.arl.fjage.connectors.TcpServer@53:run|Listening on port 1103
-1682351932492|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 3
-1682351932493|INFO|Script1@1:doInvoke|Starting web interface on port null:8083
-1682351932495|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
-1682351932496|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
-1682351932497|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
-1682351932498|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
-1682351932499|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
-1682351932500|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
-1682351932500|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
-1682351932505|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8083
-1682351932505|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.125:8083/ws
-1682351932506|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
-1682351932700|INFO|Script1@1:doInvoke|Created static node 3 (arp) @ [0, 0, -15]
-1682351932701|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1104
-1682351932701|INFO|org.arl.fjage.connectors.TcpServer@66:run|Listening on port 1104
-1682351932702|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 4
-1682351932703|INFO|Script1@1:doInvoke|Starting web interface on port null:8084
-1682351932705|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
-1682351932705|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
-1682351932706|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
-1682351932708|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
-1682351932708|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
-1682351932709|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
-1682351932709|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
-1682351932714|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8084
-1682351932714|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.125:8084/ws
-1682351932715|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
-1682351932866|INFO|Script1@1:doInvoke|Created static node 4 (arp) @ [10000, 0, -15]
-1682351932904|INFO|Script1@1:doInvoke| --- BEGIN SIMULATION #1 ---
-1682351932910|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
-1682351932913|INFO|org.arl.fjage.shell.ShellAgent/10@84:init|Agent websh init
-1682351932914|INFO|org.arl.unet.net.Router/10@80:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 10
-1682351932914|INFO|org.arl.unet.link.ReliableLink/10@81:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 10
-1682351932914|INFO|org.arl.unet.mac.CSMA/10@86:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 10
-1682351932914|INFO|org.arl.unet.bb.BasebandSignalMonitor/10@82:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 10
-1682351932914|INFO|org.arl.unet.remote.RemoteControl/10@79:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 10
-1682351932915|INFO|org.arl.unet.sim.HalfDuplexModem/10@87:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 10
-1682351932914|INFO|org.arl.unet.addr.AddressResolution/10@85:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 10
-1682351932915|INFO|org.arl.unet.net.RouteDiscoveryProtocol/10@88:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 10
-1682351932916|INFO|org.arl.unet.nodeinfo.NodeInfo/10@89:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 10
-1682351932916|INFO|org.arl.unet.transport.SWTransport/10@90:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 10
-1682351932917|INFO|org.arl.unet.localization.Ranging/10@91:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 10
-1682351932918|INFO|org.arl.unet.sim.SimulationAgent/10@92:doInvoke|Loading simulator : SimulationAgent
-1682351932977|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.57698
-1682351933019|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
-1682351933032|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.57699
-1682351933124|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
-1682351933125|INFO|org.arl.unet.remote.RemoteControl/1@100:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 1
-1682351933125|INFO|org.arl.unet.link.ReliableLink/1@102:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 1
-1682351933125|INFO|org.arl.unet.net.Router/1@101:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 1
-1682351933126|INFO|org.arl.unet.bb.BasebandSignalMonitor/1@103:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 1
-1682351933126|INFO|org.arl.fjage.shell.ShellAgent/1@105:init|Agent websh init
-1682351933126|INFO|org.arl.unet.mac.CSMA/1@107:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 1
-1682351933126|INFO|org.arl.unet.addr.AddressResolution/1@106:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 1
-1682351933127|INFO|org.arl.unet.net.RouteDiscoveryProtocol/1@110:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 1
-1682351933127|INFO|org.arl.unet.sim.HalfDuplexModem/1@108:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 1
-1682351933127|INFO|org.arl.unet.nodeinfo.NodeInfo/1@111:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 1
-1682351933127|INFO|org.arl.unet.transport.SWTransport/1@112:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 1
-1682351933127|INFO|org.arl.unet.localization.Ranging/1@113:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 1
-1682351933127|INFO|org.arl.unet.sim.SimulationAgent/1@114:doInvoke|Loading simulator : SimulationAgent
-1682351933231|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
-1682351933335|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
-1682351933336|INFO|org.arl.unet.net.Router/2@116:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 2
-1682351933336|INFO|org.arl.unet.bb.BasebandSignalMonitor/2@118:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 2
-1682351933336|INFO|org.arl.unet.link.ReliableLink/2@117:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 2
-1682351933336|INFO|org.arl.fjage.shell.ShellAgent/2@120:init|Agent websh init
-1682351933336|INFO|org.arl.unet.remote.RemoteControl/2@115:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 2
-1682351933337|INFO|org.arl.unet.addr.AddressResolution/2@121:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 2
-1682351933337|INFO|org.arl.unet.mac.CSMA/2@122:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 2
-1682351933337|INFO|org.arl.unet.sim.HalfDuplexModem/2@123:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 2
-1682351933337|INFO|org.arl.unet.net.RouteDiscoveryProtocol/2@125:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 2
-1682351933337|INFO|org.arl.unet.nodeinfo.NodeInfo/2@126:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 2
-1682351933337|INFO|org.arl.unet.localization.Ranging/2@128:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 2
-1682351933337|INFO|org.arl.unet.transport.SWTransport/2@127:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 2
-1682351933338|INFO|org.arl.unet.sim.SimulationAgent/2@129:doInvoke|Loading simulator : SimulationAgent
-1682351933442|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
-1682351933545|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
-1682351933546|INFO|org.arl.unet.remote.RemoteControl/3@130:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 3
-1682351933546|INFO|org.arl.unet.net.Router/3@131:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 3
-1682351933547|INFO|org.arl.unet.link.ReliableLink/3@132:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 3
-1682351933547|INFO|org.arl.unet.bb.BasebandSignalMonitor/3@133:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 3
-1682351933547|INFO|org.arl.fjage.shell.ShellAgent/3@135:init|Agent websh init
-1682351933548|INFO|org.arl.unet.addr.AddressResolution/3@136:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 3
-1682351933548|INFO|org.arl.unet.mac.CSMA/3@137:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 3
-1682351933548|INFO|org.arl.unet.sim.HalfDuplexModem/3@139:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 3
-1682351933549|INFO|org.arl.unet.net.RouteDiscoveryProtocol/3@140:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 3
-1682351933549|INFO|org.arl.unet.nodeinfo.NodeInfo/3@141:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 3
-1682351933549|INFO|org.arl.unet.transport.SWTransport/3@142:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 3
-1682351933549|INFO|org.arl.unet.localization.Ranging/3@143:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 3
-1682351933549|INFO|org.arl.unet.sim.SimulationAgent/3@144:doInvoke|Loading simulator : SimulationAgent
-1682351933654|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
-1682351933759|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
-1682351933760|INFO|org.arl.unet.remote.RemoteControl/4@145:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 4
-1682351933760|INFO|org.arl.unet.net.Router/4@146:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 4
-1682351933761|INFO|org.arl.unet.link.ReliableLink/4@147:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 4
-1682351933762|INFO|org.arl.unet.bb.BasebandSignalMonitor/4@148:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 4
-1682351933762|INFO|org.arl.fjage.shell.ShellAgent/4@150:init|Agent websh init
-1682351933762|INFO|org.arl.unet.addr.AddressResolution/4@151:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 4
-1682351933763|INFO|org.arl.unet.mac.CSMA/4@152:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 4
-1682351933763|INFO|org.arl.unet.sim.HalfDuplexModem/4@153:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 4
-1682351933763|INFO|org.arl.unet.net.RouteDiscoveryProtocol/4@155:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 4
-1682351933763|INFO|org.arl.unet.nodeinfo.NodeInfo/4@156:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 4
-1682351933764|INFO|org.arl.unet.transport.SWTransport/4@157:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 4
-1682351933764|INFO|org.arl.unet.sim.SimulationAgent/4@159:doInvoke|Loading simulator : SimulationAgent
-1682351933764|INFO|org.arl.unet.localization.Ranging/4@158:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 4
-1682351933869|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
-1682351933974|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
-1682351933974|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
-1682351933975|INFO|org.arl.unet.link.ReliableLink/10@81:startup|No PHY specified, auto detecting...
-1682351933975|INFO|org.arl.unet.nodeinfo.NodeInfo/10@89:obtainAddress|Node name is 10, address is 10, address size is 8 bits
-1682351933975|INFO|org.arl.unet.link.ReliableLink/10@81:startup|Using agent 'phy' for PHY
-1682351933976|INFO|org.arl.unet.nodeinfo.NodeInfo/1@111:obtainAddress|Node name is 1, address is 1, address size is 8 bits
-1682351933975|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
-1682351933975|INFO|org.arl.unet.remote.RemoteControl/10@79:startup|Using transport for communication
-1682351933978|INFO|org.arl.unet.remote.RemoteControl/2@115:startup|Using transport for communication
-1682351933979|INFO|org.arl.unet.transport.SWTransport/2@127:startup|Using router for communication
-1682351933975|INFO|org.arl.unet.localization.Ranging/10@91:startup|No PHY specified, auto detecting...
-1682351933979|INFO|org.arl.unet.localization.Ranging/10@91:startup|Using agent 'phy' for PHY
-1682351933979|INFO|org.arl.unet.remote.RemoteControl/2@115:startup|Using websh for command exec
-1682351933978|INFO|org.arl.unet.nodeinfo.NodeInfo/2@126:obtainAddress|Node name is 2, address is 2, address size is 8 bits
-1682351933978|INFO|org.arl.unet.link.ReliableLink/2@117:startup|No PHY specified, auto detecting...
-1682351933978|INFO|org.arl.unet.localization.Ranging/2@128:startup|No PHY specified, auto detecting...
-1682351933981|INFO|org.arl.unet.link.ReliableLink/2@117:startup|Using agent 'phy' for PHY
-1682351933978|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
-1682351933976|INFO|org.arl.unet.transport.SWTransport/1@112:startup|Using router for communication
-1682351933976|INFO|org.arl.unet.link.ReliableLink/10@81:startup|No MAC specified, auto detecting...
-1682351933983|INFO|org.arl.unet.localization.Ranging/3@143:startup|No PHY specified, auto detecting...
-1682351933983|INFO|org.arl.unet.localization.Ranging/3@143:startup|Using agent 'phy' for PHY
-1682351933983|INFO|org.arl.unet.link.ReliableLink/3@132:startup|No PHY specified, auto detecting...
-1682351933983|INFO|org.arl.unet.link.ReliableLink/3@132:startup|Using agent 'phy' for PHY
-1682351933984|INFO|org.arl.unet.link.ReliableLink/3@132:startup|No MAC specified, auto detecting...
-1682351933984|INFO|org.arl.unet.link.ReliableLink/3@132:startup|Using agent 'mac' for MAC
-1682351933984|INFO|org.arl.unet.transport.SWTransport/3@142:startup|Using router for communication
-1682351933976|INFO|org.arl.unet.link.ReliableLink/1@102:startup|No PHY specified, auto detecting...
-1682351933984|INFO|org.arl.unet.link.ReliableLink/1@102:startup|Using agent 'phy' for PHY
-1682351933985|INFO|org.arl.unet.link.ReliableLink/1@102:startup|No MAC specified, auto detecting...
-1682351933985|INFO|org.arl.unet.link.ReliableLink/1@102:startup|Using agent 'mac' for MAC
-1682351933976|INFO|org.arl.unet.localization.Ranging/1@113:startup|No PHY specified, auto detecting...
-1682351933987|INFO|org.arl.unet.localization.Ranging/1@113:startup|Using agent 'phy' for PHY
-1682351933988|INFO|org.arl.unet.localization.Ranging/1@113:startup|No MAC specified, auto detecting...
-1682351933988|INFO|org.arl.unet.localization.Ranging/1@113:startup|Using agent 'mac' for MAC
-1682351933976|INFO|org.arl.unet.remote.RemoteControl/1@100:startup|Using transport for communication
-1682351933990|INFO|org.arl.unet.remote.RemoteControl/1@100:startup|Using websh for command exec
-1682351933975|INFO|org.arl.unet.transport.SWTransport/10@90:startup|Using router for communication
-1682351933983|INFO|org.arl.unet.nodeinfo.NodeInfo/3@141:obtainAddress|Node name is 3, address is 3, address size is 8 bits
-1682351933983|INFO|org.arl.unet.localization.Ranging/3@143:startup|No MAC specified, auto detecting...
-1682351933993|INFO|org.arl.unet.localization.Ranging/3@143:startup|Using agent 'mac' for MAC
-1682351933983|INFO|org.arl.unet.link.ReliableLink/10@81:startup|Using agent 'mac' for MAC
-1682351933983|INFO|org.arl.unet.remote.RemoteControl/3@130:startup|Using transport for communication
-1682351933995|INFO|org.arl.unet.remote.RemoteControl/3@130:startup|Using websh for command exec
-1682351933983|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
-1682351933982|INFO|org.arl.unet.localization.Ranging/2@128:startup|Using agent 'phy' for PHY
-1682351933996|INFO|org.arl.unet.localization.Ranging/2@128:startup|No MAC specified, auto detecting...
-1682351933996|INFO|org.arl.unet.localization.Ranging/2@128:startup|Using agent 'mac' for MAC
-1682351933997|INFO|org.arl.unet.remote.RemoteControl/4@145:startup|Using transport for communication
-1682351933997|INFO|org.arl.unet.remote.RemoteControl/4@145:startup|Using websh for command exec
-1682351933997|INFO|org.arl.unet.localization.Ranging/4@158:startup|No PHY specified, auto detecting...
-1682351933997|INFO|org.arl.unet.localization.Ranging/4@158:startup|Using agent 'phy' for PHY
-1682351933997|INFO|org.arl.unet.localization.Ranging/4@158:startup|No MAC specified, auto detecting...
-1682351933998|INFO|org.arl.unet.localization.Ranging/4@158:startup|Using agent 'mac' for MAC
-1682351933999|INFO|org.arl.unet.link.ReliableLink/4@147:startup|No PHY specified, auto detecting...
-1682351933999|INFO|org.arl.unet.link.ReliableLink/4@147:startup|Using agent 'phy' for PHY
-1682351933999|INFO|org.arl.unet.link.ReliableLink/4@147:startup|No MAC specified, auto detecting...
-1682351933999|INFO|org.arl.unet.link.ReliableLink/4@147:startup|Using agent 'mac' for MAC
-1682351934000|INFO|org.arl.unet.nodeinfo.NodeInfo/4@156:obtainAddress|Node name is 4, address is 4, address size is 8 bits
-1682351933982|INFO|org.arl.unet.link.ReliableLink/2@117:startup|No MAC specified, auto detecting...
-1682351934001|INFO|org.arl.unet.link.ReliableLink/2@117:startup|Using agent 'mac' for MAC
-1682351933981|INFO|org.arl.unet.localization.Ranging/10@91:startup|No MAC specified, auto detecting...
-1682351934004|INFO|org.arl.unet.localization.Ranging/10@91:startup|Using agent 'mac' for MAC
-1682351934004|INFO|org.arl.unet.remote.RemoteControl/10@79:startup|Using websh for command exec
-1682351934002|INFO|org.arl.unet.transport.SWTransport/4@157:startup|Using router for communication
-1682351935389|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57700
-1682351935393|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57701
-1682351935398|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57702
-1682351935403|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57703
-1682351936335|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57704
-1682351936341|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57705
-1682351936346|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57706
-1682351936351|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57707
-1682351937096|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.57708
-1682351937100|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.57709
-1682351937104|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.57710
-1682351937109|INFO|org.arl.unet.sim.SimulationMasterContainer@53:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.57711
-1682351961011|INFO|org.arl.unet.sim.SimulationMasterContainer@94:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.57698 closed
-1682351961012|INFO|org.arl.unet.sim.SimulationMasterContainer@97:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.57699 closed
-1682351961667|INFO|org.arl.unet.sim.SimulationMasterContainer@194:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.57710 closed
-1682351961667|INFO|org.arl.unet.sim.SimulationMasterContainer@188:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.57708 closed
-1682351961667|INFO|org.arl.unet.sim.SimulationMasterContainer@197:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.57711 closed
-1682351961667|INFO|org.arl.unet.sim.SimulationMasterContainer@191:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.57709 closed
-1682351973487|INFO|org.arl.unet.sim.SimulationMasterContainer@163:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57701 closed
-1682351973487|INFO|org.arl.unet.sim.SimulationMasterContainer@169:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57703 closed
-1682351973487|INFO|org.arl.unet.sim.SimulationMasterContainer@160:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57700 closed
-1682351973487|INFO|org.arl.unet.sim.SimulationMasterContainer@166:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57702 closed
-1682351974371|INFO|org.arl.unet.sim.SimulationMasterContainer@176:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57704 closed
-1682351974371|INFO|org.arl.unet.sim.SimulationMasterContainer@185:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57707 closed
-1682351974371|INFO|org.arl.unet.sim.SimulationMasterContainer@182:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57706 closed
-1682351974371|INFO|org.arl.unet.sim.SimulationMasterContainer@179:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57705 closed
-1682352404789|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57759
-1682352404793|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57760
-1682352404797|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57761
-1682352404801|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57762
-1682352405888|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57763
-1682352405891|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57764
-1682352405895|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57765
-1682352405899|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57766
-1682352424705|INFO|org.arl.unet.sim.SimulationMasterContainer@204:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57760 closed
-1682352424705|INFO|org.arl.unet.sim.SimulationMasterContainer@210:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57762 closed
-1682352424705|INFO|org.arl.unet.sim.SimulationMasterContainer@201:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57759 closed
-1682352424705|INFO|org.arl.unet.sim.SimulationMasterContainer@207:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57761 closed
-1682352471127|INFO|org.arl.unet.sim.SimulationMasterContainer@216:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57764 closed
-1682352471127|INFO|org.arl.unet.sim.SimulationMasterContainer@222:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57766 closed
-1682352471127|INFO|org.arl.unet.sim.SimulationMasterContainer@213:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57763 closed
-1682352471127|INFO|org.arl.unet.sim.SimulationMasterContainer@219:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57765 closed
-1682352493950|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57775
-1682352493953|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57776
-1682352493957|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57777
-1682352493961|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57778
-1682352495635|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57779
-1682352495639|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57780
-1682352495643|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57781
-1682352495647|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57782
-1682352514786|INFO|org.arl.unet.sim.SimulationMasterContainer@228:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57776 closed
-1682352514786|INFO|org.arl.unet.sim.SimulationMasterContainer@225:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57775 closed
-1682352514786|INFO|org.arl.unet.sim.SimulationMasterContainer@231:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57777 closed
-1682352514786|INFO|org.arl.unet.sim.SimulationMasterContainer@234:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57778 closed
-1682352515380|INFO|org.arl.unet.sim.SimulationMasterContainer@246:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57782 closed
-1682352515380|INFO|org.arl.unet.sim.SimulationMasterContainer@237:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57779 closed
-1682352515380|INFO|org.arl.unet.sim.SimulationMasterContainer@240:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57780 closed
-1682352515380|INFO|org.arl.unet.sim.SimulationMasterContainer@243:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57781 closed
-1682352521969|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57783
-1682352521972|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57784
-1682352521976|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57785
-1682352521981|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57786
-1682352523091|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57787
-1682352523095|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57788
-1682352523099|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57789
-1682352523103|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57790
-1682352565888|INFO|org.arl.unet.sim.SimulationMasterContainer@249:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57783 closed
-1682352565888|INFO|org.arl.unet.sim.SimulationMasterContainer@255:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57785 closed
-1682352565888|INFO|org.arl.unet.sim.SimulationMasterContainer@252:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57784 closed
-1682352565888|INFO|org.arl.unet.sim.SimulationMasterContainer@258:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57786 closed
-1682352575883|INFO|org.arl.unet.sim.SimulationMasterContainer@270:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57790 closed
-1682352575883|INFO|org.arl.unet.sim.SimulationMasterContainer@264:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57788 closed
-1682352575883|INFO|org.arl.unet.sim.SimulationMasterContainer@267:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57789 closed
-1682352575883|INFO|org.arl.unet.sim.SimulationMasterContainer@261:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57787 closed
-1682352646867|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57792
-1682352646880|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57793
-1682352646883|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57794
-1682352646887|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57795
-1682352648064|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57796
-1682352648067|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57797
-1682352648071|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57798
-1682352648075|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57799
-1682352701655|INFO|org.arl.unet.sim.SimulationMasterContainer@285:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57796 closed
-1682352701655|INFO|org.arl.unet.sim.SimulationMasterContainer@291:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57798 closed
-1682352701655|INFO|org.arl.unet.sim.SimulationMasterContainer@288:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57797 closed
-1682352701655|INFO|org.arl.unet.sim.SimulationMasterContainer@294:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57799 closed
-1682352784497|INFO|org.arl.unet.sim.SimulationMasterContainer@276:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57793 closed
-1682352784497|INFO|org.arl.unet.sim.SimulationMasterContainer@273:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57792 closed
-1682352784497|INFO|org.arl.unet.sim.SimulationMasterContainer@282:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57795 closed
-1682352784497|INFO|org.arl.unet.sim.SimulationMasterContainer@279:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57794 closed
+1682352847548|INFO|org.arl.unet.UnetBoot@1:doInvoke|fjage Build: fjage-1.9.1/37c49259/5-09-2021_13:26:12
+1682352847625|INFO|org.arl.unet.UnetBoot@1:doInvoke|UnetBoot: [samples/topo.groovy]
+1682352847787|INFO|org.arl.fjage.remote.EnumTypeAdapter@1:<clinit>|Groovy detected, using GroovyClassLoader
+1682352847828|INFO|org.arl.fjage.remote.MessageAdapterFactory@1:<clinit>|Groovy detected, using GroovyClassLoader
+1682352848787|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1110
+1682352848847|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 10
+1682352848865|INFO|org.arl.fjage.connectors.TcpServer@13:run|Listening on port 1110
+1682352848880|INFO|Script1@1:doInvoke|Starting web interface on port null:8090
+1682352849005|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1682352849008|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1682352849013|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1682352849014|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1682352849015|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1682352849015|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1682352849028|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1682352849095|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8090
+1682352849097|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.125:8090/ws
+1682352849101|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1682352849692|INFO|Script1@1:doInvoke|Created static node 10 (10) @ [0, 0, 0]
+1682352849693|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1101
+1682352849694|INFO|org.arl.fjage.connectors.TcpServer@27:run|Listening on port 1101
+1682352849695|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 1
+1682352849695|INFO|Script1@1:doInvoke|Starting web interface on port null:8081
+1682352849697|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1682352849698|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1682352849699|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1682352849700|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1682352849701|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1682352849702|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1682352849702|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1682352849706|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8081
+1682352849707|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.125:8081/ws
+1682352849707|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1682352849859|INFO|Script1@1:doInvoke|Created static node 1 (1) @ [0, 0, -15]
+1682352849860|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1102
+1682352849860|INFO|org.arl.fjage.connectors.TcpServer@40:run|Listening on port 1102
+1682352849861|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 2
+1682352849862|INFO|Script1@1:doInvoke|Starting web interface on port null:8082
+1682352849863|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1682352849864|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1682352849865|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1682352849868|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1682352849869|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1682352849869|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1682352849870|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1682352849874|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8082
+1682352849874|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.125:8082/ws
+1682352849875|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1682352850002|INFO|Script1@1:doInvoke|Created static node 2 (arp) @ [0, 0, -15]
+1682352850003|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1103
+1682352850004|INFO|org.arl.fjage.connectors.TcpServer@53:run|Listening on port 1103
+1682352850005|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 3
+1682352850005|INFO|Script1@1:doInvoke|Starting web interface on port null:8083
+1682352850007|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1682352850007|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1682352850008|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1682352850009|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1682352850009|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1682352850009|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1682352850010|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1682352850014|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8083
+1682352850014|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.125:8083/ws
+1682352850014|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1682352850143|INFO|Script1@1:doInvoke|Created static node 3 (arp) @ [0, 0, -15]
+1682352850144|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1104
+1682352850144|INFO|org.arl.fjage.connectors.TcpServer@66:run|Listening on port 1104
+1682352850145|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 4
+1682352850145|INFO|Script1@1:doInvoke|Starting web interface on port null:8084
+1682352850147|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1682352850147|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1682352850148|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1682352850149|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1682352850149|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1682352850150|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1682352850150|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1682352850153|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8084
+1682352850154|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.125:8084/ws
+1682352850154|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1682352850253|INFO|Script1@1:doInvoke|Created static node 4 (arp) @ [10000, 0, -15]
+1682352850279|INFO|Script1@1:doInvoke| --- BEGIN SIMULATION #1 ---
+1682352850285|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
+1682352850287|INFO|org.arl.fjage.shell.ShellAgent/10@84:init|Agent websh init
+1682352850288|INFO|org.arl.unet.remote.RemoteControl/10@79:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 10
+1682352850288|INFO|org.arl.unet.link.ReliableLink/10@81:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 10
+1682352850288|INFO|org.arl.unet.mac.CSMA/10@86:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 10
+1682352850289|INFO|org.arl.unet.net.RouteDiscoveryProtocol/10@88:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 10
+1682352850288|INFO|org.arl.unet.net.Router/10@80:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 10
+1682352850288|INFO|org.arl.unet.bb.BasebandSignalMonitor/10@82:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 10
+1682352850289|INFO|org.arl.unet.nodeinfo.NodeInfo/10@89:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 10
+1682352850288|INFO|org.arl.unet.sim.HalfDuplexModem/10@87:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 10
+1682352850290|INFO|org.arl.unet.transport.SWTransport/10@90:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 10
+1682352850290|INFO|org.arl.unet.localization.Ranging/10@91:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 10
+1682352850288|INFO|org.arl.unet.addr.AddressResolution/10@85:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 10
+1682352850291|INFO|org.arl.unet.sim.SimulationAgent/10@92:doInvoke|Loading simulator : SimulationAgent
+1682352850394|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
+1682352850498|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
+1682352850499|INFO|org.arl.unet.remote.RemoteControl/1@94:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 1
+1682352850499|INFO|org.arl.unet.net.Router/1@95:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 1
+1682352850499|INFO|org.arl.unet.link.ReliableLink/1@96:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 1
+1682352850499|INFO|org.arl.unet.bb.BasebandSignalMonitor/1@97:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 1
+1682352850499|INFO|org.arl.fjage.shell.ShellAgent/1@99:init|Agent websh init
+1682352850500|INFO|org.arl.unet.addr.AddressResolution/1@100:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 1
+1682352850500|INFO|org.arl.unet.mac.CSMA/1@101:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 1
+1682352850500|INFO|org.arl.unet.nodeinfo.NodeInfo/1@105:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 1
+1682352850500|INFO|org.arl.unet.transport.SWTransport/1@106:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 1
+1682352850500|INFO|org.arl.unet.sim.HalfDuplexModem/1@103:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 1
+1682352850500|INFO|org.arl.unet.net.RouteDiscoveryProtocol/1@104:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 1
+1682352850501|INFO|org.arl.unet.localization.Ranging/1@107:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 1
+1682352850501|INFO|org.arl.unet.sim.SimulationAgent/1@108:doInvoke|Loading simulator : SimulationAgent
+1682352850606|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
+1682352850708|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
+1682352850709|INFO|org.arl.unet.remote.RemoteControl/2@109:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 2
+1682352850709|INFO|org.arl.unet.link.ReliableLink/2@111:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 2
+1682352850709|INFO|org.arl.unet.net.Router/2@110:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 2
+1682352850709|INFO|org.arl.fjage.shell.ShellAgent/2@114:init|Agent websh init
+1682352850709|INFO|org.arl.unet.bb.BasebandSignalMonitor/2@112:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 2
+1682352850710|INFO|org.arl.unet.addr.AddressResolution/2@115:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 2
+1682352850710|INFO|org.arl.unet.mac.CSMA/2@117:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 2
+1682352850710|INFO|org.arl.unet.sim.HalfDuplexModem/2@118:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 2
+1682352850710|INFO|org.arl.unet.net.RouteDiscoveryProtocol/2@119:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 2
+1682352850710|INFO|org.arl.unet.nodeinfo.NodeInfo/2@120:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 2
+1682352850711|INFO|org.arl.unet.transport.SWTransport/2@121:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 2
+1682352850711|INFO|org.arl.unet.localization.Ranging/2@122:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 2
+1682352850711|INFO|org.arl.unet.sim.SimulationAgent/2@123:doInvoke|Loading simulator : SimulationAgent
+1682352850815|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
+1682352850920|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
+1682352850922|INFO|org.arl.unet.remote.RemoteControl/3@124:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 3
+1682352850922|INFO|org.arl.unet.net.Router/3@125:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 3
+1682352850923|INFO|org.arl.unet.bb.BasebandSignalMonitor/3@127:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 3
+1682352850922|INFO|org.arl.unet.link.ReliableLink/3@126:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 3
+1682352850923|INFO|org.arl.fjage.shell.ShellAgent/3@129:init|Agent websh init
+1682352850924|INFO|org.arl.unet.addr.AddressResolution/3@130:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 3
+1682352850925|INFO|org.arl.unet.mac.CSMA/3@131:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 3
+1682352850925|INFO|org.arl.unet.sim.HalfDuplexModem/3@132:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 3
+1682352850925|INFO|org.arl.unet.net.RouteDiscoveryProtocol/3@134:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 3
+1682352850926|INFO|org.arl.unet.nodeinfo.NodeInfo/3@135:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 3
+1682352850926|INFO|org.arl.unet.transport.SWTransport/3@136:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 3
+1682352850926|INFO|org.arl.unet.localization.Ranging/3@137:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 3
+1682352850926|INFO|org.arl.unet.sim.SimulationAgent/3@138:doInvoke|Loading simulator : SimulationAgent
+1682352851028|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
+1682352851131|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
+1682352851133|INFO|org.arl.unet.remote.RemoteControl/4@139:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 4
+1682352851133|INFO|org.arl.unet.net.Router/4@140:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 4
+1682352851134|INFO|org.arl.unet.link.ReliableLink/4@141:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 4
+1682352851134|INFO|org.arl.unet.bb.BasebandSignalMonitor/4@142:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 4
+1682352851135|INFO|org.arl.fjage.shell.ShellAgent/4@144:init|Agent websh init
+1682352851135|INFO|org.arl.unet.addr.AddressResolution/4@145:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 4
+1682352851136|INFO|org.arl.unet.mac.CSMA/4@146:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 4
+1682352851136|INFO|org.arl.unet.sim.HalfDuplexModem/4@148:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 4
+1682352851136|INFO|org.arl.unet.net.RouteDiscoveryProtocol/4@149:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 4
+1682352851136|INFO|org.arl.unet.nodeinfo.NodeInfo/4@150:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 4
+1682352851137|INFO|org.arl.unet.transport.SWTransport/4@151:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 4
+1682352851137|INFO|org.arl.unet.localization.Ranging/4@152:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 4
+1682352851137|INFO|org.arl.unet.sim.SimulationAgent/4@153:doInvoke|Loading simulator : SimulationAgent
+1682352851242|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
+1682352851345|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
+1682352851346|INFO|org.arl.unet.localization.Ranging/10@91:startup|No PHY specified, auto detecting...
+1682352851346|INFO|org.arl.unet.nodeinfo.NodeInfo/10@89:obtainAddress|Node name is 10, address is 10, address size is 8 bits
+1682352851346|INFO|org.arl.unet.link.ReliableLink/10@81:startup|No PHY specified, auto detecting...
+1682352851346|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
+1682352851348|INFO|org.arl.unet.link.ReliableLink/10@81:startup|Using agent 'phy' for PHY
+1682352851348|INFO|org.arl.unet.link.ReliableLink/10@81:startup|No MAC specified, auto detecting...
+1682352851348|INFO|org.arl.unet.remote.RemoteControl/1@94:startup|Using transport for communication
+1682352851349|INFO|org.arl.unet.transport.SWTransport/1@106:startup|Using router for communication
+1682352851346|INFO|org.arl.unet.remote.RemoteControl/10@79:startup|Using transport for communication
+1682352851349|INFO|org.arl.unet.remote.RemoteControl/1@94:startup|Using websh for command exec
+1682352851348|INFO|org.arl.unet.nodeinfo.NodeInfo/1@105:obtainAddress|Node name is 1, address is 1, address size is 8 bits
+1682352851348|INFO|org.arl.unet.link.ReliableLink/10@81:startup|Using agent 'mac' for MAC
+1682352851348|INFO|org.arl.unet.link.ReliableLink/1@96:startup|No PHY specified, auto detecting...
+1682352851348|INFO|org.arl.unet.localization.Ranging/1@107:startup|No PHY specified, auto detecting...
+1682352851348|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
+1682352851347|INFO|org.arl.unet.transport.SWTransport/10@90:startup|Using router for communication
+1682352851354|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
+1682352851354|INFO|org.arl.unet.localization.Ranging/2@122:startup|No PHY specified, auto detecting...
+1682352851354|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
+1682352851355|INFO|org.arl.unet.transport.SWTransport/2@121:startup|Using router for communication
+1682352851355|INFO|org.arl.unet.remote.RemoteControl/3@124:startup|Using transport for communication
+1682352851356|INFO|org.arl.unet.remote.RemoteControl/3@124:startup|Using websh for command exec
+1682352851356|INFO|org.arl.unet.localization.Ranging/3@137:startup|No PHY specified, auto detecting...
+1682352851356|INFO|org.arl.unet.localization.Ranging/3@137:startup|Using agent 'phy' for PHY
+1682352851356|INFO|org.arl.unet.localization.Ranging/3@137:startup|No MAC specified, auto detecting...
+1682352851357|INFO|org.arl.unet.localization.Ranging/3@137:startup|Using agent 'mac' for MAC
+1682352851357|INFO|org.arl.unet.link.ReliableLink/3@126:startup|No PHY specified, auto detecting...
+1682352851357|INFO|org.arl.unet.link.ReliableLink/3@126:startup|Using agent 'phy' for PHY
+1682352851358|INFO|org.arl.unet.link.ReliableLink/3@126:startup|No MAC specified, auto detecting...
+1682352851358|INFO|org.arl.unet.link.ReliableLink/3@126:startup|Using agent 'mac' for MAC
+1682352851359|INFO|org.arl.unet.transport.SWTransport/3@136:startup|Using router for communication
+1682352851347|INFO|org.arl.unet.localization.Ranging/10@91:startup|Using agent 'phy' for PHY
+1682352851359|INFO|org.arl.unet.localization.Ranging/10@91:startup|No MAC specified, auto detecting...
+1682352851359|INFO|org.arl.unet.remote.RemoteControl/4@139:startup|Using transport for communication
+1682352851359|INFO|org.arl.unet.nodeinfo.NodeInfo/4@150:obtainAddress|Node name is 4, address is 4, address size is 8 bits
+1682352851357|INFO|org.arl.unet.nodeinfo.NodeInfo/3@135:obtainAddress|Node name is 3, address is 3, address size is 8 bits
+1682352851354|INFO|org.arl.unet.localization.Ranging/2@122:startup|Using agent 'phy' for PHY
+1682352851361|INFO|org.arl.unet.localization.Ranging/2@122:startup|No MAC specified, auto detecting...
+1682352851361|INFO|org.arl.unet.localization.Ranging/2@122:startup|Using agent 'mac' for MAC
+1682352851354|INFO|org.arl.unet.nodeinfo.NodeInfo/2@120:obtainAddress|Node name is 2, address is 2, address size is 8 bits
+1682352851354|INFO|org.arl.unet.link.ReliableLink/2@111:startup|No PHY specified, auto detecting...
+1682352851363|INFO|org.arl.unet.link.ReliableLink/2@111:startup|Using agent 'phy' for PHY
+1682352851363|INFO|org.arl.unet.link.ReliableLink/2@111:startup|No MAC specified, auto detecting...
+1682352851363|INFO|org.arl.unet.link.ReliableLink/2@111:startup|Using agent 'mac' for MAC
+1682352851354|INFO|org.arl.unet.remote.RemoteControl/2@109:startup|Using transport for communication
+1682352851366|INFO|org.arl.unet.remote.RemoteControl/2@109:startup|Using websh for command exec
+1682352851354|INFO|org.arl.unet.localization.Ranging/1@107:startup|Using agent 'phy' for PHY
+1682352851367|INFO|org.arl.unet.localization.Ranging/1@107:startup|No MAC specified, auto detecting...
+1682352851367|INFO|org.arl.unet.localization.Ranging/1@107:startup|Using agent 'mac' for MAC
+1682352851353|INFO|org.arl.unet.link.ReliableLink/1@96:startup|Using agent 'phy' for PHY
+1682352851368|INFO|org.arl.unet.link.ReliableLink/1@96:startup|No MAC specified, auto detecting...
+1682352851368|INFO|org.arl.unet.link.ReliableLink/1@96:startup|Using agent 'mac' for MAC
+1682352851352|INFO|org.arl.unet.remote.RemoteControl/10@79:startup|Using websh for command exec
+1682352851366|INFO|org.arl.unet.localization.Ranging/4@152:startup|No PHY specified, auto detecting...
+1682352851370|INFO|org.arl.unet.localization.Ranging/4@152:startup|Using agent 'phy' for PHY
+1682352851370|INFO|org.arl.unet.localization.Ranging/4@152:startup|No MAC specified, auto detecting...
+1682352851370|INFO|org.arl.unet.localization.Ranging/4@152:startup|Using agent 'mac' for MAC
+1682352851359|INFO|org.arl.unet.transport.SWTransport/4@151:startup|Using router for communication
+1682352851359|INFO|org.arl.unet.remote.RemoteControl/4@139:startup|Using websh for command exec
+1682352851359|INFO|org.arl.unet.localization.Ranging/10@91:startup|Using agent 'mac' for MAC
+1682352851359|INFO|org.arl.unet.link.ReliableLink/4@141:startup|No PHY specified, auto detecting...
+1682352851375|INFO|org.arl.unet.link.ReliableLink/4@141:startup|Using agent 'phy' for PHY
+1682352851375|INFO|org.arl.unet.link.ReliableLink/4@141:startup|No MAC specified, auto detecting...
+1682352851375|INFO|org.arl.unet.link.ReliableLink/4@141:startup|Using agent 'mac' for MAC
+1682352852389|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57814
+1682352852406|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57815
+1682352852411|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57816
+1682352852415|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57817
+1682352853384|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57818
+1682352853388|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57819
+1682352853392|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57820
+1682352853396|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57821
+1682352864180|INFO|org.arl.unet.sim.SimulationMasterContainer@179:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57821 closed
+1682352864180|INFO|org.arl.unet.sim.SimulationMasterContainer@170:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57818 closed
+1682352864181|INFO|org.arl.unet.sim.SimulationMasterContainer@176:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57820 closed
+1682352864181|INFO|org.arl.unet.sim.SimulationMasterContainer@173:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57819 closed
+1682352865001|INFO|org.arl.unet.sim.SimulationMasterContainer@157:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57815 closed
+1682352865001|INFO|org.arl.unet.sim.SimulationMasterContainer@154:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57814 closed
+1682352865001|INFO|org.arl.unet.sim.SimulationMasterContainer@160:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57816 closed
+1682352865001|INFO|org.arl.unet.sim.SimulationMasterContainer@163:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57817 closed
+1682352871186|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57822
+1682352871190|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57823
+1682352871194|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57824
+1682352871198|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57825
+1682352872345|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57826
+1682352872349|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57827
+1682352872354|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57828
+1682352872359|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57829
+1682352894491|INFO|org.arl.unet.sim.SimulationMasterContainer@192:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57825 closed
+1682352894491|INFO|org.arl.unet.sim.SimulationMasterContainer@183:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57822 closed
+1682352894491|INFO|org.arl.unet.sim.SimulationMasterContainer@186:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57823 closed
+1682352894491|INFO|org.arl.unet.sim.SimulationMasterContainer@189:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57824 closed
+1682352895141|INFO|org.arl.unet.sim.SimulationMasterContainer@204:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57829 closed
+1682352895141|INFO|org.arl.unet.sim.SimulationMasterContainer@198:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57827 closed
+1682352895141|INFO|org.arl.unet.sim.SimulationMasterContainer@201:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57828 closed
+1682352895141|INFO|org.arl.unet.sim.SimulationMasterContainer@195:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57826 closed
+1682352924407|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57833
+1682352924411|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57834
+1682352924415|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57835
+1682352924419|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57836
+1682352925219|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57837
+1682352925224|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57838
+1682352925228|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57839
+1682352925232|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57840
+1682352944645|INFO|org.arl.unet.sim.SimulationMasterContainer@213:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57835 closed
+1682352944645|INFO|org.arl.unet.sim.SimulationMasterContainer@216:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57836 closed
+1682352944645|INFO|org.arl.unet.sim.SimulationMasterContainer@207:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57833 closed
+1682352944645|INFO|org.arl.unet.sim.SimulationMasterContainer@210:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57834 closed
+1682352945373|INFO|org.arl.unet.sim.SimulationMasterContainer@219:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57837 closed
+1682352945373|INFO|org.arl.unet.sim.SimulationMasterContainer@222:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57838 closed
+1682352945373|INFO|org.arl.unet.sim.SimulationMasterContainer@225:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57839 closed
+1682352945373|INFO|org.arl.unet.sim.SimulationMasterContainer@228:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57840 closed
+1682352975914|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57842
+1682352975917|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57843
+1682352975921|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57844
+1682352975925|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57845
+1682352976851|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57846
+1682352976854|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57847
+1682352976858|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57848
+1682352976862|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57849
+1682353009471|INFO|org.arl.unet.sim.SimulationMasterContainer@237:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57844 closed
+1682353009471|INFO|org.arl.unet.sim.SimulationMasterContainer@234:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57843 closed
+1682353009471|INFO|org.arl.unet.sim.SimulationMasterContainer@231:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57842 closed
+1682353009471|INFO|org.arl.unet.sim.SimulationMasterContainer@240:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57845 closed
+1682353010222|INFO|org.arl.unet.sim.SimulationMasterContainer@243:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57846 closed
+1682353010222|INFO|org.arl.unet.sim.SimulationMasterContainer@246:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57847 closed
+1682353010222|INFO|org.arl.unet.sim.SimulationMasterContainer@252:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57849 closed
+1682353010222|INFO|org.arl.unet.sim.SimulationMasterContainer@249:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57848 closed
+1682353069273|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57854
+1682353069277|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57855
+1682353069281|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57856
+1682353069285|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57857
+1682353070965|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57858
+1682353070969|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57859
+1682353070973|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57860
+1682353070977|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57861
+1682353072968|INFO|org.arl.unet.sim.SimulationMasterContainer@276:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57861 closed
+1682353072968|INFO|org.arl.unet.sim.SimulationMasterContainer@273:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57860 closed
+1682353072968|INFO|org.arl.unet.sim.SimulationMasterContainer@270:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57859 closed
+1682353072968|INFO|org.arl.unet.sim.SimulationMasterContainer@267:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57858 closed
+1682353073563|INFO|org.arl.unet.sim.SimulationMasterContainer@255:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57854 closed
+1682353073563|INFO|org.arl.unet.sim.SimulationMasterContainer@264:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57857 closed
+1682353073563|INFO|org.arl.unet.sim.SimulationMasterContainer@261:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57856 closed
+1682353073563|INFO|org.arl.unet.sim.SimulationMasterContainer@258:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57855 closed
+1682353087291|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57863
+1682353087295|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57864
+1682353087299|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57865
+1682353087303|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57866
+1682353088632|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57867
+1682353088635|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57868
+1682353088639|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57869
+1682353088643|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57870
+1682353107657|INFO|org.arl.unet.sim.SimulationMasterContainer@282:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57864 closed
+1682353107657|INFO|org.arl.unet.sim.SimulationMasterContainer@285:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57865 closed
+1682353107657|INFO|org.arl.unet.sim.SimulationMasterContainer@279:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57863 closed
+1682353107657|INFO|org.arl.unet.sim.SimulationMasterContainer@288:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57866 closed
+1682353109160|INFO|org.arl.unet.sim.SimulationMasterContainer@291:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57867 closed
+1682353109160|INFO|org.arl.unet.sim.SimulationMasterContainer@294:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57868 closed
+1682353109160|INFO|org.arl.unet.sim.SimulationMasterContainer@297:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57869 closed
+1682353109160|INFO|org.arl.unet.sim.SimulationMasterContainer@300:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57870 closed
+1682353110196|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57872
+1682353110200|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57873
+1682353110204|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57874
+1682353110207|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57875
+1682353111341|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57876
+1682353111345|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57877
+1682353111349|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57878
+1682353111353|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57879
+1682353204346|INFO|org.arl.unet.sim.SimulationMasterContainer@306:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57873 closed
+1682353204346|INFO|org.arl.unet.sim.SimulationMasterContainer@309:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57874 closed
+1682353204346|INFO|org.arl.unet.sim.SimulationMasterContainer@312:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57875 closed
+1682353204346|INFO|org.arl.unet.sim.SimulationMasterContainer@303:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57872 closed
+1682353251253|INFO|org.arl.unet.sim.SimulationMasterContainer@321:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57878 closed
+1682353251253|INFO|org.arl.unet.sim.SimulationMasterContainer@318:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57877 closed
+1682353251253|INFO|org.arl.unet.sim.SimulationMasterContainer@315:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57876 closed
+1682353251253|INFO|org.arl.unet.sim.SimulationMasterContainer@324:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57879 closed
+1682353351859|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57885
+1682353351863|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57886
+1682353351867|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57887
+1682353351871|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57888
+1682353353508|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57889
+1682353353512|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57890
+1682353353517|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57891
+1682353353521|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57892
+1682353363918|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682353472255|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [e639dc18-b3c3-4974-afa9-753639987e6e, 8497a2d7-89b6-4f3c-b1ab-2d7d644a3f46, f82de355-efd0-43c7-9efd-eefa3e869db7, 09cadd38-0cb3-4064-80c7-7f95d6f696f4, e3ec1803-393e-491b-a28c-7ee2f9bca91f, 0e6f855a-5d10-4a9f-83c0-409976ce0314, ab204e6b-9ce6-448d-b901-aa84cfdd0845, ccc63730-5917-4192-89aa-ea358e559d8e, 741527ed-1caf-4e22-925b-69994482da8f, cd77d443-77e4-499a-9d4d-e0b67adec0c2, e5877225-e8a3-4a91-b4ac-01ce82297df8, ea4b32dd-afd6-4767-a1b2-1373177c0f16, c77a301e-255b-4587-8668-dce21eeef87a]
+1682353484293|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682353532447|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [ab41bfcb-12fd-4c31-98ec-31a4e25b3d0b, f595d44f-5fc9-4344-ac11-4f2da6fb5a02, f31053ab-bd30-49ba-8f6c-5bde5dc983cb, 4c312193-d012-4d97-8f36-becad419ec6b, 969abeea-19c3-4c37-b65b-593be2ae6235, e8a821bd-11c3-4d22-8773-7bcdb7755df0, 4df80a27-6ab7-45d7-8533-753e3072fd50, 81724244-4074-4795-b584-99699b7e6a53, 2c9d3f85-76d5-43d5-b868-5eae63882e99, ea8c4f14-469c-49f7-ba08-335f78b55800, 6b10c738-58d6-4808-8567-dfc25f0876c4, 322ad5dd-226f-4d42-b5dd-ac1aa27fe86f, bb363bda-4240-4e97-8e2c-bb6094f7759b, f4c047bd-3675-4b84-9557-bc6fbb127daf, eabce766-62b4-4648-9bbd-66798854c977]
+1682353553569|INFO|org.arl.unet.sim.SimulationMasterContainer@339:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57889 closed
+1682353553570|INFO|org.arl.unet.sim.SimulationMasterContainer@342:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57890 closed
+1682353553569|INFO|org.arl.unet.sim.SimulationMasterContainer@348:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57892 closed
+1682353553569|INFO|org.arl.unet.sim.SimulationMasterContainer@345:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.57891 closed
+1682353555494|INFO|org.arl.unet.sim.SimulationMasterContainer@336:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57888 closed
+1682353555494|INFO|org.arl.unet.sim.SimulationMasterContainer@327:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57885 closed
+1682353555494|INFO|org.arl.unet.sim.SimulationMasterContainer@330:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57886 closed
+1682353555494|INFO|org.arl.unet.sim.SimulationMasterContainer@333:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.57887 closed
+1682353571466|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57895
+1682353571470|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57896
+1682353571474|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57897
+1682353571478|INFO|org.arl.unet.sim.SimulationMasterContainer@40:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.57898
+1682353572983|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57899
+1682353572987|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57900
+1682353572991|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57901
+1682353572995|INFO|org.arl.unet.sim.SimulationMasterContainer@27:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.57902
+1682353595559|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [b10320cd-e27e-49db-92c9-78cc60bd5f59, 1e753bcd-333b-4fb1-a35e-d3afaa2c4a53, 9dfdbedf-eb3e-42e7-94cc-24200bf4965c, 260a7da8-0a0f-42c7-8fb1-cfe323119ea8]
+1682353607600|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682353655754|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [2d0d32e0-bf8a-4462-b78b-ae6766dc842e]
+1682353711922|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [a33368f1-fa2f-4398-90e3-ac2252fea14d, 74f14375-614e-45ec-a86d-31ceea12686d, f09044b9-35c7-41b1-9f68-327df0167792, 9bbf4e58-a29b-4f60-99e6-0803d97f504d, 5da57748-0e6b-4687-8049-0c6d45f808b1, c7dbd791-d714-4e58-b5d8-b60c5ed084f1, 2314bbdc-4c49-4c79-a904-8af078c74206, 7f9a1057-27b3-4f2f-b018-e2c35bd03152, cc08c379-514f-4c80-98ed-e72444e4fe49, fa1e789a-9be6-4598-b1e2-82682291cde5, 0e1a9c04-ad46-4a63-b142-221b967b2e2a, 2ee8db03-ec21-4108-8761-8302d2ab73c6, e1d005da-4ad6-4508-b27d-2539e3108482, 875229d0-82fe-43d5-997f-220103149a86]
+1682353727976|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682353772113|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [4fb692ed-a3e8-43a8-9f92-07171dce3710, 676e188b-7e37-40fc-9fc5-7fee2f524c33, 23f27e38-6da5-4203-a361-b35194012c5b, 673f16a3-1eaf-426f-b342-099195153f28, 2c22fa64-3e0b-4e03-b0c2-01a8e48760f1, 6f879226-b429-40d4-bf74-b5da11c8a6ce, bbaace4e-0150-4145-aaa6-64f4cefcad85, b9389ff6-c30e-4c86-ae3c-b42581beb58a, e1145b31-530a-4ec8-b79d-1e3bd5f78bcc, 729ed17f-e4cb-4715-af29-ca3940aab86f, e5fb96c3-072a-4a77-9ef1-c6c92203a250, 55d6ef1a-ac2c-4282-9233-adac2e68ffb1, f54c758f-9756-49ef-aa65-2c4a89ea087b, ec899bcb-4b17-4f39-8d52-efb72e869539, 2f0c33e0-33b0-4ffd-a85b-6d80418e098c]
+1682353832302|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [a1934da3-5d68-4853-b877-b4fc16caec5b, e892ef94-311a-473a-94b8-8e89a3990ecb, 083029ad-3847-43e5-a143-db166f6c409c, 0063404f-3bae-478c-88f5-442830133c07, 1ffc4018-7a20-4ac4-b404-e54111e53ad8, 3b30061d-e4b2-429d-b596-e86441baf87c, c29c5dc1-4ac7-4330-9a60-d4010d6862f9, b788b774-466b-45ab-b0b1-be898990a8f2, f27c865d-21c2-4394-8116-d79451728ccf, 056d68d8-50cf-4695-9d38-69d9b02b40d5, e9292cfd-c2d3-48fa-aa52-72ab05021280, 403cb800-7836-4a03-b55f-084682fe096f, ec9aacb2-1af2-4334-9b6a-7a7486703999, c1032c75-d5c2-4a2e-a727-70fe94994baa, 336b0ec5-accd-4526-86d8-da39cc6ced04]
+1682353848356|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682353892489|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [d3c7f519-30ca-4aef-a46b-ca0aea1398a1, 795bbeb6-b3c5-423c-899b-5619569ba602, 0bf5b1f4-bb90-4efe-84cb-7a7e136e92fd, d054c8b3-dbcb-4640-a98c-c5585e6e7099, 2d6a5a02-72f8-4906-a241-11e250d6d381, 711dfeef-32c4-4a29-9ca2-7d8a333d428e, c8fc9256-8a95-41aa-be20-476b751198d4, d8c41965-f416-400e-b826-5945bebeecb1, a012de50-f41f-4800-a903-00e2bf69f351, 197831da-be87-42ba-9bef-42a8adcb9d9b, aeb8e19d-19c6-4fcc-b99e-c4cdeebffeaa, 61b78de5-0f10-4eee-949a-d2e2019f631f]
+1682356204333|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [c512a024-24f6-48de-89c5-364b75868285, f61d523a-40f6-404a-81c1-3c933d21bc19, 3e952b32-bf05-4329-b273-c5ed28421a90, 6bfa8dd1-3520-4893-8244-113f9f19a680, 23b9d4fc-177c-4aaf-8c6d-19262f13a546, 673a4ef5-edc8-480c-9f85-901f40989ea4, 3fdc0a56-69d7-4ce5-bdd5-4b30a1f2e442, 7614efad-9db1-45df-b1d0-c7629b6282eb, fe89a3c4-c216-474d-ae13-b6f64f4b9bd4, 807834f9-4173-447f-92aa-2160b564b371, 167923de-47d5-4c1c-b913-0c7481e0bedf, 9fe1d6d1-3e34-4902-afff-652c18a08f6b, 74a4bb18-64f3-4f38-95d7-ea80876252b1, 9a7465a7-0753-4d79-a002-62b7669af747, 28ca3ab9-ef60-437f-8bb5-76b5fcd93be8, e7d92569-2bde-449d-8850-3498d7d77ed9, cddfe527-ba8d-43a4-9323-ba04054fefc4, 106b3d8c-a95b-4057-9b80-d0abe5cbb0f8, 1dd555dc-575a-43e7-91f6-2b596a928acc, db5dcc45-8582-4224-9af8-c5ee3c0a519a, 859bc14e-eefd-450a-91ed-7491127f8279, 3085d955-d90e-48a1-b6ae-63670f1022af, bf9e6d8e-7505-4c85-b08d-a8ac38946d67, 6813682f-8234-446c-9a1b-72e6a8d513a3, ca748e5d-097f-4ad8-8d39-d40f2ec3f28d, 623aa342-3d99-42f3-984c-e5a07cf9c063, d0a4377c-b7f2-416c-bf7c-91a803402349, 04c04369-3e41-4c51-97c5-4d10d6d07c90, 4a590d7b-1d28-4f94-9dc1-9c96cf0433b3, 7ac7285f-540f-4f5d-8c45-8626c6289207, 4ed60a39-cf27-4475-85da-dbf2217d9939, d9f8e3da-71c3-40ad-86cb-cba23fd72a12, d05c2892-dcad-42f6-92ad-026e22fd1b74, b00f31ce-dc69-4791-bf65-ee4dfca85b65, 3cec616c-bce8-489e-8b67-6a947cf68ded, df45367e-10b1-4f39-b378-1926fa1625e0, 83945e59-576e-40df-b8b6-74c847bc7917, 76d63e10-ae09-4689-95a8-462f39746b35, 4ba404e1-ebb6-434e-a7ee-45d9bbc2d998, fb9a1e34-0ade-4b94-a14f-da6246eb0e04, 85ae1939-36cc-473c-a007-36b92b5fee02, e99d8fb8-54a6-4110-9fcd-5d532551b3c9, e9af141d-665f-48e3-a0ba-abb527d2d599, 5cfd15c9-1960-4a5d-a858-19b5bb34d7f2, 93ec1f24-1471-463b-ad21-ef6506d5db07, c928e2c6-2ecc-4723-bf3d-de006e8c1695, ba21ba70-287f-4bd2-a623-fcf23c888f50, 28f27d94-6d56-4244-9362-ec656032b5e7, 991c2d8a-cbca-4c38-88a3-896a1bf80f62, f1967a15-d62e-4a82-b3c0-ef529e40844a, 558697fe-d92a-462a-b532-4a47eeb6069f, 722afead-96c7-462c-8a95-5babf126809b, d78f03fb-e686-4361-ad9d-26c9e8509e25, 535b9f08-2cbe-4889-8e45-40c774b87071, 81356e6c-63e1-407d-9417-82eab1472d62, 36f602b1-72e2-43c8-a57e-bfb688c2902f, 8cd4584e-fa40-4099-a852-95e5367c43ee, e0035f0d-3403-40cf-8c6f-f61605b0be6c, 5ebcd51a-8a6f-4d29-a210-1406cb9846ef, 3118a459-c4fe-4f56-b5c0-76d2ce49273f, 755031b7-2e47-4133-8aae-1f7242985944, b93f0bfa-7f7a-4b0b-b350-939db056bc56, 9433d949-6c5c-4b39-b6c1-84bb9b4eebc5, f6d07c1b-7941-4930-9f4e-9d9395e1308c, 66b67489-b765-4ae4-a450-bc7018b1f6da, 16e70611-6021-443b-b994-3fc9a68406ed, 0f764b5f-9e8d-4860-af0b-719a1dd06039, adf6f0ee-f974-4673-a2be-46086db9d771, 5315744f-eaf0-4d51-83aa-3300878a1ef1, ac98b0d3-767d-4518-a931-4562d9f79545, e6febd45-80e2-4613-a954-25122ab960cc, 68ff3961-7fb0-4022-a536-2473a23283e3, 40971dc7-c191-47bf-a996-7a804396609e, 559a6617-e27e-4bc1-aef7-93ed05c854d2, e23a09ac-6a42-4946-ba53-ce30cc86f07a, 07b9ad42-4e09-43fa-bd12-9a9f65b9bcda, ea5155a9-9e5f-45be-83c8-ea937d316fef, 6889193a-cfe2-46ed-b26a-0335ba845d51]
+1682356204334|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682356324571|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682356444838|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682356504974|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [c79200f8-e40b-481e-b14f-e62dd09be9fe]
+1682356565112|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [b3d07b12-2251-46f2-8661-c8a1fdc7af9a, 1df1b64a-b123-4c57-b1ce-61ebf080101c, b36a36b2-3a04-4b54-9005-739d0f98be1c, 719ba450-e156-4a4c-bc7c-dafae81f8f8b, d14f7ad2-5497-4f89-ba7d-8fa4f52f9f57, e113a236-8d96-4e48-a7a1-e40e42488b7b, 4877734f-3b82-437a-814b-7bec32a28ea5, e86a77b4-8294-42ab-a0b5-105961b36ee5, 337d77b7-e6a0-4ccb-acdc-0c818ded1f1c, 094b54cf-34ac-468c-9afa-90017deb62f6, ff21a425-47ba-4063-9cab-ee51c2dcaa37, 880213b1-1faa-4f09-bbc9-7a373ece9c82, f5a22003-b587-488d-aacd-7d90221d2879, 900ebd8c-1fe8-4c9f-bb40-6a9cf40e320a, 2f143cff-b20d-447e-9ade-a21611e7ff64]
+1682356565112|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682356625256|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [0b35fe04-d5a9-414c-9427-2a7851827670, 6f9d07a8-3db1-4844-b575-4b0d9b27f03c, e9b6da54-3d80-4613-88d5-a131d3b2924a, 9800f97e-67c1-45af-8333-898d2b583c32, 8ee37412-483e-45bb-bfc8-76a9b899e7e5, e20fc668-646f-48e2-8ac0-6135375d4118, 08db0847-4102-44de-be24-f4f8e10ca7d0, f53dc17c-b82b-4505-a71d-548e980dc303, 14e6341f-8409-48a7-8db0-e6ee1152e0c5, ee4bb256-cb9b-4fa6-bc0c-1eabbfe83d83, 173fe526-d5dc-4751-80da-53617bb0fb79, 24c32ecf-9b8d-4bd3-aa8a-237a9cb3104f, 783df01a-cdc0-48b3-8b12-f27e85ca62c0, 69ab7dc5-0148-4a78-a774-fd311df8bcf4, 8fa8c0c4-199e-4d5b-b064-a64486195c65]
+1682356685394|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [bdc1e9a2-bec9-4507-9f6e-01c40ce1be28, efcb4a8e-2295-40d3-befb-2f07c1f06ae1, 394d596c-2b42-47ae-b5f4-c7096e6905df, 69ee9de1-5cf2-444d-85f2-01e4cf63fce3, 194db868-3813-4493-bee3-e3d0644b79ca, c0154f4a-8144-4eb9-9e13-f605dd2d1ee1, 804cc92a-3592-4f01-ad4e-bfbe97683fad, c32682f9-9241-4334-9220-2c9bbf03a7ea, 068885ac-a31b-439b-b407-45aaae0ffe20, 1a76be88-b4bc-4f61-ac6b-2315f741da6d, 42e01bd6-8a12-4593-a1f8-a253594c333b, 33fd7fe6-0993-40f0-ae64-e04456a3105e, 2316d6e7-eb07-465e-9d6c-82e7bf71f541, ed8aff05-0808-40c5-a486-52c311bf10d0, ac01ce8f-5ac5-4e8b-897d-5f255af5f5ae]
+1682356685396|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682356745587|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [f0118f1f-708f-4b0a-953d-3e3e2d8aabea, 2b153a3b-238e-468f-aee0-b9e81f882736, 7b6c37b5-5848-4b89-8f3d-5ae0c0351062, 83720c1a-5a4a-43fc-ba37-43802166f8c1, efaec2d4-1c68-4439-9fa3-8636e7b9f034, dbb63e50-fb15-4a46-abf8-671c3c9d3c34, 0f684bf9-4bfe-4a0d-b663-a252549667d9, bb4dd2d3-f6f9-412d-b99e-e1bf3c29a7d1, b13b42d5-3d7e-4a62-92f8-fcf6f9831624, 9ba397d3-4e7a-4771-ad78-e991f93cac91, 165ab126-a37f-4eb3-aa79-c8be8face713, 52eb2d8f-e4ac-454c-911e-9f3d461a6da9, 83c47d60-a161-43fc-9cf6-57c519b27a69, 926ac6f1-e43e-4064-9702-4ae24900f86c, bf8f6563-654f-43ac-ba2d-b500b6df2ed5]
+1682356805765|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [539c1cfd-c9b8-4909-a6ea-5ce25558a4c2, 280ad746-1bc6-471a-bc72-a57481385974, b556f0f5-de03-482a-acfa-789eed96396b, e918fc49-1bc5-46fa-a4e2-d2920e74b020, 9d48447f-e89c-4435-8427-17fd13029dcd, 0fcba902-71dc-4019-9fac-b210f8d1e572, 1bde91c6-1344-4ce4-8ba5-5614ffae0aa0, fbb61f7f-788f-4e50-9e12-43b276da1777, 4ac573f6-4fe6-4abd-82e0-abb0f27e45c3, 0391605b-c5c3-48ee-9bf0-dec853a68def, 29a47aef-f92b-4906-bb8e-124df9cfb539, e7146279-c202-4d08-a7f2-6fc3a48762a2, 9bed8bf6-a67e-451a-85fa-d0b4aadddfab, de296e7e-3887-4773-8f90-c53a37ba5829, 43818185-4eb4-45ee-92fc-417ffa87b986]
+1682356805766|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682358066206|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [8bf6d0c9-dadd-42ed-ab6c-e0d14fbe932f, 7ad4e1b8-c91d-46d9-87ba-8b592ddc72d5, 6eec1321-44d4-4556-9e99-fcafabbf7227, 001a0ad6-5f63-48e4-a7fe-b96f0e95cd82, 936c924a-7652-420e-a3f6-6214f0d14c05, c20e2650-f6d7-48a0-b133-41904cfcc871, 0431b63b-2126-4bba-902b-5de063802baf, 3e122c57-63d4-4cdc-adde-2df5723a1d88, 7c7b94c3-0ce1-4fe8-a740-901f5f2b6c77, a047e355-6fab-4949-aaae-4ee39e26d584, 8fd3e250-f912-46a9-982e-be216918cf9d, 37340d98-c5c4-4de0-87d6-ce67dcc22c43, 17adb829-d09b-42c4-b66e-c02ebdb22a8d, 0a8e33cf-d843-4ae2-a74d-2ae575cc4924, f1be3386-775c-4f88-9082-ba07f08a7d6d, 45730c44-b29e-4a1e-a27b-3d1033a3b529, f5bb518c-ee5e-4517-aa22-ffaedc223254, 8d68483b-1e1c-4ef3-ae74-b1dcaed42c05, be4397e1-bbee-464e-8cdd-6ba90a4eb4da, 158662e5-e471-4d8b-aba8-cabeb95a3587, d786647a-9ac5-456b-a52f-5fb23f85b1d9, 41a7dfa0-3663-4ad7-8e05-0984876b7d3c, 93dccbbd-d68e-40d9-9a2e-e2538c9d668e, ed5a7419-b38e-407c-a943-780385722256, dcfed7fa-9cb3-4a3b-8948-6f57ecc17084, 4e173513-cf85-4144-8678-bf3431e1e0c9, 13bfa3f1-e76a-425c-9988-67174077f3a0, 88f5340a-2394-47a9-94d0-7634425507a9, e5e7d014-d0a6-4a3f-8568-2eb93a98a538, c1023525-f666-4541-9a06-284c39fbc1a3, 3a272fa2-cc90-4f97-a879-4d54aa86994d, 70706827-b704-468a-8977-f5f31825c038, 008f0d5c-9d38-48fd-8839-73b2a7ceb681, 98db2d9c-ef36-4097-8fc2-f930f441a908, aa5dd059-727e-41f7-82f4-3db224285e92, 2d2a52ce-18ea-4b35-b84a-fef97d2c78c7, 03f0f841-3c38-45a4-856e-69fa0c5a1fea, 88758334-f2ca-4f98-b14c-81c2e60e4409, f5e41ac2-d4dc-4a91-892b-2de18cf0f510, b6075628-1db0-4751-9318-ae74df3eee64, 9e30ec6c-5b05-4885-b61e-01a89950d283, f4a928b6-b8fb-4a93-89d7-6d440aa7b044, def4648f-09c5-46e3-ad7a-0741aaf3425e, 17cd128f-3ee0-4c0b-8842-82ee358f1a1a, c2ea5569-29c1-4e74-acc8-f1f89a423ea6, 06e3676f-feb3-4724-af2a-92566938e6d8, 74fc1b36-6809-4318-a1b1-c8011d1b57ff, 72d4f277-f832-40b6-9ad3-64d1ad84c8e4, 134b0851-05e5-475a-9ce6-bc4104ac38da, 531bd3f3-30f1-43cd-8f7e-f7951098cab6, abaf44af-8f59-4a7e-8dca-fe473c45fa4f, 3baffacc-5c54-486f-96a4-8c57f580d0d8, e80a9551-4879-44fd-bd38-70a0116f58c3, 73bc97da-98b8-4461-8d21-be351d118b2b, 925fb01f-462d-4788-9cd0-3e8aa5c0d094, aca068b1-94ba-4c81-892e-868960b6b288, 81690815-7235-4470-848c-ed16b1c4c1dc, ff014c76-328f-48d1-bb40-e956242321e8, 90436aee-6d37-4c58-8d96-ddea1cdf8336, 2a88e4e1-9a89-4e80-b1a1-41d5de4c83bc, 412e6bd9-54ee-41e2-84c2-7c4cb7600900, eb772eae-b193-4e46-9581-3b6f3a0b3bea, 43210fd0-5171-41bc-b6bc-49b45165796c, d9b07a43-ce71-4cb8-9230-96a09947c6f5, 69ed024c-cbf7-48da-a3b6-7fe0ef9ee835, 9eabccd1-3c45-46c9-a900-863c3bb63e81, dc55ddf2-2ed6-495a-96fa-de7811286881, 0661db82-6903-4a54-aa88-86d50722add0, 710b978c-ce8c-478b-ba63-cbe873070d0f, a1e0e693-fc59-40a1-a566-4f628d46f4be, f8580067-2448-4cea-a7a7-6745c248f9bf, 98191cd0-f454-4a5b-968f-a2dda3f2cb44, 50090661-b972-456c-95e2-dfd04f8593a6, 2100934d-9c74-4157-9ae5-8ba324e02c5c, c23ec337-5695-47da-8eea-722eca877eb9, cc06e289-57a2-45e3-b597-c43ff455ab1f, ec16f081-e0e2-488f-a928-1a77e1353644, a56f18e0-12cf-4380-9870-683721f76168, 52722e6e-d8df-4090-855f-b88088cd0aee, 6f97f57a-f225-4572-a066-fcd9d4cd9071, 3427ba63-ef14-4f16-9c29-a6c3aace0092]
+1682358066207|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682358885806|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [bc1c57e5-b580-43d5-81c8-d7519b17c378, 38d334f6-5981-4c3a-85e3-726a916f6786, 6e909e18-7158-4b3d-8048-50ca30793e8b, 2aa14cb9-293f-410f-a3b8-300fd718f157, d71a56cd-1372-41a0-a2bc-1697860b9d2f, 0239bbdb-d3d2-4627-a4ab-dd9164e1a372, 26db706f-ee38-49b6-9b40-13c747261fdd, dbaef7a9-f250-431c-8a95-57b1c3329774, 481c4463-9b62-46c9-990e-339bd6a9dbb3]
+1682358886551|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682366107074|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [e226c097-7e1d-43a4-a9f6-7f40c84af73b, 1ff67e90-4315-41ee-88c0-7bc086c7ff20, 00b0649d-4a92-4d40-ba41-8459af21ccad, 3249a43d-f62b-44e3-ab48-170342b3c116, ea5b7acd-4eb8-4a0c-9010-7d11ed8381fe, e22cd6b4-f79d-4e99-b343-3306f32c645b]
+1682366107075|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682366400856|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682368900800|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [2de2211f-3886-412e-a548-428f70b701fb, cb343914-23ee-408f-89b2-51eed5407160, b50c026a-c177-43b1-beb5-98b3ff5e8d22, ca0a01b3-acdf-4600-bc92-cc5a3e381f0a, 85861bb8-471a-41f1-b1b1-6158fd542c05, 3e75cf1f-b42b-4c5c-a680-2a300edb7cf6, 6310ec04-1ae5-4795-b4d7-b72f78e2ad5c, 417f9559-5e70-40c2-a07e-576465334769, 418064b7-118e-4ffe-a8b2-f3eb7333fc04, 5821367b-a853-4cd9-a700-f883c5414e1d, 77dde0e2-8f45-44af-b575-43f1719a40ce, 46a636ad-d27a-4d76-a463-984d047fed8d, 37792b97-1705-409a-b9d5-61a89d702e20, b313fe85-3d73-4c0c-b739-0bfab9b79557, a90f21d9-fade-420d-8a45-1b1507c5eb97, 27e2bdbb-6ce7-4bed-bdaf-d9259b9dfa4f, 963738db-a311-424d-ac7b-6627928cdec9]
+1682368900802|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682370140191|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [79b40ebd-8729-445f-8fed-bfb7d52010e8, 673ca879-2bfa-464a-bcdb-e1a7e4953091, 673d11aa-e4b1-4203-b850-b579edee27c7, 253630f4-4f9a-4b65-9848-d8f50f6c51dc, 7e40bbb6-f77d-4513-9ad5-bf5b56332397, 3324c59b-f4b0-4542-8f2b-66c15e4c7143, 3f73001c-170d-4606-85b1-3a5a82f90797, 60598e25-337d-4b63-bc90-4c497729d189, 320e08e8-22b5-4c60-9a30-00e8eb6c1a96]
+1682370140227|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682370447439|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [8ff5f9a6-7627-4047-b687-f0ab9f42d4c9, 86a41a53-9331-4757-9c52-e881562215c4]
+1682370447454|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682370507735|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [faa6585c-c12c-4bc4-9ab9-dd2d8fda0bff, dd8ac5a5-0496-49c1-8f7a-2c4d1ed532ec, 311375d9-5c23-4ca0-adfc-3a9f7c972cd3, 2a335aa8-f135-4281-97b0-b0e3ca85ee4a, 72e1fcab-6a78-4a1b-a557-67029798a598, 9b612a37-4fcf-437a-a29b-07a2519c40ab, 6c5bc09e-24f2-4b49-811a-e54d104282d4, 03433e29-28e3-49f6-8c6f-6c6ef6b7ab34, 38c1243e-1a70-4142-8d52-832dc993ef1d, 2960acce-e1d9-4aca-bda9-3848915e3db2, 0dc99620-ff7e-4472-b98f-d9b419101553, 6edc912a-bdae-45ee-a3dd-c56beef6f2dd]
+1682370586890|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682370706925|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682370769212|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [d386ac03-d532-48d5-be90-e2b620d3cc7f, 09f65ab8-e5ec-478c-a944-799e9a0c4e3f, be63e3f3-f016-4a0c-abe9-3d1be55a4606, b834725c-028c-4583-a4ac-52dc87349e48, be2b67bb-c940-4dbe-81eb-00e0dfc48571, 91804d1a-e764-4dd0-83fe-d893f5091349]
+1682372456792|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [0885478d-3eef-49ce-865c-d21fe9b65e9b, cdf7dc43-1819-4d17-bd84-f52c9369b11c, de43f4be-d2d7-4d57-9905-ace9e9ac052a, 5bb05d3a-8fcf-414d-8d94-732249450108, a2b9d898-113a-44d8-bb3c-1cd361b44544, 1effb544-e457-4270-93d7-6e5e2b078fca, 6009224b-0f72-48ae-ad82-ef31b6c3da45, 8be1c747-8a5b-40e6-acde-304ab4fb99b3, 33447958-a3c8-4970-9a2f-07a5a15cda53, d690b289-f38f-4e2c-b7ad-29bec4f3030f, 19b5d248-6c1e-4e5a-b8a9-3b5af64b1bd7, e1a89ff5-a3a9-4c2e-be28-cdd2c2974c3f, 16f7acc6-fcf6-4344-a3df-2094890f7450, 32ede1e2-0223-42ed-a513-7e2a7a6ca1ee, 57d297e8-5a26-4f83-a26e-3ead8bfd6aba, c32235a0-2f2a-49ff-8f45-d631e2c866ab, a928c808-d1d4-4c61-be11-8ff47942ce77, 39f3d670-91e8-4ca2-8829-c9a5662122bf, 060ed8d9-0574-4b9b-a539-5565229dc770, 02ac3674-72b0-4b91-bbe8-faa5dd7090a0, 91bab270-2bfe-416a-a0bd-0a9c08d1cd27, 37e319ae-51f9-486b-927a-e0ad9d3db207, 69deac2e-0193-425e-ab47-65380e64aec7, 6ccffb1b-1adb-499f-943c-8494bc8dde09, 8bd4d69b-5dc4-499e-a12b-454e8bcb9846, faf5ed39-e397-46e5-95f9-ebe4b78fd08c, ac18c420-02ce-46c7-be87-2f2629350dab, 360015ec-838a-4610-a7b0-787ba317a36f, 3df6d029-68fb-4eb7-8984-873e57179225, 545114d3-c26b-4392-9bfe-e8a669ea4d82, f25ff148-7c7d-442e-964b-4bc785edcf21, 18e1e46a-df24-4a0b-8d89-80b2dd6a87bd, 272c3a4a-cec3-4b2c-85c1-fce051f37348, 211b2725-4699-4fc2-9317-fe05fb7e187d, da79cd58-a2bc-4f60-811c-9ce08ea01f27, 3499a2f8-6837-4140-bb25-3896e3c790f5, 872ce64d-17ac-4df7-83a0-7c8ceb0f52e3, b9f61a4c-de03-4901-9f3a-f8e76d62e50d, 69732671-325f-439c-a277-68d76b5d50ed, e3168b5f-065e-45a6-aead-6aa6a20d3ab9, 3838d93d-ce8f-4a11-9f3c-bb813b428c7c, 2b18ed80-cb39-4a71-a908-ba6f02ce0911, b3cbc2b2-a9c0-49ee-81ee-f90e4970f7d5, 96e0f544-72d8-4e72-9e5b-c529dc7e20ac, 7e60a273-ebaf-40d0-8cdf-e49a67d3f6fb, b134b2be-ddd8-4cf5-8e49-ca9bb2aaa159, 862529da-8fb8-4153-b3a8-84b695092294, 51e385f8-a09e-40d3-af42-e8f1af9e087e, 8f4d6775-51c4-4170-bc19-485f599a300a, 55619d67-39e8-488a-93d0-86cf373874a4, db63a3af-bfde-49b2-80ba-810a5e623416, 662f2b2a-b320-4d55-b1a9-8a4827eb5099, f9385431-279a-49ce-b697-90054cdb7e35, 5af243c7-b449-4367-a1bc-3c35781985a9]
+1682372456793|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682379702757|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [d73b2a84-be05-4fbc-a0c4-19fa8f975ce6, ef706892-e7d1-4754-a7da-183475ed4f68, c62db43e-c3cc-41af-9cd9-cf112845bca0, ab57a43c-acbe-4338-8e0d-ec1e6c49849c, 0f0224dc-5f3c-40c7-b088-c611394dda05, f2a72cf9-6299-4704-8795-9fce36ccc4ef, c71019e5-9a1c-49f7-8f27-ef6d81d7de81, eafb5e19-abcb-40de-847b-29e81296c2a8, f99c179c-3152-4b51-92e1-ee84422b238c, c129c278-f5e2-444b-b36e-c02c767c194b, 879f89fb-8a3d-4375-87c3-49b184736841, f9877f64-fe50-4c19-81bd-17c56db0b80c]
+1682379702759|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682381335857|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [1cc6dcfd-c879-4775-885d-a8d8a4e172ed, 32430eca-35b5-467f-99b8-72ea61004722, f1b93c00-7e6f-4a1f-a941-b5b2ef9a4427, a7fd7431-93a5-43d6-9125-34ee7f51c72c, 49b38b68-f215-4588-8d61-133613df0815, 57ca8e6d-68a7-481c-b36f-01aa27ae0378, 72123018-d588-4a73-bde0-2dec6c8070f4, e946e4d4-fd3b-4971-a51e-d9c8054e0698, 0f0dff39-9c2b-4706-9b32-96e9ed5eb5ab, f5ff1657-5834-4f1f-acc7-511ac2cbad1c, fc3b905b-9140-43c2-8d29-d932ba088783, eed29753-8343-4e77-80d4-e977d7c31069, a2d80f55-9697-4664-b7f4-457751a1aaae]
+1682381335859|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682388471855|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [db3ec72c-f88e-47d9-a660-d9781423d79f, 78cb3797-2221-4b58-8f97-83f7b597b8e6, 93fb6322-47cb-4b73-8b6a-8a44d3078754, 42e190a6-78f2-4ce8-874c-62ec3de8fe9a, e8d034fd-30fa-47cc-9581-7f90383318f7, 61d0218f-8d4e-430b-9566-15bf0c404239, fbf8d77a-d5f1-4de2-b8e7-013628767b00, 8411b53c-0072-49ac-9930-f4e5012016fe, fa388255-46c2-4ac2-adc7-ba92e30cdda3]
+1682388471884|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682395695182|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [9ac00206-cd7b-43ba-be49-fc73230b26d9, 5af58559-d7a0-4fbb-9ec3-90603e9625de, 9e9eaeb9-be99-4aa7-92ce-79c0db33da53, 6ecdc893-5d4e-44de-b149-a82a963c8190, 5869cef0-7af4-468c-b455-8c2ae8dce1ff, c5991457-e255-4ec2-99ad-782feb45fdf2]
+1682395695203|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682410236610|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [25e4b9a3-0f12-4310-a400-aa05972d4c2c, a387f28f-3d77-4734-bbcd-02a6fb9d1447, 5f2eb546-4d8b-42b3-9adb-1200e96f1b27, e98156a5-e15c-4afe-af30-e5f449f4d7b3, 0c5fead5-2fdb-4eb9-ac64-b275f002f03e, 431f9f8a-65ae-412b-945b-849f18b711ab, b0e21f31-8f38-4a5a-89ca-d80ac2ea9b36, 21dbc2bd-2c68-42e9-a877-464688e81752, 00e7e61a-7798-4251-a491-5714a077f8aa, ee5e4cb4-f2cf-4875-a557-86c79fc72efc]
+1682410236617|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682410357182|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682410477544|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682410597904|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [f7fa07a2-0c33-4aaa-9fbc-4cf7a2949bb0, c843845e-edbe-4fb5-895d-d51bb9f61bbf, 00da9d13-ed6e-4382-b928-50b85fd506fa, 31ec2465-99e0-4770-bc86-3a13cabee38b, 79b32e5f-1515-4e40-8a96-6bcc78f8afda, 0a13d18e-55fe-4c5a-befd-759959eeec48, c81b5e84-a4b3-451f-a2ca-45084d05e2c6, 33fa0da4-64e8-4f1d-a59b-c6a14ec4f94b, e592f577-a094-4b76-b373-a6792a58d1ee, 84e5d0bd-42a2-454a-950c-850c9b1d7945, e82d0cb4-c225-442e-80ea-93b9f42cbc98, 8323d15b-25f8-43d6-b118-7e0f3a415f4f, df02ddc1-5eab-497e-8c67-839bb95d1ce2, 8805288c-a0ad-4f57-baf1-7c15eca48fa0, 0f7c72b3-a2ab-4afa-ae9c-abe1c390b169]
+1682410597906|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682410658085|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [6684b5a4-b285-4027-bc08-db69bb1df72e, 78bfe8ec-b67c-48e7-9692-65fd43303bd3, cb1fdac2-e84d-4372-a135-155786654ee4, f9f2b5b8-7db3-49c2-bcb9-df1709794442, 80e99a23-955d-4600-9b7b-1c3dee025521, 3f00a4bc-a252-449d-b321-f66126afaef4, 61257275-a097-4a65-ac49-f3e28aebdfc1, 2121dc06-1219-489d-a3d6-9eb9f43aa090, 1f806c02-8949-4d6b-861f-900f380e6b10, 20bf4a53-8388-4556-a2e8-7646899804f4, 425eced3-f5c8-4ecb-a1eb-7260183e9ec9, 53a00646-4b4d-462b-b613-c257efc8654d, 6d1f25de-3485-4dfa-a506-45fd0f44b514, 26c1741e-6afd-4f1c-b6eb-c14443c2518d, 88dc462d-c456-456e-ac62-190ab05c1edf]
+1682410718265|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [d409ed3b-8c4e-406a-94df-a28a9819a1de, 2560b921-81d3-4c57-a61d-4fcc38a0f71f, 88cabbe6-cbad-48dd-a29b-fbfbccda2734, 42c02799-d293-49d8-b78e-75da27dcf596, 7e77bcdb-5d72-4e88-96c5-98efc47aad30, 1777572a-82bc-47f9-9af4-3302a0cd79d3, aeb0b840-d32f-4ad2-854a-60e4369be15d, 997f6fee-3785-455a-9f31-91c15f00a087, b2de77e0-032e-444c-a629-118f3758171a, f541c072-8b8e-4dbb-8cc1-66f3b38842cf, 010b6a06-40e2-4b4c-aacb-1b342a1f0cb4, edd14a50-8729-4321-bfb6-1d23fb1dea06, b6d956b8-3e4c-4db1-82df-6e72ae63ec78, d4bbd0d2-8781-484d-88c9-daa9ea3b2049, 83785003-23e9-47ee-992c-11425a11f4f7]
+1682410718266|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682410778437|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [520ed022-9d44-45b7-b9e3-d0edfc57a189, b62e0bd0-f3cb-4671-82bc-f13768fc567d, fb63a5c4-a1ac-4516-8d82-5b5181c2689b, 2b4f0647-1a67-45ca-9f2d-70b25dab549a, afeba55f-3d5b-4f0d-a2c7-a5622c8f9e5d, 67926627-12a3-4da5-a351-d2e9151db0c4, fea0bcba-de29-4e62-ae00-44b020d56c1f, ac0e0ff2-bea0-4a9d-9cdf-f33df852e628, 46f3fd74-3de8-4be8-8a46-e7878fb8eef8, 33ac4fc6-8735-4ee1-811d-bb0f4f9beca2, 3871ef3e-e293-4016-b61c-79aa5a028e02, c7709d65-a2c9-4db5-af2f-e6a7789e5f0d, c4ce6392-ac89-472d-85bf-a206b5efe247, 823fd8ed-2c20-4533-aaa2-8b5b3a543f82, aab71d4c-e54d-4d3e-92ca-6390a6d063de]
+1682410838622|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [cd022485-912c-418d-82b2-055e6638bcd1, 9a6f5b21-f9e3-48b4-a012-ac7ac1d8800a, f91aa571-bed7-4510-9c30-2f8d55de522e, 43e1749c-63e0-4351-aa61-2c2ea1bb174a, 736ac603-20cc-4ca8-b5b7-509337ca3e2a, 2055d6f2-5792-45ae-8337-6f7838880de8, d666a004-75eb-40c8-ad4d-4cdfa4a29fc9, a67f75b8-9f9d-41cc-938e-02da5c909152, dc6c78ec-cdc8-49ca-ac2d-79418805a4fc, dfa68be8-f35b-4f81-9bad-ab3c470b5bcd, 7fafcc01-8723-4b7b-9a0b-9afecafae8d5, 3cba494f-10d9-47dd-9e65-bbd031ede871, dee0af66-251a-4595-a69d-17707ecdac11, a94498aa-0297-44ef-80b6-975fcb00959c, 964c5c14-6172-4c4d-9822-523aa627dcf8]
+1682410838624|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682410898813|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [3c364b38-bce5-40fb-be59-49379b331f9b, b2a9fc39-4855-4358-86df-f5cf6e5caecb, f87b4aa8-8612-423c-9796-072978f6813e, 9b0ade34-dd72-4958-b7c2-eb289e340595, 90138443-c03a-49c8-ade4-1c6e3e1c5aa4, 25aa2c4c-cd74-4a70-b2c1-185cb20dba24, 81abee6d-aa11-4ea9-be75-c5a0280a1818, 81a17330-10f0-4b28-8fc7-1a30b99af07f, af2c9760-3f01-4757-a52a-973a79db4c3d, c79477de-db7d-456c-bc47-91f18fc4029c, 8ad47b75-76d1-432c-ae3e-da80ab087f73, 2574a0ba-57f9-42e7-ad17-dee4776fcca6, 8da035c5-c561-437b-ae97-a93f12ebc39b, b12937bf-5101-449a-9555-610c60a00250, 5d04e2d0-85cc-49a6-bdc1-0dfe66512d6a]
+1682410958998|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [11c29ded-0642-43b1-83f4-61e638d9a8b5, 00fa6d21-f8eb-4d95-8976-43087cafbdd0, 5fb1359d-c738-4172-8683-101f438cd51b, 681fc9fb-afa2-4122-9458-d728bd36f1ae, a033ae50-3906-4fa4-b433-514b2f1eca73, 2da2edf1-5845-4b3d-a224-fa7f29ca8667, 554f21cf-0d6e-47e2-92b4-726dc25239d0, d32bcbc3-73ee-4f2d-96a1-9c81aa6ac6a8, 1933521b-43aa-4dd2-9863-7c9a905f1e18, bb3d9da7-63a7-42b2-9057-f3b24f8ad9c9, 9a0d98fc-92f2-4acd-b28b-39e6762834e6, 737550e4-6df7-47b7-b756-177032e6e952, f4579967-bd07-4a98-913f-6aa7cf857be3, 954dc822-1317-4834-9ebc-ea1b3071459e, 2b50089c-52fc-454a-a96f-bba60a0b2b79]
+1682410958998|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682411019169|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [e9be9607-6d8f-4b37-83ca-501e06a2beb7, 3d3433d4-3b75-49ed-baaf-1d4057eba0b9, eeb01bc6-4ebf-428a-8401-165f24d638e9, c16e158b-a0f6-4ef9-9875-44c02b1d59d7, 7d2670ca-a49a-41de-a2ec-9620fa828e53, 61b99082-6a9d-4e13-b362-f5371c0158a6, 86c7cca5-7e1e-41e2-a070-066ef98e78ba, 42ad1cc7-9d31-4d06-a15a-0a6bf4c9e2df, bfb36328-4fb5-44a1-984a-725e7cbb1aa2, b983c614-cbda-48a6-9bfb-f910c779f3c7, ba0694c0-0780-4c3d-81f4-d6675ae6a982, 67ff87cb-3503-4cd3-9f16-089face17803, 022b5f46-3ed3-4bec-88f7-336def987b7b, 881fe199-1afc-4aff-8d10-81cd2bb8d57f, 189ae147-130b-4688-adf2-0cb77a48c0f7]
+1682411079356|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [6cd43451-b844-4407-b8d3-2a2d990d38b9, 0397a2f7-2e47-41f9-a738-21dc7cf82964, 60c9394a-d940-4219-9608-fe83ffa7101c, 929debfb-2e61-4c45-92b1-b214c942b74b, 96e7001b-0c04-4551-b070-0ee6d1cd406d, ca20f244-ba6f-462d-8de9-759787c09ef9, 7541608d-1f1d-409c-9bd8-f3ccc76e3347, 01ffd7e8-f455-4f6c-ae57-b4dd6ed3317f, 93bdec77-44c5-417a-8729-222025825300, f9c182de-193d-4e89-be64-d9ea0dc86a59, 26b9268e-c628-42e8-a9f6-8cc334202dfe, 1ca8e3c0-bd4a-478d-be6e-0885a42cbd9c, b34b8e72-88da-449c-a6bf-d67a79dbdc77, 5d33f3cf-45f0-4397-9f34-6f1d8c370837, 3e378bc6-8105-4dde-9067-724fac73f478]
+1682411079357|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682411139530|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [be86bbf1-9651-42a4-ba20-47d9e271c211, 62f55c49-d8d0-43c5-ab0c-d07f38133474, c9c1d0b6-2018-444e-ab70-632d052a23d9, ff094570-1b42-4cf9-a9e1-ea147e8499ad, 9e8591ad-fe50-4852-b8ff-ac23a79e045a, 79c43ebb-291e-4d54-b1a4-95cba79b2dd7, 24b8c2e7-e3d6-4456-872c-07c23c7299a3, 72259190-ae43-4ff4-82ec-73dec36ec6b2, 1de060eb-8770-4ff3-833b-2d1ff6779f4b, d03b267e-bd03-48c1-b607-4a086f5345ba, e9f754b6-75e5-4d3e-8714-5a2ecf3ff3f8, 0c85e9ba-7e70-448c-b6c5-0aafa3c5c65f, ae457830-1c94-43e2-ac2b-879dc9d79777, 4afc622a-0423-404e-b763-54679c8f9509, cb2da302-c351-433f-bd6d-14e7d983505a]
+1682411199704|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [52305f18-918a-437b-99c8-9987a5b4cda1, 126336c7-a596-4d20-8bc9-d7379cc98045, bb19999b-f137-4999-90f0-c880f27e5740, aa408aec-8b5c-4cb0-b198-242ea6a3d13b, 4e18dd64-708b-4506-97fa-84d762456cb7, f2c85a1f-c3c4-4ba8-b986-9eca6f61d8f3, 90cfafd1-ee3a-4f40-9b9c-2d23e46952b9, 0741b9f1-4a8a-4f97-9f79-6156c1072ce9, 21614a1a-58ee-43ad-b868-3791408299c7, d2271380-c93d-49b3-8732-338c3bcf93a6, b1401a85-6f5a-4a76-a6e2-8c60b8306b4e, 362d4494-3fdb-4c26-8d09-84f45bdcb4d2, 0d4948d0-c96c-4a06-a456-ec0594288c40, d4322aab-6c7b-4300-b2c9-122ad04f6542, cebff8df-6686-4d0c-bac5-03aed05af09d]
+1682411199705|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682411259877|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [42caddca-058d-46c9-adeb-faa4d99865f9, 0262d1e8-7904-4160-af38-9888a2b3e6bc, 572c67e2-f378-40dd-a714-fc26220ef7ef, b7bbebdf-7e0e-416f-8db1-41aae544d076, 7d042ed8-b729-4ec2-a5f4-86edaefa3cbf, 60821e77-5b4e-4396-9f60-b7191d552264, adc0f9e3-db67-4085-8a06-282fd6ef18c1, b59e46e9-5846-437b-8bcc-950ce2ad511c, c68b2aa0-fca9-49d8-ad52-26470e8276d8, 15384c9c-9588-4d49-975a-f456afe01f01, 2e766fe8-14a7-42b6-bf2d-b59c02fb700b, 4c7e9b1f-07c8-4779-ad9e-d0677c8485c6, acbf2984-aefa-4fb2-9e40-aa438d2df2b5, b07d80f7-e6e9-4c89-9b7a-2114de1a72a3, 4ff82b3f-30cc-4778-a55d-e8933171b443]
+1682411320033|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [b2d00e67-0e6e-4e08-87a2-7477dc31dd5c, 53159ae6-8ac0-42a6-94fc-0ad82965104e, d698035d-7952-4720-ab44-ae29902df7b4, 420bfce2-2f21-4c1d-bd8c-e6f59022881c, 149c5add-4de0-4358-a6f1-704dfe871814, 0ddf4801-8cd4-4c02-a0b6-b589ce6b681d, 051fb59f-5fc3-4552-95f4-a99ad54cca8b, a74e8ab8-6d62-45ea-ab75-98b9ac565ff9, 30c370b5-0396-4f22-aa47-c4ed6ac82899, 60954e3a-b4ee-493f-b0cd-24ae7aa1cfdd, 3b6641cc-0bcd-4ce6-97cd-57b5a56683e5, a652377d-8671-433c-9620-f999f5a8591b, f01174ba-f6d7-4998-b612-4261128f3054, fd41d73b-b89f-4ea2-9709-5d02cf6d725c, 54f48988-c746-4088-8468-076da4b7bda2]
+1682411320034|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682411380217|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [60a2ed2e-8a34-4091-ac35-33f86f77ae1a, 42eb1aa8-26bb-4c41-8022-27dda9b248fe, 6369f1a8-0b70-4380-9ded-77628acb4e89, 8b429228-4bc7-43b4-adf3-5ddf00736c18, 3e232e0f-86f0-4c65-a790-b16e4f1cd9e6, 3ce678f6-3a68-4807-9a5d-44d6038e13c4, 2a5f1d7b-a315-4084-ad63-9829f98e312e, 184f238a-7b53-4ba9-b36c-989a752b0047, 8d8e37f7-cb65-4544-9a13-ff847a40803d, b7d76e6b-8529-43fa-b70c-67179bbbe79f, 35a8d1b5-3c1a-46b9-b822-920de35e8bca, 82fe6e68-13c6-4ca5-9b5f-d94f7d1f004a, 8ebeca8e-7d70-4d36-bfbf-f1f9cc788dc6, d85d709f-a8f7-4202-be1b-311525b9a46d, 075140a8-cd44-409d-a947-0022a92e0579]
+1682411440409|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [247adb71-e6b2-4ac2-96e3-7f3080b2bc4e, 7b4225e3-3540-4c2d-8a64-b37e89570409, ddc22da2-8b2f-4228-846c-813fe0021435, 667443f1-1c56-475c-aefb-85b008f1f0fa, 1651c447-dd36-47e0-9b4e-1fb1ca76e509, 2f1f40bb-3a9f-4f84-870d-60fb41cfa66a, 47b69400-43fd-4345-b320-779831a4b6e8, 8bd1eb5c-a586-4e32-bb8f-2335270ed38c, 10651020-af9f-444e-aa55-d119859a305c, 57473858-796e-4079-95e5-0c5e7448bfb4, a64068a7-6652-4416-bf2c-d549ce506366, 634ab132-1cb4-4ee6-a41d-30b8f32fa119, e861f438-2655-45f2-a95c-86ce83bca546, f50adcbc-dd2f-4150-8491-39bbbe4e30c7, 7ee3f02b-9564-4e88-a009-20e458bd139c]
+1682411440410|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682411500592|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [eac07591-371b-42c0-b644-f1951ca74bdb, f9f6133a-968f-4d59-a03c-32bcf66b9012, bb56fa91-7f45-47cf-81fb-22ea3843bbb4, 7a88d68b-a34c-44c9-88df-e160f899a7be, d4808b76-c78f-4d8e-bb84-7620d5c8e4b9, 9c130f42-6613-4cd8-9c8c-2a99a98c2266, 589116ea-179a-486b-bc2c-dd7449ec70d7, 0d7feb90-82e0-4898-a13e-a30567b79f15, 19db5f76-03eb-4612-bfca-c9f68c35ae84, 0fafa9ae-2481-4d63-8c4d-6f09bd3c28ca, 9c510655-be1b-4802-b2be-6b01b27b639c, c1c09667-a3f8-4c2d-8c76-359af4c76d7d, b9d52ba4-dd87-49ef-b5f9-4f43535b7f15, 1af76a96-7f5a-4a84-a68b-8e718dd665b5, e8275ad9-9c7f-44bd-a511-dde5d72071cc]
+1682411556757|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [15981d18-183f-446e-80e8-0cd47f0cb17b, 12acd18c-37dc-415f-9213-21fa6c85d6ee, cdd5b6ff-a0cd-4353-b997-0db86104b80a, 06debeaa-5e01-4bc6-af22-2ec018eec73f, 709b2749-a2d1-4c2c-9207-16a8eebca50d, 01efa9eb-3ba3-4d36-84fe-79f833630626, 0dc57821-f408-4902-a843-0b717e1d33cd, 3d226d7c-acb0-4ae0-a0bf-86267bb3ebff, e6a1ffc0-bcad-462c-942a-78239241dbda, fe054b15-54fc-4370-9c7b-2c41ccf6a3bb, e0df6edf-a074-4d5a-ac5d-a9b7d3a8d9da, 8f3be29f-d739-4643-bbc4-3da44134b112, 210c4815-483f-4b78-9e67-8a7b4f625e46, 75482ca6-e1a7-448c-a7eb-502a808300d9]
+1682411560771|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682411616928|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [f6208112-e505-4fff-a18b-42565f5233b3, f6774785-95d0-4e5a-8690-b2fde579805e, 86ab7bb9-b6f6-4614-92d0-1f594182d86d, 77dbfe4b-4de7-4211-9c16-1c90ed3172d0, 57d80cf3-f9a7-4ff9-b883-381fd2d63e3a, a6e96f46-260f-4055-8c9e-02ec13335c47, 6599fdc3-6de3-4b25-a51a-061853c63b95, 92e838a6-5b0f-498c-8c04-d6fcf049b86f, 2d6c09c2-d19d-4385-971d-1421ffff5f49, 01b60a1b-c2bc-4bd5-87d4-d06bca89f484, e5a9524d-f34a-479d-8f32-f07504004c64, 4912bdc9-ede4-4989-97d1-da21c93d46c0, b1ec4729-c92c-4336-8d97-0970cd8702ee, 3da92536-f7ec-4242-8a7d-cb0e5d620168, e5c59b84-5e6f-4fe3-99ba-72ffa9f223fe]
+1682411677089|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [691b01bd-a872-4ac4-b9cc-9fe1aa31b46d, f59dddc1-6786-4751-8883-3427c272f7fc, d0112aee-a8e1-4569-be61-f4ba840ea71f, fc940d89-0900-4419-9bb4-71f118c68b56, a28e7b84-f542-48e4-9367-f4cf2ee19c01, e4bd3dd7-6ee9-4f2f-a405-108a33d71f5a, 52643a66-8e5a-4e7e-ae8e-288b08fb7a7d, 853ff195-39f6-4638-b46f-d0f9b298ffba, 4e3ed41f-c09e-4131-a7c4-50a7df2cb595, 4e03d7c7-b499-4796-859f-36748f8b51ce, f63642af-85c2-48c2-abe5-3fe55e819dee, 1c31ff60-87be-46e8-a890-3ec8c9a56961, 4a6dd7f5-195d-4d1d-80a0-3f4e4edad839, 94a36d15-b517-43ea-ae1a-8dd57c91e831, ccb4d919-8197-439c-968a-11f65b5063ed]
+1682411681103|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682411737258|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [f373f9c9-e9dc-4007-920b-d4bb5cc2c796, ccc4f5a7-df6c-42de-a6c9-ae11c32b51b5, 3620c154-d0a7-4be5-b181-f96dd5db25bf, 65c98258-cda9-4040-ba24-54be324207dd, beb8a309-96c2-45ac-a3b7-8b1298e4b6b1, 756588c3-6a48-4e49-82bd-cec2a6413f6d, 04e627ee-ec4b-4c9c-a67f-058bdfca0da6, f3943c65-dca6-4977-9825-08bec725bdc2, bee4ed6f-56f5-40f6-93d1-8eece99b9f41, 15848938-0914-48b4-b0b5-a2b32dd819dc, dae9de3b-270a-4140-8da6-6ce0ce5682bd, 464ba02e-c7a1-4c64-9fbf-4101737b140c, 256ebd62-0e87-4da7-8e1e-f7d251667066, de31f654-eebc-4536-9b20-f03a27cded3e, 0ac4f224-14c0-440e-b41e-b7ae749cac68]
+1682411797402|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [2b98896c-fa7c-4e53-a3a5-a82d77338294, ed170e4e-e589-4f2d-aaff-244ba2ddd2e7, 2e7a8887-4042-4b8b-8dc2-64e64d886100, 74618230-69f4-4fe3-a130-f3760ac5a9f1, c57fda4c-61a2-4e8c-8c6c-b89ff83a33b1, 2157dd74-0e48-46c1-8831-d3ccb9d4a45f, e1678929-4076-4211-a661-c6ba5138d2c7, c9dae822-f460-4492-b18f-a312af0ff942, 6e8b7f28-871e-4c73-acd5-64b434e2ffbb, 98f35f18-ecfd-4e6e-b550-bb8703dab3ac, be75a840-b5bc-4547-837f-7112ce9b26fb, 7f406760-9eff-49d3-904d-a164c70b7f20, 18a9e258-a226-4f3b-8755-4107f06b13b4, fcf2e609-1496-4580-a95b-5fdbb569e7e6, 2fdac7e2-acee-4953-b203-fbf37e9ca6f6]
+1682411801412|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682411857617|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [abce2e1c-a735-499e-894c-66a75237bfe8, 82ab773f-98d8-47fd-bfe8-54d252fa257b, f20d42af-6c72-4b5c-9889-567fb6359067, c2b69560-5740-4aab-b652-9fcfa662249f, 5027f1e4-fd06-438e-b440-35312af9978e, c2948456-71df-4a2b-ad61-fa05c14be320, 888e56ad-9c71-4fd6-84c8-a75f1ce6fa45, 06ad0e38-9cdd-4816-9d7d-f0b9716062b1, 3c419ab2-687a-4f52-a0e1-4af1bcd6e8a4, b1bfb761-4ee9-447f-afa4-639ea3a52a80, 0b405341-50e4-4663-80a9-6008551f3483, 9651747b-a2e3-407b-87b1-5c86e904a69b, 1f367598-2feb-4503-ba8e-46507fa10a84, 916f6cf2-c536-4f60-9347-84a4d3cfbc7d, 2a6e6c85-7297-4ad0-9324-e7fb533adb3c]
+1682411917790|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [b3b2003e-514a-4d57-9cce-59012c4980ff, 77685ce3-34d3-402a-a109-eb880d4fce01, 316a6e09-dca9-4aa2-811c-2e4264c3cdab, ec65d843-2b23-465d-89c9-ed03b48a784e, 8200fbdd-ad53-4a32-bde1-437195841215, ada7c9be-d707-478f-a224-0db737dd00ec, eca2d12a-5a58-4b39-8c5a-db992a5b715b, 43fb8d0c-fe44-4391-b432-eebe9f980a46, 3ee49007-dbce-4145-acb0-6bcb752d0950, d8d351a7-dbbc-423e-9400-5a5063c86e00, 1c07e0f8-86c6-454c-b64c-e4499295d219, ea576be5-64b7-4ee9-9e60-a286dd786a52, 998602b7-f9d7-4c90-9f9c-3e4f31fad8ad, de268021-6e36-4706-b46d-8639a1cdee22, 4cbc3e4e-a5d2-46b5-bc64-e55f71a2a866]
+1682411921802|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682411977941|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [406ee3ea-3d0a-4974-a93c-92012c82dab8, 4f5dd084-a421-42ad-9c95-ad7084a8df0e, 35a1ee39-c014-4a17-84d7-d57236b8d10e, 664c68de-d675-49e5-b599-3b41f1fa57c8, eb695b70-f12e-4527-93c8-b7032239d181, 495a8fe9-bebd-4876-a206-7802b30d0b2e, 0f9c4821-1903-45fa-9b06-9be42ec63afe, e3ab9381-6b3a-4d0d-a55f-e8a97822523f, ae20e012-b19f-4376-b9ba-0d94a11b059f, 4329dcf2-eba3-449e-970d-bded0fcc8c96, b9f310f8-db0a-4388-9d9d-68bab95448a4, cd05257b-0d0e-4bd9-a7b7-16ae11dca597, 142014ce-3169-4b0a-9fc5-09b8b9457a32, f10e56c5-0134-49d4-8f10-319b7a6954f4, 202c2fc0-2ee1-4d39-a6b0-1b7874b15ee3]
+1682412038083|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [ebaff83f-ccde-414c-bf78-0ee4d0b01dbc, 37fec940-a70c-401f-9aff-9149b882c355, 3a125d32-f994-48fc-b203-e5cac759f162, 73d195bd-accf-4277-aecb-1261c4c808aa, 68737af9-3be2-45db-b6ad-aceea4c13d6b, e80ce138-825b-432a-a952-3adf6f30312f, 69459cc0-66bc-4510-a3d2-abf0816e486a, 3bd288e0-a9b8-4d4c-824d-c603b60d4840, 3d0f9c17-4447-43ad-b012-600ec1c86cc0, b448d1b3-cbb7-4e5c-8a12-afc1f38b7546, 26d794f7-b164-490d-a086-0c1f6ca63c18, 96af0afe-c443-44ad-b30c-f5472f55a814, 6050b441-4c5c-4201-9cb6-62fd9ad5fa20, 5b73c74b-f10e-40cf-b8d4-307bc9531008, 6cad94a6-457e-4ea6-8d07-6e672a9d9fb4]
+1682412042096|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682412098264|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [37712c5e-4eb1-4477-ab79-5274495b1c34, 34140d2b-8e55-4326-8db9-20d0418e0698, f72c8f71-149d-4d20-bfda-5191748fa67b, 9a50956e-57c6-45ec-a670-4824c0760af7, 610174be-01e2-455b-817d-41fe84fc5d3a, 6c6b9d96-c1db-407a-bb99-046fb47fe8b7, b48b0226-875b-40e6-921c-5f6c7078e966, 070dda44-ac22-43fc-9c63-a54f717bdc54, f9a9781d-ccc5-4385-8c2b-b0749d156f3a, 4709b1f0-6a4e-4744-862c-1d881db13895, 7e62fd5c-a1f0-4c58-b84e-dd58a0d0f6fd, 823190ed-356a-4834-8c34-b0fc66c6d467, c6cb59c4-8776-4849-aede-9e833b2af294, 8f640e3b-63b7-4f26-9ef0-59964d8f1fe1, 969cd1e3-c09a-4931-91e8-18444767cea0]
+1682412269006|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [1cc87644-21e5-4aab-813c-f8ef0ec1c701, 2abedd1b-e0c3-4181-9fed-1d3c80b0ab55, 9d73d832-6f45-45e1-9cb4-1bb84bc4e74b, 12cf9b84-b8f2-4949-93b9-504948aa70f7, 468dc7f2-747b-4618-86a3-c9c4c3c27f7d, 73c94808-14d1-47bd-b75d-7927adc5e7e4, 40d9a471-1997-450c-8ef1-99597b822828, 38e2d2b1-af38-41c5-b807-eded884c3afc, 949ae850-b021-4b87-a198-62cebb883a3d, 7f8b2a3b-4892-49cd-82d8-d24a7d83ce89, 478b3f37-e3c8-4b62-9d85-8644f240c6b8, 4ae2e726-3e76-4114-ad87-c780da0a4975, 045b289e-3a75-415c-bc24-c196ed7c9f67, 960cda4e-c84c-4050-9a44-d92297f2bf60, 31f30c4c-69d1-4bc4-8df3-d257f1e50748, f070f63a-b6ad-4e64-9a08-30b028be4c3b, 3050cd12-430c-4b67-92d0-d5acecb810c6, 0f404b0a-74bf-4214-b81e-0ff1688e0ca6, 6eca6165-7a39-4a23-8baa-578b11a58f1a, e1f30c94-b475-4fad-96ee-7ee3bfd5988a, 868cb8b8-9d8f-4419-bfe0-d38069350d54, 64d7ae6f-93d0-4c2e-aecd-bfd57b3cf266, 88ade882-d319-446f-8cf6-5f91059bd635, cba2daf3-6061-44f7-b05f-70e20d9fcdc9, 3f5bee8b-f396-4d2a-8ae0-2a574012aa08, fea1ef2a-cb22-471f-83b2-9bfd5e98b7ee, 28f2d362-b3e4-443f-a6bc-558cb0623a38, 772fb9c6-1485-41ee-aaf0-bfd5592b73ba, e458ea2d-17b9-4a52-af4f-e1e661a7a286, a5ae10d4-18fe-446a-b855-beceafce23f9, 98d085d2-892f-4734-9acc-3514ffffb05e, dfc9361b-e5f5-4407-af23-e4facae95d94, 93d239d8-c72e-4227-a172-dbefe2d4aeb4, f24fe43f-a262-41f1-babb-292ccb32eb0e, 1b045a3b-783d-4c6f-a4b6-2336448c67df, 9fae7f5e-f27a-4c57-a665-5593478ab3bd, 9e26fce3-fec1-42fa-870e-fcf86b926e43, 0f6eba6d-c28d-4a0b-9daa-148daa811af0, 948344c2-3a4d-4ce3-9009-fdbd559bb974, cd0117b0-d2a3-4f12-bbe5-84b7875ac380, cb02450b-ebcc-4785-92f6-a569fb81fe19, 635396b6-2e53-42a4-8b8e-cc6e050ee747]
+1682412269007|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682413869551|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [11a726c0-98eb-480c-aa56-9397605e9c92, a8a6cd0b-b97c-4bab-9b19-de1e60abd057, f1cecc4b-91c3-46ed-8946-f3281109e25a, 36c34264-c58d-4b3a-9185-27fb0456e869, adba2f67-073a-41b2-adfa-2051bf672622, 105104ee-8f04-4351-b5d2-dc50f9f8c5c1, 4b89396c-73a8-4373-81fc-c32247641376, 23615e58-e14a-4f1b-940e-0e2205e0ef18, f593e10e-f324-4a77-aa5a-29b98b03ee7d, a72a891c-7263-46c4-b880-9aa58b80a634, 1888e4ad-fedf-4968-b425-5d53433ca640, 1209addd-72b6-49cd-8f13-ade348ac4b7b, 9ca62366-88ce-4bb8-b39b-43a2c2ffeae6, e7bd3769-ce9c-4469-aca9-ce6fd0a30680, 77545a1a-2e32-4fb4-baba-dab1e79475ff, ebe0711c-4a0e-4c46-a1d5-c4983c670a66, 7f1c8d03-0d01-4f0a-8a8a-fa2c32418620, 674eacc6-a4ea-49a4-8ebf-9c9dab3a7854, 14bf6151-c1ae-4e23-a23e-6336ca57239d, 38de830e-a073-4519-92f4-0cc3ef3b74bc, 1f2157a0-0010-4710-9260-451384b51b3d, 5a0540b5-bd4a-40e2-88e6-c70a2df36bf6, 0a41f7a3-02e0-4503-9feb-5321f91ba215, 4d76f608-cec9-43ab-9f89-0c470de04d64, 9a30fb53-6418-4585-aee7-77d16122c7af, 13f31910-6930-4e5d-8c6e-58f00a7be835, abfd5b3b-cebd-4753-aed7-c68e25c7da7d, 2c656843-e7c1-4297-a434-ce43e5c9e8c7, 04ff58d5-e608-4ac4-a369-a5dc1e7af997, fecec560-05e1-4c55-a610-ebd28c04d30f, b0fb7308-eae8-4914-9b34-76b96a1f4780, 30e19c4e-88bb-4ec2-8c9c-ee3c793e6d93, 9c6ea8c6-5756-4e93-9199-efeea7203a2e, 2e9805c4-2594-44fc-ac97-cb264fbf088c, 27828dc2-9565-40aa-b14d-f66d16ea974c, fd1909dd-5986-44ea-9118-b5b3da15186b, a6d9afba-fade-410f-bd68-8886306e7265, 72e18502-28c0-4a6d-9839-52f1f243d9a2, 6d8eefc2-8e83-4a68-b0a8-986614060270, 3cbd4a9c-0943-4b44-ada4-c984cf311a16, ee8b99ce-1c05-47fc-8aa5-99a0aea9e90c, 6a9dd36f-fd9d-453c-b05a-a5776e4508e7, 276f3569-177e-48f9-b61f-4acf5a868381, be22393b-f762-4c70-8e72-1f8711974e81, 97e20acc-622a-4bdc-9b60-61374db6b9f5, f1127a7b-09bb-4d1a-8b92-74fd4b074b37, 95bbd475-3162-4f82-958d-55e583fecb40, 395f06cb-4d4d-4320-92f6-b98edd976e7f, b52599bd-0423-43cb-9d51-fcf7fc60c771, c6d05721-95a1-4236-b2ad-80c054e2786d, e2dcd006-e058-44b7-a3bc-b7040e949c5d, 564b0f02-4468-4481-a640-71bc4f05e753, 267c7672-470f-4724-8414-f078310e477f, 9c391117-2b5a-471d-9dae-573956f2954e, c5db4e76-526e-412a-8c8a-b0d0c4908d4c, 21c8e810-73fc-44a9-b8ce-262d0d9b6cb7]
+1682413869554|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682415977563|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [01f92a5e-c883-4707-9a84-0d3d9212c5a8, 93f107d4-ec57-41d1-b6ef-a0e16bb3cfca, b88af022-49dc-48c7-b20f-9186c75800c6, c22e5c5a-397c-436e-b27b-fb0ede31442b, dac8e727-b408-419e-9fb6-a2055b0da18c, 64bbdffd-fedc-4e4e-a624-1a2594794193, 4ae14080-c125-4667-aeb6-e25bbdd9d244, 45261334-db25-4038-ad3b-93c029fc836b, 73c909db-e5bb-4619-a802-7e06e41c49c6, 5dec8eab-4978-4b38-a78b-be64e263fb08, 58b21b70-cdce-4c8c-9260-8d9f054da554, ca0e273e-74a5-4d40-9b80-6073c991634c, 34e0b6b5-6ba8-40b2-90ad-b7ff3d7dc038, 2c2f52af-aeb2-493a-bfeb-b62a7c63c89a, e6802786-8e0d-4556-9de7-fb3d662c93b5, e4876acf-2d5d-4065-ae37-118ae7bb3bea, 9f38fcf2-d283-42b1-8156-1f5a9212b20a]
+1682415977565|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682416181211|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682416301516|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [a8264f51-fd86-4bec-bff4-f2498b4596dd, a6b6a83d-8a4c-4236-9ddc-eb6960a8cd7e, 9ff2615e-7ea6-4f6a-b3dd-ba1831a38a13, de2f9580-c463-40e7-9d23-4964b454867a, f2f5b1fe-0cda-4d7a-84b4-28ca1aa12fe0, 6f0b679e-79e7-450d-bf3b-0856dfc68038]
+1682416301517|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682416361663|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [6e231786-5e8a-4c7b-a8b2-70c55fdc9fd6, d7fb9b47-ad32-41d1-9f8f-4661bec024b4, a5f2902d-4cd1-41c0-a0cf-9bce15c0547a, 874bff42-a558-4109-9761-f26cac49760a, 824592f9-12c7-4983-9744-cc62b0b192d0, ce7a13b8-1400-4dc1-b562-a10bc3896d29, 3d9ba4b6-a5c1-4368-9977-8f9a4b378abc, 2b8fb81d-8307-46ab-bb48-8148585c370c, 86b06573-615c-4d93-a41a-d547217e2ad5, 3467b18a-9894-4953-a88a-a09ed64e5e6e, 64367d1e-8597-4f3d-8025-cd2600e58b17, 92fa004b-f84b-497a-8e0b-ee73e6d5445d, ac0c7d2d-02a8-4479-ad75-f66be2b42d96, b981203f-9d2c-44e7-af5d-3db6f791ee14, 902a97b0-2e66-4fc0-bf6c-f65ecdf2df81]
+1682416421821|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [7808866d-2f72-4ba3-8bde-32d202f1648e, e01626f0-6b86-4083-9191-9f3a38bfa86e, 9f9f9670-3fa1-4969-a720-4f7a01093798, 69a55232-53f1-4b40-98fa-53e26078e06a]
+1682416421821|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682416481974|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [dc2c2e36-f939-4093-9519-f12d0ed5223d]
+1682416542135|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [d5ae6674-5fde-467d-9d90-b8b850f65c89, d22d7c07-525d-465d-8f36-1e0393644c07, 3272c64d-a9d8-4c3a-8b8f-71de307ac664, d2762411-6847-424f-af10-533c5f538cb7, d91ea4e9-d633-471a-a09e-e8feb286f911, 08fad1d3-78a8-4508-b54a-4bd064a863ac, 6940913e-5058-451d-96d1-45a7eeccdf78, d956edf4-22a3-4256-878b-f28832081194, b41bd479-f401-4223-a1ce-d040d921a599, 5484d868-3289-46a7-8b97-0177973e59be, 19b37c57-3d56-43c4-99fc-085e4e1b5fa4, 6730be80-6a72-4f6b-bd05-28962b456866, 1601f486-23ae-49eb-864e-fa10a3b731c7, d9ef5d87-4795-4152-a7ed-2735d8953b3f, cae7cddd-b70d-4f51-ab1a-183293d0644c]
+1682416542137|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682416602287|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [aa588ee4-4b84-4134-8858-1a7af0ef11da, 6e3cfaeb-82f7-4391-b9dc-d579cd1148e6, 3aa218ea-d3c3-405b-a4f9-1c460dff024e, 170a8a13-8860-4acc-86e1-abb8a48c4ee4, 695034d6-c7b8-4ed0-bce9-e0c9cd966aa5, 1d215b1f-76be-4bb3-881d-9968e9e9e200, 95f4a2a1-f1cd-4127-9e00-55390fd1bc02, c33fd528-7d94-48cb-b619-7e80960a1ab9, ccf60d78-8f8d-436b-90cb-03439c03059a, ff55acb4-1b37-4dca-b265-a91e64806c3c, ee219678-35dc-4830-ace2-6053a73a319a, 9266e27c-8cb0-4910-ac07-553391d2e8e0, 29c5f1d5-1425-41f6-9ed9-a1d3a69e4eca, a51489ee-adb5-4967-a664-9317e18cdff8, c8354cbe-6cb9-49eb-ad10-ae2dd0f89627]
+1682416662444|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [1a4daab9-c6bc-4649-bc7b-02bc2a42d68d, 2687b09c-2e60-4b16-91e6-e620f9e769f7, 85690ed9-2682-4a83-96b3-bbc8d1a1452d, 07ed53d7-64b3-4331-9da1-07ed3ae1c21a, 5fbf3805-d8bf-4b1b-ba3f-ef3d0428619a, 65d4433b-cc55-48c3-a489-4b0f74162cfa, 6de6279a-62cf-4bcc-adbe-17ac9611b895, 1756a462-b3e3-45da-8e90-7c164420fd39, 0beb6e4a-ca8e-4637-a187-da3bdf6472e3, 20848b04-b163-4f8f-a1ab-e00c0247e705, f50777bb-b191-4f8e-b525-819cbea1c0cb, dea0e7db-daaa-4105-b782-3cfa8747a304, c7a6ebd2-e6cb-4a99-bb46-13e0934b785f, 98748d7c-6709-4043-ba4d-e2e732576bd9, cb85ad46-e834-45ed-9273-37fb64a3d9dc]
+1682416662445|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682416722598|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [cb178a68-75d7-49ac-95c6-ba1625fc8f1a, 1cac1bb7-731d-487f-a387-07d691b46d95, 5520b59d-70da-4718-9a86-3ec472dc8c2a, 8374c092-b13d-4f9d-91fd-a1a36971eb6d, 5c404915-0da8-4063-ac72-b9d4cb5ab686, 7ed37679-a0fb-4cb3-8f87-9b5f2964ce9c, f40061f5-d464-4e2d-a2f7-e6728e886513, d9bc22cf-2a6f-46da-ac8e-9fc5f6d68cf1, c19eb408-9adf-4516-923d-28e2cc70bef9, 944d0151-bfff-45b8-b8b2-3c2497c0337b, a14776c4-487e-444d-b71e-701450780841, a08a4e33-1b3e-4a43-8d58-e5f9ea74e875, 176ec7ef-c15d-47b7-b342-a287aa44472c, a59a7615-b860-46c8-a31c-824d0e43d7a7, ce08d8dd-86f1-497d-a530-704f93b155d7]
+1682416782762|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [0f3fff8e-5e12-49db-947b-f94185b42126, dfbc9af3-cc73-45d0-9720-2c944cf8e470, 5c6026a1-1b27-4ff7-8ffe-5a8ee579d619, 162e5904-edb8-469c-a38f-f229eae8becd, ff2e636e-e176-454c-9e24-a4f93ca2fe10, 3524ea98-2c4a-43d0-bef3-df848c4006cb, a83f0159-9531-4bf0-821b-a863fc077229, 844e1cc7-ee10-4574-a8d7-77e7a54af6c8, 178aa7db-fe3a-4841-9bb5-6f913f673f99, 19eb1a89-44a1-4ebd-aa69-47c8acd6e52d, 2b494ab1-6c69-4784-bdae-72d90385ad1f, f45e9db8-6ea2-42d2-b42b-ab26f5633494, 6b1fbaec-a01e-4e74-ba53-1e9a4cebe5b7, 9e2651de-9ebc-4df3-bd04-36e4d4a58e05, 7d125ef7-c671-4585-a311-40ddc2e86bb9]
+1682416782764|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682416842907|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [9a4e29dc-5729-4061-8eca-b38e60ffc597, 727c6ab9-caf1-44c3-95ee-10b0732d8c85, a091e2c0-1e6d-4f8d-8f29-d14cb3c9fde4, 877eee62-5f72-4efb-96d4-8c56db7898ce, 15aa7442-9552-4aff-8801-b03001f897ea, 00f90c15-3c1f-4cec-9f13-7512924def06, 59b83def-ec25-4ffd-8b1e-e59b93bdef41, fe3f353b-d25a-4b52-8936-2c69768706c1, 5a153911-1785-4aef-abe3-27d649840f5c, 9efe6be1-759b-49c1-adac-e6e0694b24bd, 8b603338-bd4f-4104-8d49-cdc992829fdc, 9787abab-88a9-410a-908e-27f44d93d096, 23d6aa14-4944-4cb2-ada6-3a6cc28eb78f, b59a10bd-04d3-4151-b8a4-696dbaed4a86, 2eb69836-edfc-40d6-80f8-45a82a3e4af5]
+1682418053364|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [375dcdf1-9bb5-4392-a590-99e73c96b6a2, 68202ea2-ea8c-407e-92cf-8744477534e8, d331be25-6cab-4ae0-9ef8-ebe280eadfa1, d88e2d1d-3e1f-442a-a165-4f7925251956, 3b177cfc-70b4-4fc5-81a1-60eb13914efe, 80ff3af5-6ee9-4eb1-b029-a5d3468aa1c1, b51394d6-dd32-4a92-b70a-4e0da5f9892f, 7ff272b6-7491-4d29-9694-a9015f742d5c, 4d582ff5-c5e6-4803-92aa-b0218057e466, 1a9a7be9-f465-47e1-aaac-64a6eedb7e53, 8abb7943-1537-45b9-a64a-18c2f6eefaaa, 5fef7993-7b45-4fde-937f-fccda61ac605, 02f23733-e5f9-481f-8e8c-c71bb5f0cf95, c15732b0-8f15-4699-aa73-4b01927bdcde, 3ef4936f-48e1-4791-9e4f-5432882a7a5c, b998f30f-fa1e-4371-9dc5-8314b78de576, b8483557-d280-447a-9f25-befe5d41c099, e2ba4ac6-239d-4f45-bac0-5260ec6f31b9, 312a9d48-f6df-4ef4-b978-b5b8937bca5a, 82fda660-d71c-45b6-8d6f-4494f6f88aa7, ff845ad9-c1a9-45bb-9a66-f8193a89e4cd, 92feb762-08aa-48b8-aa68-8c3b081c69fa, 7dcaf8b0-d398-4d72-9f4c-4d2afcd1cb65, 29a55cda-aa3d-4eeb-b56d-ae3bc3f2648b, 7f92b2e8-b76e-4426-a5c0-2c9e3d8e945b, 757cabd6-e6cc-4855-b2aa-67930720b4a3, 6d169e8b-7bb3-492f-ac1e-64478a6db291, d15cceff-336e-4f56-828f-6bbc68976dbe, b1c66203-4b1b-4538-9611-a20f84810a93, ef74a3e7-b4e9-4f17-b9bf-50877524e309, ea2d600d-d3f1-428f-8259-c1a88f7ed2f0, f866d2fe-1169-4a94-ba59-aadb0775192f, e1616618-c41a-4ec4-817d-32f862b83142, daaeb522-a51e-4685-be1e-f068958fd421, 21ccb313-d548-4109-b39a-da4d5978342a, 789ae2ca-7211-4349-ac61-07ae8abfaf80, a1456bd4-b252-4556-a231-eb559d9d2702, 2ae9272d-df06-41b8-9080-8743795516bd, c72ec958-b6a4-46cf-8d94-03305852921d, 1c59b3ef-cc27-4004-b59b-953c3dd4f72b, 23f4087e-cfb7-4e54-af2e-7b5bf15ea42a, 9a839e6d-acaf-49f0-b583-e5fba47ea3c2, a306ae92-7f97-4eaa-8adb-9122f6ae69dd, 544db424-7077-444c-ac02-ef49677530da, ee0ec485-5467-4e62-8037-063cbb212433, a41b7491-987e-4a3b-9e3a-227b85487ae2, 0a282c7c-1001-4f04-8df9-44d27a0cf007, 20737776-e32c-4c54-b249-237f01bded6a, eead81c9-cbc2-432c-a0a6-8a12657f1003, 6767d86b-042b-4281-99c5-6102963f13a3, a557ed79-b642-4018-b751-d3a8c7d77935, a09dd261-8bfa-4bff-ad8e-86ebc95e5d72, c5ae6cfd-a949-4e43-8e6d-96fd65bff6d0, 52ce9511-5cb5-437e-add7-069ed593206f, 29edb444-dc50-4fed-ae62-f9aa1e7b5fa1, 82fba0cb-ccef-4b8c-b596-b4725e6c355a, e25a649f-aa54-48b3-b023-14f0b92dfa65, 660af4be-84d8-479d-aac1-a8f13cd6ab00, 52b9fac4-e127-4998-9bd5-af298bb50358, 6ade9384-4608-4142-85c3-52e04f67055c, f6d67b1a-4b5f-41f9-86cb-6938a3f477bc, 61016736-4424-4c3f-88bd-3f9744bb2d54, fb51a288-f60e-4e14-8ccb-1b5d35c99b7f, 1139d2c6-d110-41b6-bf85-017d566b76a1, 250fb3cf-8ee9-4c7f-ad9d-7a48c35e089a, 62240860-4525-4b77-8142-3283282129e1, da1b618f-19a3-409b-9585-afef49514a94, 7220a327-5e17-41d1-823a-e2363001e0ee, bbcd236f-b585-4107-af5e-0bd35342ab79, 4b91ac58-93bc-452d-ac69-695876d7ba16, a2566da3-b72c-44db-a48f-c8ebb59a928a, 130f9916-f561-47a8-8648-a25418ad5ac9, e35c8fd7-cc87-43d7-a783-bb1f29a00f16, 29d6bdd4-dd66-482e-bb6e-b1284082c102, 95f4f12e-55a2-4066-aab0-0d3e583e7b2e, 492e977b-b91e-4c31-8c97-62983af2ac9e, 6cca2337-1e1f-44f9-933b-e20c2c47a4ee, 24cd4b11-063c-440e-abdb-8037623f0d8d, 5c59d245-bebd-4abe-b355-c815e00aa551, c6db58a3-2959-44e2-891b-69f110d85866, 81ebd9b5-f2ab-4a2b-928b-21f9e589e0a1, b35d0fbe-f16f-45b9-86a2-0acd87d8cee5]
+1682418053367|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682425300225|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [bba2b4bb-dd73-4eab-bf15-7486069df9b0, 3c4603c4-bc30-4540-9faf-2bd14955411d, 1d0df848-1722-400c-a962-640feea51258, ae9f6390-cd0f-4965-9e1d-1b9622f00631, 119cc4d1-a36d-45c6-aee5-6010b5261cf0, 51d9647b-43b7-4fb4-b3c9-47aae4b4504c, c2849762-d461-464e-a3cd-ad7d460c8426, 32dcb0d0-b4a0-4086-bc7b-ab91b93f63f7, 97f4ec8d-2f13-4a95-b7ab-782c6d135b2e, 607a5e05-2617-4ce0-b0ac-4ada93119719, 40b1e01c-e080-4b81-931c-083a09c5a983, fc592b58-d116-4de1-b171-1079cb036765, a139d469-5597-4a2f-81dc-ea3c8bbe3dce, 8dc9a298-1f9d-48de-8c13-e8ca4aa60f96, 248bdc84-8115-4b76-aef0-1347e755a53c, bbd42ca4-4e3a-44fc-9521-e5aff6a95094, b4c1919c-2263-4465-8c01-628a16589402, ea575964-7d34-42a1-b424-699951b2a35c, e6b67437-4579-487f-8797-415e39b90ee8]
+1682425300227|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682432523068|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [7d4e5f0e-d3f0-42a9-897f-3c57633ee377, aaf174e0-36b8-483e-b4dd-fcd0152d0c77, 8b8af3de-cca0-4f0c-b76a-32102aef2c0f, 872078bf-f620-4d3f-9b48-a75977ea4dac, a602818b-2906-4032-9566-a021cef45c62, a040f556-c067-4060-83eb-2ac869e23712, 7862cb57-8641-4917-9bc1-aa82620e8adf, 30506660-6c72-4287-9e00-b738524764ea]
+1682432523069|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682439788599|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [c2b798ab-e900-4ce2-a057-49d8168b9e0b, 76871d10-2efb-45dd-9a9b-b29d2d179328, 5e2b9e5c-ecf2-4fd1-b641-850e0d25a3fb, 901a6010-20a8-471f-ae1c-af0557239783, 27b2a70a-ace4-47fc-a3ab-46457104c019, 117959f7-a08a-4aca-b318-35145271af02, 0d7b2580-aaa0-45e3-b2b0-6117d8af56d8, 23d376a6-3eee-4215-903d-b2996e68db71, 963b0a99-6aba-4404-89d5-9588009eab40, 191db745-2b63-47ac-a479-0e304fab1cef, da09f271-bcfc-4e5d-93f6-9b67d492eb69, b47760bf-d7d7-4013-abd3-ae1438ab430d, 3c93dd0b-65ca-4133-9b9d-193d2adb6f34, 74a20fa3-31ab-45ec-b7ae-2ef905c7d868, a431f3b7-2a9e-427f-a8b7-2703197c37c1, cb7959aa-9af9-4adb-b0a2-851c10bb3f05, b3ce8367-09cb-45d8-9356-de3d6bd3ffb0]
+1682439788600|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682440260874|WARNING|org.arl.unet.net.Router/2@110:onTick|Cleaning up old requests: [b83940b2-bf19-4ed2-8652-d9de85c5d66f, ebb3286b-4657-4cd9-bd2b-ede9a4b38995, 83683f66-5dec-42f6-86a8-39abef701cd4, 385594b9-15a1-4ef5-9761-698b9c7a17eb, 85585d6a-317d-4e5f-bf6a-8a0ac3862a7e, 987b366f-6212-4e36-a3d9-686d462dc6b4, 1d2cad52-f479-4e99-828c-d267f9f4073b, 5b6836b2-9372-4c65-953d-26d4bef6642a, 045c6c22-2965-49e3-963d-d61258eec379, d4ddb079-009d-4fab-8bb3-0a4c328a09ab, b9d693ac-7c87-4871-8c14-f9676a133002, 5c14cc98-20f2-428a-aa50-6dd1b932d946, 2352393d-9b82-4844-a10e-a125add167bd, 309f9f32-bb90-491f-9d10-9481edfa585b, 263f1f79-f81f-4c3e-8a98-1b533b5fdd32, 10db4208-cacc-4e02-92c7-0e4e0dd2bd63]
+1682440260876|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...
+1682440539929|WARNING|org.arl.unet.link.ReliableLink/2@111:onWake|ReliableLink stuck in MAC_WAIT state, resetting...

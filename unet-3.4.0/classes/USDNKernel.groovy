@@ -9,7 +9,9 @@ class USDNKernel extends UnetAgent {
         flow_table,
         cached_flows,
         quarantine_flowtable,
-        buffer
+        buffer,
+        address,
+        aliases
         }
 
       final String title = 'Underwater SDN Kernel'        
@@ -21,6 +23,9 @@ class USDNKernel extends UnetAgent {
     ArrayList cached_flows = []
     ArrayList quarantine_flowtable = []
     def buffer = [:]
+    int address = -1
+    ArrayList addresses = []
+    
     
     //flow_table.add(default_entry);
  int getAction(int id){
@@ -101,6 +106,7 @@ class USDNKernel extends UnetAgent {
   void startup() {
     subscribeForService(Services.DATAGRAM)
     subscribeForService(Services.LINK)
+    //node = agentForService(org.arl.unet.Services.NODE_INFO)
   }
 
   @Override
@@ -118,17 +124,21 @@ class USDNKernel extends UnetAgent {
   @Override
   void processMessage(Message msg) {
     def link = agentForService(org.arl.unet.Services.LINK)
-    def node = agentForService(Services.NODE_INFO)
+    println("kok")
     //Protocols:
+    //  33: proactive flow
     //. 34: update controller on a link situation
     //  35: new flow
     //  36: delete flow
     //  37: delete all flows with an action
     //  38: update action of a flow
+    //  39: trace
+    //  40: ping
+    
     if(msg instanceof LinkStatusNtf || msg instanceof DatagramFailureNtf) {
         print(msg)
     }
-    
+
     if (msg instanceof DatagramNtf && msg.protocol == 35) {
          newFlow(msg)
     }
@@ -141,19 +151,46 @@ class USDNKernel extends UnetAgent {
     if (msg instanceof DatagramNtf && msg.protocol == 38) {
          updateFlow(msg)
     }
-    if (msg instanceof DatagramNtf){
-        if(node.address != msg.to){
-            forward(msg)
-        }
-        
+    if (msg instanceof DatagramNtf && msg.protocol == 40) {
+         ping(msg)
     }
+    if (msg instanceof DatagramNtf && (msg.protocol > 40 || msg.protocol == Protocol.DATA ))  {
+         def data = msg.data.toList()
+         if(data[1] != address){
+             sendDatagram(msg)
+         }
+         
+    }
+        
+    
     
     return null
   }
   
   Message sendDatagram(msg){
         def link = agentForService(org.arl.unet.Services.LINK)
-        ArrayList mask = getMask(msg)
+        ArrayList mask = []
+        if(msg instanceof DatagramReq){
+            mask = getMask(msg)
+            ArrayList header = getMask(msg)
+            def data = msg.data.toList()
+            header[0] = address
+            header.addAll(data)
+            msg.data = header
+        }else{
+            def data = msg.data.toList()
+            mask = data[0..3]
+            msg = new DatagramReq()
+            msg.to = mask[1]
+            msg.protocol = mask[2]
+            msg.reliability = false
+            if (mask[3] == 1){
+                msg.reliability = true
+            }
+
+        }
+        
+        
         int id = isInCache(mask)
         if(id != -1){
             if(buffer[id]){
@@ -162,11 +199,7 @@ class USDNKernel extends UnetAgent {
             
             return new Message(msg,Performative.REFUSE)
         }
-        
-        
-        
         def action = match(mask)
- 
         if(action == controller_address){
             ID++
             if(id == -1){
@@ -182,10 +215,10 @@ class USDNKernel extends UnetAgent {
         }
         return new Message(msg,Performative.AGREE)
   }
+
   
   void newFlow(msg){
         def link = agentForService(org.arl.unet.Services.LINK)
-
         def reply = msg.data.toList()
         def flow = []
         int id = reply[0]
@@ -254,6 +287,7 @@ class USDNKernel extends UnetAgent {
           }
       }
   }
+
   void forward(msg){
       sendDatagram(msg)
   }

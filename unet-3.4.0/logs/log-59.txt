@@ -1,8 +1,8 @@
-1682324876710|INFO|org.arl.unet.UnetBoot@1:doInvoke|fjage Build: fjage-1.9.1/37c49259/5-09-2021_13:26:12
-1682324876779|INFO|org.arl.unet.UnetBoot@1:doInvoke|UnetBoot: [samples/topo.groovy]
-1682324876906|INFO|org.arl.fjage.remote.EnumTypeAdapter@1:<clinit>|Groovy detected, using GroovyClassLoader
-1682324876938|INFO|org.arl.fjage.remote.MessageAdapterFactory@1:<clinit>|Groovy detected, using GroovyClassLoader
-1682324877741|WARNING|org.arl.fjage.shell.GroovyScriptEngine@1:error|Groovy execution failed
+1682324890073|INFO|org.arl.unet.UnetBoot@1:doInvoke|fjage Build: fjage-1.9.1/37c49259/5-09-2021_13:26:12
+1682324890140|INFO|org.arl.unet.UnetBoot@1:doInvoke|UnetBoot: [samples/topo.groovy]
+1682324890266|INFO|org.arl.fjage.remote.EnumTypeAdapter@1:<clinit>|Groovy detected, using GroovyClassLoader
+1682324890303|INFO|org.arl.fjage.remote.MessageAdapterFactory@1:<clinit>|Groovy detected, using GroovyClassLoader
+1682324891180|WARNING|org.arl.fjage.shell.GroovyScriptEngine@1:error|Groovy execution failed
 
 groovy.lang.MissingMethodException: No signature of method: org.arl.unet.sim.initrc$_run_closure9.call() is applicable for argument types: (LinkedHashMap, String, Integer) values: [[location:[0, 0, 0], web:8090, api:1110, stack:/Users/jiarro/Desktop/Uni/Casari/unet-3.4.0/etc/setup], ...]
 Possible solutions: any(), any(), grep(), find(), collect(), dump()
