@@ -12,7 +12,7 @@ socket = UnetSocket("localhost",1101)
 gw = socket.getGateway()
 uwlink = gw.agentForService("org.arl.unet.Services.LINK")
 phy = gw.agentForService("org.arl.unet.Services.PHYSICAL")
-
-phy[2] << TxFrameReq(to=2,data=[32],protocol=33)
-
+kernel = gw.agentForService("org.arl.unet.Services.ROUTING")
+x = kernel << DatagramReq(to=3,data=[2,3,4,5],protocol=55,reliability=True)
+print(x)
 
