@@ -1,298 +1,226 @@
-1682505825398|INFO|org.arl.unet.UnetBoot@1:doInvoke|fjage Build: fjage-1.9.1/37c49259/5-09-2021_13:26:12
-1682505825512|INFO|org.arl.unet.UnetBoot@1:doInvoke|UnetBoot: [samples/topo.groovy]
-1682505825639|INFO|org.arl.fjage.remote.EnumTypeAdapter@1:<clinit>|Groovy detected, using GroovyClassLoader
-1682505825676|INFO|org.arl.fjage.remote.MessageAdapterFactory@1:<clinit>|Groovy detected, using GroovyClassLoader
-1682505826506|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1110
-1682505826578|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 10
-1682505826629|INFO|Script1@1:doInvoke|Starting web interface on port null:8090
-1682505826727|INFO|org.arl.fjage.connectors.TcpServer@13:run|Listening on port 1110
-1682505826849|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
-1682505826853|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
-1682505826864|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
-1682505826865|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
-1682505826866|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
-1682505826866|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
-1682505826887|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
-1682505826887|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.60494
-1682505826994|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8090
-1682505826996|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.132:8090/ws
-1682505826999|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
-1682505827476|INFO|Script1@1:doInvoke|Created static node 10 (10) @ [0, 0, 0]
-1682505827477|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1101
-1682505827478|INFO|org.arl.fjage.connectors.TcpServer@28:run|Listening on port 1101
-1682505827478|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 1
-1682505827479|INFO|Script1@1:doInvoke|Starting web interface on port null:8081
-1682505827481|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
-1682505827482|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
-1682505827483|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
-1682505827484|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
-1682505827484|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
-1682505827485|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
-1682505827486|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
-1682505827492|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8081
-1682505827493|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.132:8081/ws
-1682505827493|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
-1682505827637|INFO|Script1@1:doInvoke|Created static node 1 (1) @ [0, 0, -15]
-1682505827638|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1102
-1682505827638|INFO|org.arl.fjage.connectors.TcpServer@41:run|Listening on port 1102
-1682505827639|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 2
-1682505827639|INFO|Script1@1:doInvoke|Starting web interface on port null:8082
-1682505827640|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
-1682505827641|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
-1682505827644|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
-1682505827645|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
-1682505827645|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
-1682505827646|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
-1682505827646|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
-1682505827649|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8082
-1682505827649|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.132:8082/ws
-1682505827649|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
-1682505827777|INFO|Script1@1:doInvoke|Created static node 2 (arp) @ [0, 0, -15]
-1682505827778|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1103
-1682505827778|INFO|org.arl.fjage.connectors.TcpServer@54:run|Listening on port 1103
-1682505827779|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 3
-1682505827780|INFO|Script1@1:doInvoke|Starting web interface on port null:8083
-1682505827782|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
-1682505827782|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
-1682505827783|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
-1682505827784|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
-1682505827785|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
-1682505827785|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
-1682505827785|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
-1682505827790|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8083
-1682505827790|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.132:8083/ws
-1682505827791|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
-1682505827925|INFO|Script1@1:doInvoke|Created static node 3 (arp) @ [0, 0, -15]
-1682505827926|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1104
-1682505827927|INFO|org.arl.fjage.connectors.TcpServer@67:run|Listening on port 1104
-1682505827927|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 4
-1682505827928|INFO|Script1@1:doInvoke|Starting web interface on port null:8084
-1682505827930|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
-1682505827930|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
-1682505827931|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
-1682505827932|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
-1682505827932|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
-1682505827933|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
-1682505827933|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
-1682505827937|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8084
-1682505827937|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.132:8084/ws
-1682505827937|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
-1682505828017|INFO|Script1@1:doInvoke|Created static node 4 (arp) @ [10000, 0, -15]
-1682505828046|INFO|Script1@1:doInvoke| --- BEGIN SIMULATION #1 ---
-1682505828051|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
-1682505828052|INFO|org.arl.fjage.shell.ShellAgent/10@85:init|Agent websh init
-1682505828054|INFO|org.arl.unet.mac.CSMA/10@87:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 10
-1682505828054|INFO|org.arl.unet.net.RouteDiscoveryProtocol/10@89:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 10
-1682505828054|INFO|org.arl.unet.sim.HalfDuplexModem/10@88:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 10
-1682505828054|INFO|org.arl.unet.remote.RemoteControl/10@80:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 10
-1682505828055|INFO|org.arl.unet.link.ReliableLink/10@82:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 10
-1682505828054|INFO|org.arl.unet.net.Router/10@81:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 10
-1682505828055|INFO|org.arl.unet.bb.BasebandSignalMonitor/10@83:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 10
-1682505828054|INFO|org.arl.unet.addr.AddressResolution/10@86:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 10
-1682505828056|INFO|org.arl.unet.nodeinfo.NodeInfo/10@90:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 10
-1682505828057|INFO|org.arl.unet.transport.SWTransport/10@91:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 10
-1682505828057|INFO|org.arl.unet.localization.Ranging/10@92:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 10
-1682505828057|INFO|org.arl.unet.sim.SimulationAgent/10@93:doInvoke|Loading simulator : SimulationAgent
-1682505828159|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
-1682505828169|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.60495
-1682505828264|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
-1682505828265|INFO|org.arl.unet.remote.RemoteControl/1@100:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 1
-1682505828265|INFO|org.arl.unet.net.Router/1@101:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 1
-1682505828265|INFO|org.arl.unet.link.ReliableLink/1@102:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 1
-1682505828265|INFO|org.arl.fjage.shell.ShellAgent/1@105:init|Agent websh init
-1682505828265|INFO|org.arl.unet.bb.BasebandSignalMonitor/1@103:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 1
-1682505828266|INFO|org.arl.unet.addr.AddressResolution/1@106:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 1
-1682505828266|INFO|org.arl.unet.mac.CSMA/1@107:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 1
-1682505828266|INFO|org.arl.unet.nodeinfo.NodeInfo/1@111:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 1
-1682505828266|INFO|org.arl.unet.sim.HalfDuplexModem/1@109:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 1
-1682505828266|INFO|org.arl.unet.net.RouteDiscoveryProtocol/1@110:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 1
-1682505828266|INFO|org.arl.unet.sim.SimulationAgent/1@114:doInvoke|Loading simulator : SimulationAgent
-1682505828266|INFO|org.arl.unet.transport.SWTransport/1@112:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 1
-1682505828266|INFO|org.arl.unet.localization.Ranging/1@113:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 1
-1682505828371|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
-1682505828475|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
-1682505828476|INFO|org.arl.unet.remote.RemoteControl/2@115:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 2
-1682505828476|INFO|org.arl.unet.net.Router/2@116:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 2
-1682505828476|INFO|org.arl.unet.link.ReliableLink/2@117:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 2
-1682505828476|INFO|org.arl.unet.bb.BasebandSignalMonitor/2@118:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 2
-1682505828476|INFO|org.arl.fjage.shell.ShellAgent/2@120:init|Agent websh init
-1682505828477|INFO|org.arl.unet.addr.AddressResolution/2@121:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 2
-1682505828477|INFO|org.arl.unet.mac.CSMA/2@122:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 2
-1682505828477|INFO|org.arl.unet.sim.HalfDuplexModem/2@123:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 2
-1682505828477|INFO|org.arl.unet.net.RouteDiscoveryProtocol/2@125:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 2
-1682505828477|INFO|org.arl.unet.nodeinfo.NodeInfo/2@126:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 2
-1682505828477|INFO|org.arl.unet.transport.SWTransport/2@127:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 2
-1682505828477|INFO|org.arl.unet.localization.Ranging/2@128:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 2
-1682505828478|INFO|org.arl.unet.sim.SimulationAgent/2@129:doInvoke|Loading simulator : SimulationAgent
-1682505828582|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
-1682505828686|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
-1682505828687|INFO|org.arl.unet.remote.RemoteControl/3@130:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 3
-1682505828687|INFO|org.arl.unet.net.Router/3@131:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 3
-1682505828687|INFO|org.arl.unet.bb.BasebandSignalMonitor/3@133:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 3
-1682505828687|INFO|org.arl.unet.link.ReliableLink/3@132:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 3
-1682505828687|INFO|org.arl.fjage.shell.ShellAgent/3@135:init|Agent websh init
-1682505828688|INFO|org.arl.unet.addr.AddressResolution/3@136:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 3
-1682505828688|INFO|org.arl.unet.sim.HalfDuplexModem/3@138:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 3
-1682505828688|INFO|org.arl.unet.mac.CSMA/3@137:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 3
-1682505828688|INFO|org.arl.unet.net.RouteDiscoveryProtocol/3@140:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 3
-1682505828689|INFO|org.arl.unet.nodeinfo.NodeInfo/3@141:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 3
-1682505828689|INFO|org.arl.unet.transport.SWTransport/3@142:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 3
-1682505828689|INFO|org.arl.unet.localization.Ranging/3@143:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 3
-1682505828689|INFO|org.arl.unet.sim.SimulationAgent/3@144:doInvoke|Loading simulator : SimulationAgent
-1682505828792|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
-1682505828892|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
-1682505828894|INFO|org.arl.unet.remote.RemoteControl/4@145:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 4
-1682505828894|INFO|org.arl.unet.net.Router/4@146:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 4
-1682505828894|INFO|org.arl.unet.link.ReliableLink/4@147:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 4
-1682505828894|INFO|org.arl.unet.bb.BasebandSignalMonitor/4@148:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 4
-1682505828894|INFO|org.arl.fjage.shell.ShellAgent/4@150:init|Agent websh init
-1682505828895|INFO|org.arl.unet.addr.AddressResolution/4@151:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 4
-1682505828895|INFO|org.arl.unet.mac.CSMA/4@152:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 4
-1682505828895|INFO|org.arl.unet.sim.HalfDuplexModem/4@154:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 4
-1682505828895|INFO|org.arl.unet.net.RouteDiscoveryProtocol/4@155:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 4
-1682505828895|INFO|org.arl.unet.nodeinfo.NodeInfo/4@156:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 4
-1682505828895|INFO|org.arl.unet.transport.SWTransport/4@157:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 4
-1682505828896|INFO|org.arl.unet.localization.Ranging/4@158:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 4
-1682505828896|INFO|org.arl.unet.sim.SimulationAgent/4@159:doInvoke|Loading simulator : SimulationAgent
-1682505829000|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
-1682505829102|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
-1682505829103|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
-1682505829103|INFO|org.arl.unet.link.ReliableLink/10@82:startup|No PHY specified, auto detecting...
-1682505829104|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
-1682505829103|INFO|org.arl.unet.localization.Ranging/10@92:startup|No PHY specified, auto detecting...
-1682505829104|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
-1682505829105|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
-1682505829105|INFO|org.arl.unet.remote.RemoteControl/2@115:startup|Using transport for communication
-1682505829106|INFO|org.arl.unet.link.ReliableLink/2@117:startup|No PHY specified, auto detecting...
-1682505829106|INFO|org.arl.unet.link.ReliableLink/2@117:startup|Using agent 'phy' for PHY
-1682505829106|INFO|org.arl.unet.link.ReliableLink/2@117:startup|No MAC specified, auto detecting...
-1682505829106|INFO|org.arl.unet.remote.RemoteControl/3@130:startup|Using transport for communication
-1682505829104|INFO|org.arl.unet.link.ReliableLink/10@82:startup|Using agent 'phy' for PHY
-1682505829104|INFO|org.arl.unet.nodeinfo.NodeInfo/10@90:obtainAddress|Node name is 10, address is 10, address size is 8 bits
-1682505829104|INFO|org.arl.unet.transport.SWTransport/10@91:startup|Using router for communication
-1682505829103|INFO|org.arl.unet.remote.RemoteControl/10@80:startup|Using transport for communication
-1682505829116|INFO|org.arl.unet.link.ReliableLink/10@82:startup|No MAC specified, auto detecting...
-1682505829110|INFO|org.arl.unet.localization.Ranging/4@158:startup|No PHY specified, auto detecting...
-1682505829118|INFO|org.arl.unet.localization.Ranging/4@158:startup|Using agent 'phy' for PHY
-1682505829118|INFO|org.arl.unet.localization.Ranging/4@158:startup|No MAC specified, auto detecting...
-1682505829118|INFO|org.arl.unet.localization.Ranging/4@158:startup|Using agent 'mac' for MAC
-1682505829110|INFO|org.arl.unet.transport.SWTransport/3@142:startup|Using router for communication
-1682505829110|INFO|org.arl.unet.remote.RemoteControl/3@130:startup|Using websh for command exec
-1682505829110|INFO|org.arl.unet.nodeinfo.NodeInfo/4@156:obtainAddress|Node name is 4, address is 4, address size is 8 bits
-1682505829110|INFO|org.arl.unet.nodeinfo.NodeInfo/3@141:obtainAddress|Node name is 3, address is 3, address size is 8 bits
-1682505829109|INFO|org.arl.unet.link.ReliableLink/4@147:startup|No PHY specified, auto detecting...
-1682505829125|INFO|org.arl.unet.link.ReliableLink/4@147:startup|Using agent 'phy' for PHY
-1682505829125|INFO|org.arl.unet.link.ReliableLink/4@147:startup|No MAC specified, auto detecting...
-1682505829125|INFO|org.arl.unet.link.ReliableLink/4@147:startup|Using agent 'mac' for MAC
-1682505829107|INFO|org.arl.unet.localization.Ranging/3@143:startup|No PHY specified, auto detecting...
-1682505829126|INFO|org.arl.unet.localization.Ranging/3@143:startup|Using agent 'phy' for PHY
-1682505829126|INFO|org.arl.unet.localization.Ranging/3@143:startup|No MAC specified, auto detecting...
-1682505829126|INFO|org.arl.unet.localization.Ranging/3@143:startup|Using agent 'mac' for MAC
-1682505829107|INFO|org.arl.unet.link.ReliableLink/3@132:startup|No PHY specified, auto detecting...
-1682505829128|INFO|org.arl.unet.link.ReliableLink/3@132:startup|Using agent 'phy' for PHY
-1682505829128|INFO|org.arl.unet.link.ReliableLink/3@132:startup|No MAC specified, auto detecting...
-1682505829128|INFO|org.arl.unet.link.ReliableLink/3@132:startup|Using agent 'mac' for MAC
-1682505829107|INFO|org.arl.unet.link.ReliableLink/2@117:startup|Using agent 'mac' for MAC
-1682505829106|INFO|org.arl.unet.transport.SWTransport/2@127:startup|Using router for communication
-1682505829106|INFO|org.arl.unet.nodeinfo.NodeInfo/2@126:obtainAddress|Node name is 2, address is 2, address size is 8 bits
-1682505829106|INFO|org.arl.unet.remote.RemoteControl/2@115:startup|Using websh for command exec
-1682505829105|INFO|org.arl.unet.localization.Ranging/2@128:startup|No PHY specified, auto detecting...
-1682505829131|INFO|org.arl.unet.localization.Ranging/2@128:startup|Using agent 'phy' for PHY
-1682505829131|INFO|org.arl.unet.localization.Ranging/2@128:startup|No MAC specified, auto detecting...
-1682505829131|INFO|org.arl.unet.localization.Ranging/2@128:startup|Using agent 'mac' for MAC
-1682505829105|INFO|org.arl.unet.transport.SWTransport/1@112:startup|Using router for communication
-1682505829105|INFO|org.arl.unet.nodeinfo.NodeInfo/1@111:obtainAddress|Node name is 1, address is 1, address size is 8 bits
-1682505829105|INFO|org.arl.unet.localization.Ranging/10@92:startup|Using agent 'phy' for PHY
-1682505829104|INFO|org.arl.unet.localization.Ranging/1@113:startup|No PHY specified, auto detecting...
-1682505829104|INFO|org.arl.unet.remote.RemoteControl/1@100:startup|Using transport for communication
-1682505829135|INFO|org.arl.unet.remote.RemoteControl/1@100:startup|Using websh for command exec
-1682505829104|INFO|org.arl.unet.link.ReliableLink/1@102:startup|No PHY specified, auto detecting...
-1682505829135|INFO|org.arl.unet.localization.Ranging/1@113:startup|Using agent 'phy' for PHY
-1682505829135|INFO|org.arl.unet.localization.Ranging/10@92:startup|No MAC specified, auto detecting...
-1682505829117|INFO|org.arl.unet.remote.RemoteControl/4@145:startup|Using transport for communication
-1682505829117|INFO|org.arl.unet.link.ReliableLink/10@82:startup|Using agent 'mac' for MAC
-1682505829136|INFO|org.arl.unet.remote.RemoteControl/4@145:startup|Using websh for command exec
-1682505829117|INFO|org.arl.unet.transport.SWTransport/4@157:startup|Using router for communication
-1682505829135|INFO|org.arl.unet.localization.Ranging/10@92:startup|Using agent 'mac' for MAC
-1682505829135|INFO|org.arl.unet.localization.Ranging/1@113:startup|No MAC specified, auto detecting...
-1682505829136|INFO|org.arl.unet.localization.Ranging/1@113:startup|Using agent 'mac' for MAC
-1682505829135|INFO|org.arl.unet.link.ReliableLink/1@102:startup|Using agent 'phy' for PHY
-1682505829137|INFO|org.arl.unet.link.ReliableLink/1@102:startup|No MAC specified, auto detecting...
-1682505829137|INFO|org.arl.unet.link.ReliableLink/1@102:startup|Using agent 'mac' for MAC
-1682505829138|INFO|org.arl.unet.remote.RemoteControl/10@80:startup|Using websh for command exec
-1682505863122|INFO|org.arl.unet.sim.SimulationMasterContainer@54:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.60498
-1682505863126|INFO|org.arl.unet.sim.SimulationMasterContainer@54:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.60499
-1682505863129|INFO|org.arl.unet.sim.SimulationMasterContainer@54:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.60500
-1682505863133|INFO|org.arl.unet.sim.SimulationMasterContainer@54:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.60501
-1682505863136|INFO|org.arl.unet.sim.SimulationMasterContainer@54:connected|Incoming connection tcp:///127.0.0.1:1103//127.0.0.1.60502
-1682505864520|INFO|org.arl.unet.sim.SimulationMasterContainer@28:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.60503
-1682505864524|INFO|org.arl.unet.sim.SimulationMasterContainer@28:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.60504
-1682505864528|INFO|org.arl.unet.sim.SimulationMasterContainer@28:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.60505
-1682505864533|INFO|org.arl.unet.sim.SimulationMasterContainer@28:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.60506
-1682505864538|INFO|org.arl.unet.sim.SimulationMasterContainer@28:connected|Incoming connection tcp:///127.0.0.1:1101//127.0.0.1.60507
-1682505865843|INFO|org.arl.unet.sim.SimulationMasterContainer@41:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.60508
-1682505865846|INFO|org.arl.unet.sim.SimulationMasterContainer@41:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.60509
-1682505865849|INFO|org.arl.unet.sim.SimulationMasterContainer@41:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.60510
-1682505865853|INFO|org.arl.unet.sim.SimulationMasterContainer@41:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.60511
-1682505865857|INFO|org.arl.unet.sim.SimulationMasterContainer@41:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.60512
-1682505950508|INFO|org.arl.unet.sim.SimulationMasterContainer@194:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.60508 closed
-1682505950508|INFO|org.arl.unet.sim.SimulationMasterContainer@203:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.60511 closed
-1682505950508|INFO|org.arl.unet.sim.SimulationMasterContainer@206:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.60512 closed
-1682505950509|INFO|org.arl.unet.sim.SimulationMasterContainer@197:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.60509 closed
-1682505950509|INFO|org.arl.unet.sim.SimulationMasterContainer@200:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.60510 closed
-1682505951738|INFO|org.arl.unet.sim.SimulationMasterContainer@185:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.60505 closed
-1682505951738|INFO|org.arl.unet.sim.SimulationMasterContainer@191:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.60507 closed
-1682505951738|INFO|org.arl.unet.sim.SimulationMasterContainer@188:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.60506 closed
-1682505951738|INFO|org.arl.unet.sim.SimulationMasterContainer@182:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.60504 closed
-1682505951738|INFO|org.arl.unet.sim.SimulationMasterContainer@179:connectionClosed|Connection tcp:///127.0.0.1:1101//127.0.0.1.60503 closed
-1682505952690|INFO|org.arl.unet.sim.SimulationMasterContainer@169:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.60501 closed
-1682505952690|INFO|org.arl.unet.sim.SimulationMasterContainer@160:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.60498 closed
-1682505952690|INFO|org.arl.unet.sim.SimulationMasterContainer@163:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.60499 closed
-1682505952690|INFO|org.arl.unet.sim.SimulationMasterContainer@172:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.60502 closed
-1682505952690|INFO|org.arl.unet.sim.SimulationMasterContainer@166:connectionClosed|Connection tcp:///127.0.0.1:1103//127.0.0.1.60500 closed
-1682506161615|INFO|org.arl.unet.sim.SimulationMasterContainer@14:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.60494 closed
-1682506161615|INFO|org.arl.unet.sim.SimulationMasterContainer@97:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.60495 closed
-1682506164647|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.60526
-1682506164650|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.60527
-1682506164654|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.60528
-1682506164658|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.60529
-1682506166775|INFO|org.arl.unet.sim.SimulationMasterContainer@41:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.60530
-1682506166780|INFO|org.arl.unet.sim.SimulationMasterContainer@41:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.60531
-1682506166783|INFO|org.arl.unet.sim.SimulationMasterContainer@41:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.60532
-1682506166786|INFO|org.arl.unet.sim.SimulationMasterContainer@41:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.60533
-1682506166789|INFO|org.arl.unet.sim.SimulationMasterContainer@41:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.60534
-1682506175442|INFO|org.arl.unet.sim.SimulationMasterContainer@219:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.60529 closed
-1682506175442|INFO|org.arl.unet.sim.SimulationMasterContainer@210:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.60526 closed
-1682506175442|INFO|org.arl.unet.sim.SimulationMasterContainer@216:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.60528 closed
-1682506175442|INFO|org.arl.unet.sim.SimulationMasterContainer@213:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.60527 closed
-1682506258532|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.60538
-1682506258535|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.60539
-1682506258538|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.60540
-1682506258541|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.60541
-1682506283770|INFO|org.arl.unet.sim.SimulationMasterContainer@228:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.60532 closed
-1682506283770|INFO|org.arl.unet.sim.SimulationMasterContainer@222:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.60530 closed
-1682506283770|INFO|org.arl.unet.sim.SimulationMasterContainer@225:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.60531 closed
-1682506283770|INFO|org.arl.unet.sim.SimulationMasterContainer@234:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.60534 closed
-1682506283770|INFO|org.arl.unet.sim.SimulationMasterContainer@231:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.60533 closed
-1682506306826|INFO|org.arl.unet.sim.SimulationMasterContainer@246:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.60541 closed
-1682506306826|INFO|org.arl.unet.sim.SimulationMasterContainer@243:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.60540 closed
-1682506306826|INFO|org.arl.unet.sim.SimulationMasterContainer@240:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.60539 closed
-1682506306826|INFO|org.arl.unet.sim.SimulationMasterContainer@237:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.60538 closed
-1682506309825|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.60545
-1682506309829|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.60546
-1682506309832|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.60547
-1682506309835|INFO|org.arl.unet.sim.SimulationMasterContainer@13:connected|Incoming connection tcp:///127.0.0.1:1110//127.0.0.1.60548
-1682506310887|INFO|org.arl.unet.sim.SimulationMasterContainer@41:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.60549
-1682506310890|INFO|org.arl.unet.sim.SimulationMasterContainer@41:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.60550
-1682506310893|INFO|org.arl.unet.sim.SimulationMasterContainer@41:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.60551
-1682506310896|INFO|org.arl.unet.sim.SimulationMasterContainer@41:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.60552
-1682506310899|INFO|org.arl.unet.sim.SimulationMasterContainer@41:connected|Incoming connection tcp:///127.0.0.1:1102//127.0.0.1.60553
-1682506329476|INFO|org.arl.unet.sim.SimulationMasterContainer@255:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.60547 closed
-1682506329476|INFO|org.arl.unet.sim.SimulationMasterContainer@258:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.60548 closed
-1682506329476|INFO|org.arl.unet.sim.SimulationMasterContainer@252:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.60546 closed
-1682506329476|INFO|org.arl.unet.sim.SimulationMasterContainer@249:connectionClosed|Connection tcp:///127.0.0.1:1110//127.0.0.1.60545 closed
-1682506330471|INFO|org.arl.unet.sim.SimulationMasterContainer@267:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.60551 closed
-1682506330471|INFO|org.arl.unet.sim.SimulationMasterContainer@264:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.60550 closed
-1682506330471|INFO|org.arl.unet.sim.SimulationMasterContainer@261:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.60549 closed
-1682506330471|INFO|org.arl.unet.sim.SimulationMasterContainer@270:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.60552 closed
-1682506330471|INFO|org.arl.unet.sim.SimulationMasterContainer@273:connectionClosed|Connection tcp:///127.0.0.1:1102//127.0.0.1.60553 closed
+1682588530112|INFO|org.arl.unet.UnetBoot@1:doInvoke|fjage Build: fjage-1.9.1/37c49259/5-09-2021_13:26:12
+1682588530196|INFO|org.arl.unet.UnetBoot@1:doInvoke|UnetBoot: [samples/topo.groovy]
+1682588530343|INFO|org.arl.fjage.remote.EnumTypeAdapter@1:<clinit>|Groovy detected, using GroovyClassLoader
+1682588530383|INFO|org.arl.fjage.remote.MessageAdapterFactory@1:<clinit>|Groovy detected, using GroovyClassLoader
+1682588531373|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1110
+1682588531443|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 10
+1682588531475|INFO|Script1@1:doInvoke|Starting web interface on port null:8090
+1682588531593|INFO|org.arl.fjage.connectors.TcpServer@13:run|Listening on port 1110
+1682588531608|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1682588531612|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1682588531618|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1682588531619|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1682588531619|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1682588531620|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1682588531634|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1682588531700|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8090
+1682588531703|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.132:8090/ws
+1682588531706|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1682588532312|INFO|Script1@1:doInvoke|Created static node 10 (10) @ [0, 0, 0]
+1682588532313|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1101
+1682588532313|INFO|org.arl.fjage.connectors.TcpServer@27:run|Listening on port 1101
+1682588532314|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 1
+1682588532315|INFO|Script1@1:doInvoke|Starting web interface on port null:8081
+1682588532317|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1682588532317|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1682588532319|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1682588532320|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1682588532321|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1682588532321|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1682588532322|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1682588532327|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8081
+1682588532327|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.132:8081/ws
+1682588532328|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1682588532520|INFO|Script1@1:doInvoke|Created static node 1 (1) @ [-1000, 0, -15]
+1682588532521|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1102
+1682588532522|INFO|org.arl.fjage.connectors.TcpServer@40:run|Listening on port 1102
+1682588532523|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 2
+1682588532524|INFO|Script1@1:doInvoke|Starting web interface on port null:8082
+1682588532526|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1682588532526|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1682588532530|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1682588532531|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1682588532531|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1682588532532|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1682588532533|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1682588532538|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8082
+1682588532538|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.132:8082/ws
+1682588532539|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1682588532860|INFO|Script1@1:doInvoke|Created static node 2 (arp) @ [0, -1000, -15]
+1682588532863|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1103
+1682588532864|INFO|org.arl.fjage.connectors.TcpServer@54:run|Listening on port 1103
+1682588532865|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 3
+1682588532867|INFO|Script1@1:doInvoke|Starting web interface on port null:8083
+1682588532869|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1682588532870|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1682588532871|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1682588532872|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1682588532873|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1682588532873|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1682588532874|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1682588532881|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8083
+1682588532881|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.132:8083/ws
+1682588532882|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1682588533111|INFO|Script1@1:doInvoke|Created static node 3 (arp) @ [0, -1000, 30]
+1682588533113|INFO|org.arl.unet.sim.SimulationMasterContainer@1:openTcpServer|Listening on port 1104
+1682588533113|INFO|org.arl.fjage.connectors.TcpServer@67:run|Listening on port 1104
+1682588533114|INFO|org.arl.unet.nodeinfo.NodeInfo@1:setAddress|Node address changed to 4
+1682588533115|INFO|Script1@1:doInvoke|Starting web interface on port null:8084
+1682588533118|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage
+1682588533118|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /
+1682588533119|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /logs
+1682588533121|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /scripts
+1682588533121|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /sim
+1682588533122|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /dashboards
+1682588533122|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /ws
+1682588533127|INFO|org.arl.fjage.connectors.WebServer@1:start|Started web server on port 8084
+1682588533128|INFO|org.arl.unet.sim.SimulationMasterContainer@1:addConnector|Listening on ws://192.168.1.132:8084/ws
+1682588533128|INFO|org.arl.fjage.connectors.WebServer@1:add|Adding web context: /fjage/shell/ws
+1682588533293|INFO|Script1@1:doInvoke|Created static node 4 (arp) @ [1000, 0, -15]
+1682588533294|WARNING|org.arl.unet.sim.SimulationMasterContainer@1:add|Duplicate agent name: wh
+1682588533328|INFO|Script1@1:doInvoke| --- BEGIN SIMULATION #1 ---
+1682588533334|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
+1682588533336|INFO|org.arl.fjage.shell.ShellAgent/10@85:init|Agent websh init
+1682588533337|INFO|org.arl.unet.net.Router/10@81:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 10
+1682588533337|INFO|org.arl.unet.sim.HalfDuplexModem/10@89:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 10
+1682588533337|INFO|org.arl.unet.wormhole.Wormhole/10@86:init|Loading agent wh v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.wormhole.Wormhole] on 10
+1682588533337|INFO|org.arl.unet.net.RouteDiscoveryProtocol/10@90:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 10
+1682588533337|INFO|org.arl.unet.remote.RemoteControl/10@80:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 10
+1682588533337|INFO|org.arl.unet.mac.CSMA/10@88:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 10
+1682588533338|INFO|org.arl.unet.nodeinfo.NodeInfo/10@91:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 10
+1682588533337|INFO|org.arl.unet.link.ReliableLink/10@82:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 10
+1682588533338|INFO|org.arl.unet.transport.SWTransport/10@92:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 10
+1682588533337|INFO|org.arl.unet.bb.BasebandSignalMonitor/10@83:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 10
+1682588533337|INFO|org.arl.unet.addr.AddressResolution/10@87:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 10
+1682588533339|INFO|org.arl.unet.localization.Ranging/10@93:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 10
+1682588533339|INFO|org.arl.unet.sim.SimulationAgent/10@94:doInvoke|Loading simulator : SimulationAgent
+1682588533440|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
+1682588533544|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
+1682588533546|INFO|org.arl.unet.net.Router/1@97:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 1
+1682588533546|INFO|org.arl.unet.bb.BasebandSignalMonitor/1@99:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 1
+1682588533546|INFO|org.arl.unet.link.ReliableLink/1@98:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 1
+1682588533546|INFO|org.arl.unet.remote.RemoteControl/1@96:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 1
+1682588533546|INFO|org.arl.unet.wormhole.Wormhole/1@102:init|Loading agent wh v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.wormhole.Wormhole] on 1
+1682588533546|INFO|org.arl.fjage.shell.ShellAgent/1@101:init|Agent websh init
+1682588533547|INFO|org.arl.unet.mac.CSMA/1@104:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 1
+1682588533547|INFO|org.arl.unet.addr.AddressResolution/1@103:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 1
+1682588533547|INFO|org.arl.unet.sim.HalfDuplexModem/1@105:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 1
+1682588533547|INFO|org.arl.unet.net.RouteDiscoveryProtocol/1@106:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 1
+1682588533547|INFO|org.arl.unet.transport.SWTransport/1@109:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 1
+1682588533547|INFO|org.arl.unet.nodeinfo.NodeInfo/1@107:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 1
+1682588533547|INFO|org.arl.unet.sim.SimulationAgent/1@111:doInvoke|Loading simulator : SimulationAgent
+1682588533547|INFO|org.arl.unet.localization.Ranging/1@110:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 1
+1682588533650|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
+1682588533756|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
+1682588533756|INFO|org.arl.unet.remote.RemoteControl/2@112:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 2
+1682588533757|INFO|org.arl.unet.link.ReliableLink/2@114:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 2
+1682588533757|INFO|org.arl.unet.bb.BasebandSignalMonitor/2@115:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 2
+1682588533756|INFO|org.arl.unet.net.Router/2@113:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 2
+1682588533757|INFO|org.arl.fjage.shell.ShellAgent/2@117:init|Agent websh init
+1682588533757|INFO|org.arl.unet.wormhole.Wormhole/2@118:init|Loading agent wh v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.wormhole.Wormhole] on 2
+1682588533757|INFO|org.arl.unet.addr.AddressResolution/2@119:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 2
+1682588533758|INFO|org.arl.unet.mac.CSMA/2@121:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 2
+1682588533758|INFO|org.arl.unet.sim.HalfDuplexModem/2@122:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 2
+1682588533758|INFO|org.arl.unet.net.RouteDiscoveryProtocol/2@123:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 2
+1682588533758|INFO|org.arl.unet.nodeinfo.NodeInfo/2@124:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 2
+1682588533758|INFO|org.arl.unet.transport.SWTransport/2@125:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 2
+1682588533758|INFO|org.arl.unet.localization.Ranging/2@126:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 2
+1682588533759|INFO|org.arl.unet.sim.SimulationAgent/2@127:doInvoke|Loading simulator : SimulationAgent
+1682588533863|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
+1682588533965|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
+1682588533966|INFO|org.arl.unet.remote.RemoteControl/3@128:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 3
+1682588533966|INFO|org.arl.unet.net.Router/3@129:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 3
+1682588533967|INFO|org.arl.unet.link.ReliableLink/3@130:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 3
+1682588533968|INFO|org.arl.fjage.shell.ShellAgent/3@133:init|Agent websh init
+1682588533967|INFO|org.arl.unet.bb.BasebandSignalMonitor/3@131:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 3
+1682588533968|INFO|org.arl.unet.wormhole.Wormhole/3@134:init|Loading agent wh v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.wormhole.Wormhole] on 3
+1682588533968|INFO|org.arl.unet.addr.AddressResolution/3@135:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 3
+1682588533968|INFO|org.arl.unet.mac.CSMA/3@137:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 3
+1682588533968|INFO|org.arl.unet.sim.HalfDuplexModem/3@138:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 3
+1682588533969|INFO|org.arl.unet.net.RouteDiscoveryProtocol/3@139:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 3
+1682588533969|INFO|org.arl.unet.nodeinfo.NodeInfo/3@140:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 3
+1682588533969|INFO|org.arl.unet.transport.SWTransport/3@141:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 3
+1682588533969|INFO|org.arl.unet.localization.Ranging/3@142:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 3
+1682588533970|INFO|org.arl.unet.sim.SimulationAgent/3@143:doInvoke|Loading simulator : SimulationAgent
+1682588534074|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
+1682588534176|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Initializing agents...
+1682588534177|INFO|org.arl.unet.net.Router/4@145:init|Loading agent router v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.Router] on 4
+1682588534177|INFO|org.arl.unet.remote.RemoteControl/4@144:init|Loading agent remote v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.remote.RemoteControl] on 4
+1682588534177|INFO|org.arl.unet.link.ReliableLink/4@146:init|Loading agent uwlink v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.link.ReliableLink] on 4
+1682588534178|INFO|org.arl.fjage.shell.ShellAgent/4@149:init|Agent websh init
+1682588534178|INFO|org.arl.unet.bb.BasebandSignalMonitor/4@147:init|Loading agent bbmon v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.bb.BasebandSignalMonitor] on 4
+1682588534178|INFO|org.arl.unet.wormhole.Wormhole/4@150:init|Loading agent wh v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.wormhole.Wormhole] on 4
+1682588534179|INFO|org.arl.unet.addr.AddressResolution/4@151:init|Loading agent arp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.addr.AddressResolution] on 4
+1682588534180|INFO|org.arl.unet.mac.CSMA/4@153:init|Loading agent mac v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.mac.CSMA] on 4
+1682588534180|INFO|org.arl.unet.sim.HalfDuplexModem/4@154:init|Loading agent phy v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.sim.HalfDuplexModem] on 4
+1682588534180|INFO|org.arl.unet.net.RouteDiscoveryProtocol/4@155:init|Loading agent rdp v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.net.RouteDiscoveryProtocol] on 4
+1682588534180|INFO|org.arl.unet.nodeinfo.NodeInfo/4@156:init|Loading agent node v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.nodeinfo.NodeInfo] on 4
+1682588534181|INFO|org.arl.unet.transport.SWTransport/4@157:init|Loading agent transport v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.transport.SWTransport] on 4
+1682588534181|INFO|org.arl.unet.localization.Ranging/4@158:init|Loading agent ranging v3.4.0/93008cfa/30-10-2021_02:33:22 [org.arl.unet.localization.Ranging] on 4
+1682588534182|INFO|org.arl.unet.sim.SimulationAgent/4@159:doInvoke|Loading simulator : SimulationAgent
+1682588534286|INFO|org.arl.unet.sim.SimulationMasterContainer@1:init|Agents ready...
+1682588534388|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
+1682588534389|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
+1682588534389|INFO|org.arl.unet.nodeinfo.NodeInfo/10@91:obtainAddress|Node name is 10, address is 10, address size is 8 bits
+1682588534389|INFO|org.arl.unet.transport.SWTransport/10@92:startup|Using router for communication
+1682588534389|INFO|org.arl.unet.remote.RemoteControl/10@80:startup|Using transport for communication
+1682588534389|INFO|org.arl.unet.localization.Ranging/1@110:startup|No PHY specified, auto detecting...
+1682588534390|INFO|org.arl.unet.localization.Ranging/1@110:startup|Using agent 'phy' for PHY
+1682588534390|INFO|org.arl.unet.localization.Ranging/1@110:startup|No MAC specified, auto detecting...
+1682588534390|INFO|org.arl.unet.localization.Ranging/1@110:startup|Using agent 'mac' for MAC
+1682588534390|INFO|org.arl.unet.transport.SWTransport/1@109:startup|Using router for communication
+1682588534389|INFO|org.arl.unet.localization.Ranging/10@93:startup|No PHY specified, auto detecting...
+1682588534391|INFO|org.arl.unet.localization.Ranging/10@93:startup|Using agent 'phy' for PHY
+1682588534391|INFO|org.arl.unet.localization.Ranging/10@93:startup|No MAC specified, auto detecting...
+1682588534391|INFO|org.arl.unet.localization.Ranging/10@93:startup|Using agent 'mac' for MAC
+1682588534389|INFO|org.arl.unet.link.ReliableLink/10@82:startup|No PHY specified, auto detecting...
+1682588534390|INFO|org.arl.unet.nodeinfo.NodeInfo/1@107:obtainAddress|Node name is 1, address is 1, address size is 8 bits
+1682588534390|INFO|org.arl.unet.link.ReliableLink/1@98:startup|No PHY specified, auto detecting...
+1682588534389|INFO|org.arl.unet.remote.RemoteControl/1@96:startup|Using transport for communication
+1682588534394|INFO|org.arl.unet.remote.RemoteControl/1@96:startup|Using websh for command exec
+1682588534389|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
+1682588534393|INFO|org.arl.unet.link.ReliableLink/1@98:startup|Using agent 'phy' for PHY
+1682588534398|INFO|org.arl.unet.link.ReliableLink/1@98:startup|No MAC specified, auto detecting...
+1682588534398|INFO|org.arl.unet.link.ReliableLink/1@98:startup|Using agent 'mac' for MAC
+1682588534393|INFO|org.arl.unet.link.ReliableLink/10@82:startup|Using agent 'phy' for PHY
+1682588534408|INFO|org.arl.unet.link.ReliableLink/10@82:startup|No MAC specified, auto detecting...
+1682588534408|INFO|org.arl.unet.link.ReliableLink/10@82:startup|Using agent 'mac' for MAC
+1682588534397|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
+1682588534410|INFO|org.arl.unet.sim.SimulationMasterContainer@1:start|Starting container...
+1682588534410|INFO|org.arl.unet.transport.SWTransport/2@125:startup|Using router for communication
+1682588534410|INFO|org.arl.unet.remote.RemoteControl/3@128:startup|Using transport for communication
+1682588534411|INFO|org.arl.unet.remote.RemoteControl/3@128:startup|Using websh for command exec
+1682588534411|INFO|org.arl.unet.localization.Ranging/3@142:startup|No PHY specified, auto detecting...
+1682588534411|INFO|org.arl.unet.localization.Ranging/3@142:startup|Using agent 'phy' for PHY
+1682588534411|INFO|org.arl.unet.localization.Ranging/3@142:startup|No MAC specified, auto detecting...
+1682588534412|INFO|org.arl.unet.localization.Ranging/3@142:startup|Using agent 'mac' for MAC
+1682588534412|INFO|org.arl.unet.nodeinfo.NodeInfo/3@140:obtainAddress|Node name is 3, address is 3, address size is 8 bits
+1682588534412|INFO|org.arl.unet.transport.SWTransport/3@141:startup|Using router for communication
+1682588534413|INFO|org.arl.unet.remote.RemoteControl/4@144:startup|Using transport for communication
+1682588534413|INFO|org.arl.unet.link.ReliableLink/4@146:startup|No PHY specified, auto detecting...
+1682588534413|INFO|org.arl.unet.link.ReliableLink/4@146:startup|Using agent 'phy' for PHY
+1682588534413|INFO|org.arl.unet.link.ReliableLink/4@146:startup|No MAC specified, auto detecting...
+1682588534413|INFO|org.arl.unet.link.ReliableLink/4@146:startup|Using agent 'mac' for MAC
+1682588534412|INFO|org.arl.unet.link.ReliableLink/3@130:startup|No PHY specified, auto detecting...
+1682588534418|INFO|org.arl.unet.link.ReliableLink/3@130:startup|Using agent 'phy' for PHY
+1682588534418|INFO|org.arl.unet.link.ReliableLink/3@130:startup|No MAC specified, auto detecting...
+1682588534416|INFO|org.arl.unet.nodeinfo.NodeInfo/2@124:obtainAddress|Node name is 2, address is 2, address size is 8 bits
+1682588534415|INFO|org.arl.unet.remote.RemoteControl/2@112:startup|Using transport for communication
+1682588534419|INFO|org.arl.unet.remote.RemoteControl/2@112:startup|Using websh for command exec
+1682588534415|INFO|org.arl.unet.link.ReliableLink/2@114:startup|No PHY specified, auto detecting...
+1682588534421|INFO|org.arl.unet.link.ReliableLink/2@114:startup|Using agent 'phy' for PHY
+1682588534421|INFO|org.arl.unet.link.ReliableLink/2@114:startup|No MAC specified, auto detecting...
+1682588534422|INFO|org.arl.unet.link.ReliableLink/2@114:startup|Using agent 'mac' for MAC
+1682588534415|INFO|org.arl.unet.localization.Ranging/2@126:startup|No PHY specified, auto detecting...
+1682588534422|INFO|org.arl.unet.localization.Ranging/2@126:startup|Using agent 'phy' for PHY
+1682588534422|INFO|org.arl.unet.localization.Ranging/2@126:startup|No MAC specified, auto detecting...
+1682588534422|INFO|org.arl.unet.localization.Ranging/2@126:startup|Using agent 'mac' for MAC
+1682588534413|INFO|org.arl.unet.transport.SWTransport/4@157:startup|Using router for communication
+1682588534413|INFO|org.arl.unet.nodeinfo.NodeInfo/4@156:obtainAddress|Node name is 4, address is 4, address size is 8 bits
+1682588534413|INFO|org.arl.unet.remote.RemoteControl/4@144:startup|Using websh for command exec
+1682588534413|INFO|org.arl.unet.localization.Ranging/4@158:startup|No PHY specified, auto detecting...
+1682588534436|INFO|org.arl.unet.localization.Ranging/4@158:startup|Using agent 'phy' for PHY
+1682588534436|INFO|org.arl.unet.localization.Ranging/4@158:startup|No MAC specified, auto detecting...
+1682588534436|INFO|org.arl.unet.localization.Ranging/4@158:startup|Using agent 'mac' for MAC
+1682588534418|INFO|org.arl.unet.link.ReliableLink/3@130:startup|Using agent 'mac' for MAC
+1682588534458|INFO|org.arl.unet.remote.RemoteControl/10@80:startup|Using websh for command exec
