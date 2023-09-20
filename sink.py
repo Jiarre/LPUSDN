@@ -10,24 +10,20 @@ MEAN_TIME = 5
 neighbours = []
 neighbours_dict = {}
 next_hops = []
+kernel.aliases = [90,91]
 
 
 
 control_socket = UnetSocket("localhost",int(sys.argv[1]))
-neighbour_socket = UnetSocket("localhost",int(sys.argv[1]))
-neighbour_socket_receiver = UnetSocket("localhost",int(sys.argv[1]))
-data_socket = UnetSocket("localhost",int(sys.argv[1]))
-routing_socket = UnetSocket("localhost",int(sys.argv[1]))
-sink_socket_receive = UnetSocket("localhost",int(sys.argv[1]))
-
-
-
+kernel = control_socket.agentForService("org.arl.unet.Services.ROUTING")
+kernel.controller_address = 10
 node = control_socket.agentForService(Services.NODE_INFO)
 
 location = node.location
 #websh = control_socket.agentForService('org.arl.fjage.shell.Services.SHELL')
 #tmp = websh << ShellExecReq(cmd= 'addroute 99,100')
 phy = control_socket.agentForService(Services.PHYSICAL)
+uwlink = control_socket.agentForService(Services.LINK)
 #phy[2].dataRate = 1024
 #phy[1].dataRate = 512
 
@@ -95,24 +91,20 @@ def garbage_collector():
             print("Skipping this cycle")
 
 
-threading.Thread(target=sample_receive).start()
-control_socket.send(DatagramReq(data="sink",to=10,protocol=33,reliable=True))
+#threading.Thread(target=sample_receive).start()
+uwlink << DatagramReq(to=10, data=[1],protocol=32,reliability=True)
 #control_socket.send(DatagramReq(data=''.join([str(x) + "$" for x in  location]),to=10,protocol=33,reliable=True))
 
 while True:
     char = input()
     if char == 'q':
-        print("*** Informing the controller\t***")
+        print("*** Gently informing the controller\t***")
         #Close every socket and exit
-        control_socket.send(DatagramReq(data="fin",to=control_socket.host("10"),protocol=62,reliability=True))
+        uwlink << DatagramReq(data="fin",to=control_socket.host("10"),protocol=62,reliability=True)
         print("*** Gracefully closing sockets\t***")
-        control_socket.close()
-        neighbour_socket.close()
-        neighbour_socket_receiver.close()
-        data_socket.close() 
-        routing_socket.close()
-        sink_socket_receive.close()
-        
+        control_socket.close()        
         os._exit(1) 
+        
+       
 
 

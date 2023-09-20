@@ -6,7 +6,6 @@ import numpy as np
 import time
 import threading
 from USDNKernel import *
-MEAN_TIME = 5
 
 neighbours = []
 neighbours_dict = {}
@@ -18,25 +17,18 @@ flow_table = {}
 
 
 control_socket = UnetSocket("localhost",int(sys.argv[1]))
-neighbour_socket = UnetSocket("localhost",int(sys.argv[1]))
-neighbour_socket_receiver = UnetSocket("localhost",int(sys.argv[1]))
-data_socket = UnetSocket("localhost",int(sys.argv[1]))
-routing_socket = UnetSocket("localhost",int(sys.argv[1]))
-sink_socket_receive = UnetSocket("localhost",int(sys.argv[1]))
-sink_socket_send = UnetSocket("localhost",int(sys.argv[1]))
+
 
 
 
 node = control_socket.agentForService(Services.NODE_INFO)
-
+kernel = control_socket.agentForService("org.arl.unet.Services.ROUTING")
+kernel.controller_address = 10
 phy = control_socket.agentForService(Services.PHYSICAL)
 uwlink = control_socket.agentForService(Services.LINK)
 phy_data= phy[2]
 phy_control=phy[1]
-#phy[1].dataRate = 512
-#phy[2].dataRate = 1024
 
-#phy[2].dataRate = 1024
 
 
 
@@ -46,7 +38,6 @@ location = node.location
 
 
 
-#neighbour_socket_receiver.bind(35) #bind the receiver to protocol 35
 
 
 
@@ -98,7 +89,7 @@ def register():
 def hello_lifecycle():
     global neighbours_dict, neighbours
     while True:
-        phy_data << TxFrameReq(data="",to=0,protocol=33,reliability=False)
+        phy_data << TxFrameReq(data="",to=0,protocol=32,reliability=False)
         time.sleep(15)
 
 def garbage_collector():
@@ -121,9 +112,9 @@ def garbage_collector():
 
 
 #uwlink << DatagramReq(data=''.join([str(x) + "$" for x in location]),to=10,protocol=33,reliability=True)
-control_socket.send(DatagramReq(data="auv",to=10,protocol=33,reliable=True))
-threading.Thread(target=sample_receive).start()
-threading.Thread(target=sample_send).start()
+uwlink << DatagramReq(to=10, data=[0],protocol=32,reliability=True)
+#threading.Thread(target=sample_receive).start()
+#threading.Thread(target=sample_send).start()
 #threading.Thread(target=flowHandler).start()
 #threading.Thread(target=routing).start()
 
@@ -136,14 +127,7 @@ while True:
         #Close every socket and exit
         uwlink << DatagramReq(data="fin",to=control_socket.host("10"),protocol=62,reliability=True)
         print("*** Gracefully closing sockets\t***")
-        control_socket.close()
-        neighbour_socket.close()
-        neighbour_socket_receiver.close()
-        data_socket.close() 
-        routing_socket.close()
-        sink_socket_receive.close()
-        sink_socket_send.close()
-        
+        control_socket.close()        
         os._exit(1) 
 
 
