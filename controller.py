@@ -9,6 +9,7 @@ import math
 
 auvs = {}
 sinks = []
+aliases = {}
 G = nx.Graph()
 socket = UnetSocket("localhost",int(sys.argv[1]))
 hello_socket = UnetSocket("localhost",int(sys.argv[1]))
@@ -52,36 +53,38 @@ def end():
             print(auvs)
 
 def msg_unzipper(msg):
-    from_ = None
-    
-    if hasattr(msg, 'from'):
-        from_ = msg[0]
-    return msg[0],msg[1],msg[2],msg[3]
+    return msg[0],msg[1],msg[2],msg[3],msg[4]
     
     
-def proto40():
+def proto50(from_,to):
     if sinks:
-        action = sinks[0]
+        if to in aliases:
+            action = to[0]
+        else:
+            action = sinks[0]
     else:
         action = "DUMP"
     return [action]
 
 
+def install_flow(snd,idx,action):
+    flow_socket.send(DatagramReq(to=snd,protocol=35,data=[idx,action],reliability=True))
+
+
 def flow_generator():
-    flow_socket.bind(34)
+    flow_socket.bind(35)
     while True:
         req = flow_socket.receive()
         sender = req.from_
-        fr,to,proto,reliable = msg_unzipper(req.data)
+        idx,from_,to,proto,reliable = msg_unzipper(req.data)
         # LOGIC FOR FLOW CREATION
         # Example -> Create flow to reach sinks with alias name 99
         # Decide for a sink with a certain policy
         action = "DUMP"
-        if proto == 40:
-            action = proto40()
-            print(action)
-            flow_socket.send(DatagramReq(to=req.from_,protocol=34,data=action,reliability=True))
-            
+        if proto == 50:
+            action = proto50(from_,to)
+        
+        install_flow(sender,idx,action)            
 
 
         
@@ -92,14 +95,14 @@ def connect():
             if not G.has_edge(e,k):
                 G.add_edge(e,k)
 def hello():
-    hello_socket.bind(33)
+    hello_socket.bind(32)
     while True:
         print("waiting for hello")
         msg = hello_socket.receive()
         print("hello received")
         snd = msg.from_
         #print(f"[{snd}] Hello")
-        if msg.protocol == 33:
+        if msg.protocol == 32:
             if snd not in auvs:
                 auvs[snd] = {}
                 G.add_node(snd)
@@ -107,20 +110,23 @@ def hello():
                 print(G.nodes)
             auvs[snd]["heartbeat"] = 0
             if msg.data != []:
-                print(msg.data)
-                tmp = bytearray(msg.data)
-                tmp = str(tmp,"utf-8")
-                if tmp == 'auv':
+                if msg.data == [0]:
                     auvs[snd]['type']="auv"
                     auvs[snd]["next_hops"]=set() 
                     print("[CONTROLLER] An AUV joined the network")
-                if tmp == 'sink':
+                if msg.data == [1]:
                     auvs[snd]['type']="sink"
                     auvs[snd]["next_hops"]=set() 
+                    auvs[snd]["aliases"]=set() 
                     sinks.append(snd)
                     print("[CONTROLLER] A Sink joined the network")
-                if tmp == 'sink' or tmp == 'auv':
-                    connect()
+                else:
+                    auvs[snd]['aliases'].add(msg.data)
+                    if msg.data not in aliases:
+                        aliases[msg.data] = []
+                    aliases[msg.data].append(snd)
+                
+                connect()
 
           
 
