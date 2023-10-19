@@ -19,7 +19,7 @@ import org.arl.unet.sim.channels.*
 
 channel.model = ProtocolChannelModel        // use the protocol channel model
 modem.dataRate = [1024, 1024].bps           // arbitrary data rate
-modem.frameLength = [16,16].bytes  // 1 second worth of data per frame
+modem.frameLength = [32,32].bytes  // 1 second worth of data per frame
 modem.headerLength = 5                      // no overhead from header
 modem.preambleDuration = 0                  // no overhead from preamble
 modem.txDelay = 0 // don't simulate hardware delays
@@ -41,7 +41,7 @@ for ( i = 3; i<50; i++){
     def nodes = 2..i
     def txcount = 0
     def rxcount = 0
-    simulate 1.hours, {
+    simulate 20.minutes, {
         def cont = node "1", address: 1,stack: "$home/etc/setup"
       nodes.each { myAddr ->
         def x = rnditem(0..1500)
@@ -70,18 +70,16 @@ for ( i = 3; i<50; i++){
             def mask = [dst,reliability,protocol,myAddr]
             //print("k of $myAddr $knowndst and dst $dst ")
             if(flow_table.contains(mask)){
-                //println("IKNOWHIM")
-                dst = 0
+                //dst = 0
                 //phy << new ClearReq()
-                //link << new DatagramReq(to: dst,data: new byte[16],shortcircuit:false,reliability: false)
+                link << new DatagramReq(to: dst,data: new byte[32],shortcircuit:false,reliability: false)
             }else{
                 if(!cachedst.contains(mask)){
                     def entry = mask.plus(0,count)
-                    txcount++
+                    count++
                     cachedst.add(mask)
+                    //println("cache of $myAddr $cachedst updated ")
                     link << new DatagramReq(to: 1,data: entry,protocol: 35,reliability: false,shortcircuit: false)
-                    
-
                 }
                 
             }
@@ -105,8 +103,8 @@ for ( i = 3; i<50; i++){
             })
           add new TickerBehavior((long)(60000), {  // avg time between events in ms
                 // choose destination randomly (excluding self)
-
-            //link << new DatagramReq(to: 1,data: new byte[8],shortcircuit:false,reliability: false)
+            //phy << new ClearReq()
+            link << new DatagramReq(to: 1,data: new byte[8],shortcircuit:false,reliability: false)
           })
         }
       }
@@ -127,6 +125,7 @@ for ( i = 3; i<50; i++){
                 def act = data[1]
                 def resp = [id,act,0,0,0]
                 txcount++
+
                 link << new DatagramReq(to: from,data: resp,protocol:35,shortcircuit:false,reliability: false)
            }
                

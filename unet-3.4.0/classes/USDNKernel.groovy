@@ -1,5 +1,7 @@
 import org.arl.fjage.*
 import org.arl.unet.*
+import org.arl.unet.net.*
+import org.arl.unet.link.*
 import org.arl.fjage.param.Parameter
 
 class USDNKernel extends UnetAgent {
@@ -10,14 +12,13 @@ class USDNKernel extends UnetAgent {
         cached_flows,
         quarantine_flowtable,
         buffer,
-        address,
         aliases
         }
 
-      final String title = 'Underwater SDN Kernel'        
-      final String description = 'Handles flow table for SDN communication'
+    final String title = 'Underwater SDN Kernel'        
+    final String description = 'Handles flow table for SDN communication'
     
-    int controller_address = -1;
+    int controller_address = 1;
     int ID = 0;
     ArrayList flow_table = [[ID,-1,-1,-1,-1,controller_address]];
     ArrayList cached_flows = []
@@ -72,13 +73,14 @@ class USDNKernel extends UnetAgent {
   int match(mask){
       def elegible = [:]
       elegible[0] = 4
-      
+      //print("$mask \n\n\n")
+      //print(flow_table)
+      //print("\n\n")
       for(flow in flow_table){
           int count = 0
-          if((mask[0] != flow[1] && mask[0]!=-1) || (mask[1] != flow[2] && mask[1]!=-1) || (mask[2] != flow[3] && mask[2]!=-1) || (mask[3] != flow[4] && mask[3]!=-1)){
+          if((mask[0] != flow[1] && flow[1]!=-1  && mask[0]!=-1) || (mask[1] != flow[2] && flow[2]!=-1) || (mask[2] != flow[3] && flow[3]!=-1) || (mask[3] != flow[4] && flow[4]!=-1)){
               continue
           }
-          print(flow)
           if(flow[1] == -1){
               count++
           }
@@ -94,6 +96,7 @@ class USDNKernel extends UnetAgent {
           elegible[flow[0]] = count
       }
       int minkey = elegible.min{it.value}.key
+      //print(minkey)
       int action = getAction(minkey)
       return action
       
@@ -108,27 +111,19 @@ class USDNKernel extends UnetAgent {
   void startup() {
     subscribeForService(Services.DATAGRAM)
     subscribeForService(Services.LINK)
-    add new OneShotBehavior({
-      def nodeInfo = agentForService(Services.NODE_INFO)
-      address = get(nodeInfo, NodeInfoParam.address)
-      def phy = agentForService(Services.PHYSICAL)
-      def phy_control = phy[0]
-      def phy_data = phy[1]
-    })
+    
     //node = agentForService(org.arl.unet.Services.NODE_INFO)
   }
 
   @Override
   Message processRequest(Message msg) {
     if(msg instanceof DatagramReq){
-        print(msg)
         return sendDatagram(msg)
     }
     if(msg instanceof DatagramTraceReq){
         return trace(msg)
     }
     if(msg instanceof GetRouteReq){
-        print("kok")
         return 
     }
     
@@ -138,7 +133,6 @@ class USDNKernel extends UnetAgent {
   @Override
   void processMessage(Message msg) {
     def link = agentForService(org.arl.unet.Services.LINK)
-    print(msg)
     //Protocols:
     //  33: proactive flow
     //. 34: update controller on a link situation
@@ -149,10 +143,10 @@ class USDNKernel extends UnetAgent {
     //  39: trace
     //  40: ping
     
-    if(msg instanceof LinkStatusNtf || msg instanceof DatagramFailureNtf) {
-        print(msg)
+ 
+    if (msg instanceof DatagramNtf && msg.protocol == 33) {
+         newFlowProactive(msg)
     }
-
     if (msg instanceof DatagramNtf && msg.protocol == 35) {
          newFlow(msg)
     }
@@ -165,108 +159,10 @@ class USDNKernel extends UnetAgent {
     if (msg instanceof DatagramNtf && msg.protocol == 38) {
          updateFlow(msg)
     }
-    if (msg instanceof DatagramNtf && msg.protocol == 39) {
-        
-        def data = msg.data.toList()
-        mask = data[0..3]
-        if(mask[1]!=address){
-            trace(msg)
-        }
-        if(mask[0]==address){
-            println("Trace Completed")
-            println(data)
-        }
-            
-    }
-    if (msg instanceof DatagramNtf && (msg.protocol > 40 || msg.protocol == Protocol.DATA ))  {
-         def data = msg.data.toList()
-         def mask = data[0..3]
-         if(mask[1] != address){
-             sendDatagram(msg)
-         }else{
-             if(mask[3]==1){
-                 sendAck(mask[0])
-                 //link << new DatagramReq(to:mask[0],reliability:false,protocol:2,data: "ack" as byte[])
-             }
-         }
-         
-    }
+   
     return null
   }
-  Message trace(msg){
-      def link = agentForService(org.arl.unet.Services.LINK)
-        ArrayList mask = []
-        if(msg instanceof DatagramReq){
-            mask = getMask(msg)
-            ArrayList header = getMask(msg)
-            def data = []
-            header[0] = address
-            header.addAll(data)
-            msg.data = header
-        }else{
-            def data = msg.data.toList()
-            mask = data[0..3]
-            data.add(address)
-            msg = new DatagramReq()
-            msg.data = data
-            msg.to = mask[1]
-            msg.protocol = mask[2]
-            msg.reliability = false
-            if (mask[3] == 1){
-                msg.reliability = true
-            }
-
-        }
-        int id = isInCache(mask)
-        if(id != -1){
-            if(buffer[id]){
-                buffer[id].add(msg)
-            }
-            
-            return new Message(msg,Performative.REFUSE)
-        }
-        def action = match(mask)
-        if(action == controller_address){
-            ID++
-            if(id == -1){
-                buffer[ID] = new ArrayList<DatagramReq>()
-                buffer[ID].add(msg)
-            }
-            ArrayList cached = mask.plus(0,ID)
-            cached_flows.add(cached)
-            link << new DatagramReq(to:controller_address,protocol:33,reliability:true,data:cached)
-        }else{
-            msg.to = action
-            link << msg
-        }
-        return new Message(msg,Performative.AGREE)
-  }
-  void sendAck(to){
-      def link = agentForService(org.arl.unet.Services.LINK)
-
-      def msg = new DatagramReq(to:to,reliability:false,protocol:2,data: "ack" as byte[])
-      def mask =getMask(msg)
-      int id = isInCache(mask)
-        if(id != -1){
-            if(buffer[id]){
-                buffer[id].add(msg)
-            }
-        }
-        def action = match(mask)
-        if(action == controller_address){
-            ID++
-            if(id == -1){
-                buffer[ID] = new ArrayList<DatagramReq>()
-                buffer[ID].add(msg)
-            }
-            ArrayList cached = mask.plus(0,ID)
-            cached_flows.add(cached)
-            link << new DatagramReq(to:controller_address,protocol:33,reliability:true,data:cached)
-        }else{
-            msg.to = action
-            link << msg
-        }
-  }
+ 
   Message sendDatagram(msg){
         def link = agentForService(org.arl.unet.Services.LINK)
         ArrayList mask = []
@@ -307,7 +203,7 @@ class USDNKernel extends UnetAgent {
             }
             ArrayList cached = mask.plus(0,ID)
             cached_flows.add(cached)
-            link << new DatagramReq(to:controller_address,protocol:33,reliability:true,data:cached)
+            link << new DatagramReq(to:controller_address,protocol:33,shortcircuit:false,reliability:false,data:cached)
         }else{
             msg.to = action
             link << msg
@@ -332,7 +228,7 @@ class USDNKernel extends UnetAgent {
         cached_flows.remove(flow)
         flow.add(action)
         flow_table.add(flow)
-        
+        print("New flow $flow")
         if(buffer.containsKey(id)){
           
             for(datagram in buffer[id]){
@@ -342,6 +238,43 @@ class USDNKernel extends UnetAgent {
             buffer.remove(id)
         }
   }
+  
+  void newFlowProactive(msg){
+        def link = agentForService(org.arl.unet.Services.LINK)
+        def reply = msg.data.toList()
+        def flow = []
+        def mask = [reply[0],reply[1],reply[2],reply[3]]
+        print(mask)
+        int id = isInCache(mask)
+        int action = reply[4]
+        if(id==-1){
+            ID++
+            mask.add(0,ID)
+            mask.add(action)
+            flow_table.add(mask)
+        }else{
+            for(e in cached_flows){
+                if(e[0] == id){
+                    flow = e
+                    break
+                }
+            }
+            cached_flows.remove(flow)
+            flow.add(action)
+            flow_table.add(flow)
+            
+            if(buffer.containsKey(id)){
+              
+                for(datagram in buffer[id]){
+                    datagram.to = action
+                    link << datagram
+                }
+                buffer.remove(id)
+            }
+        }
+        
+  }
+  
   
   void deleteFlow(msg){
       int idToDelete = msg.data.toList()[0]

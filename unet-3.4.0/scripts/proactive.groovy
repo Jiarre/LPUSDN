@@ -19,14 +19,14 @@ import org.arl.unet.sim.channels.*
 
 channel.model = ProtocolChannelModel        // use the protocol channel model
 modem.dataRate = [1024, 1024].bps           // arbitrary data rate
-modem.frameLength = [16,16].bytes  // 1 second worth of data per frame
+modem.frameLength = [32,32].bytes  // 1 second worth of data per frame
 modem.headerLength = 5                      // no overhead from header
 modem.preambleDuration = 0                  // no overhead from preamble
 modem.txDelay = 0 // don't simulate hardware delays
 
                             // list with 4 nodes
 
-
+//trace.warmup = 60000
 ///////////////////////////////////////////////////////////////////////////////
 // simulation details
                           // list with 4 nodes
@@ -41,10 +41,10 @@ for ( i = 3; i<50; i++){
 
     def nodes = 2..i
     def wait =  nodes.size()*nodes.size()*2000
-    //trace.warmup = wait
+    def flag = false
     def txcount = 0
     def rxcount = 0
-    simulate 1.hours, {
+    simulate 20.minutes, {
         def cont = node "1", address: 1,stack: "$home/etc/setup"
       nodes.each { myAddr ->
         def x = rnditem(0..1500)
@@ -57,11 +57,7 @@ for ( i = 3; i<50; i++){
           subscribe agentForService(Services.LINK)
           def knowndst = []
           def cachedst = []
-          def flag = true
-          add new WakerBehavior((long)wait, {
-              // called at intervals of 5 seconds
-              flag = true
-            })
+          
           
           add new PoissonBehavior((long)(1000), {  // avg time between events in ms
                 // choose destination randomly (excluding self)
@@ -78,8 +74,8 @@ for ( i = 3; i<50; i++){
                 //println("IKNOWHIM")
                 txcount++
 
-                phy << new ClearReq()
-                link << new DatagramReq(to: dst,data: new byte[16],shortcircuit:false,reliability: false)
+                //phy << new ClearReq()
+                link << new DatagramReq(to: dst,data: new byte[32],shortcircuit:false,reliability: false)
             
                 
             }
@@ -103,7 +99,7 @@ for ( i = 3; i<50; i++){
           add new PoissonBehavior((long)(60000), {  // avg time between events in ms
                 // choose destination randomly (excluding self)
             txcount++
-            if(flag){
+            if(flag==true){
                 link << new DatagramReq(to: 1,data: new byte[8],shortcircuit:false,reliability: false,protocol:35)
 
             }
@@ -115,7 +111,7 @@ for ( i = 3; i<50; i++){
            subscribe agentForService(Services.PHYSICAL)
            def link = agentForService org.arl.unet.Services.LINK
            subscribe agentForService(Services.LINK)
-           def flag = true
+           
 
            
            
@@ -128,19 +124,19 @@ for ( i = 3; i<50; i++){
                
            }*/
            for(int j: nodes){
-               def d = Math.ceil((nodes.size()-1)*(nodes.size()-1)*11) 
+               def d = Math.ceil((nodes.size()-1)/2) 
                
                for(def k = 2; k<d; k++){
                    link << new DatagramReq(to: j,data: [k,0,0,0,0],protocol:35,shortcircuit:false,reliability: false)
                }
            }
-           add new WakerBehavior((int)wait, {
-              flag = true
-            })
+           flag = true
+           
            add new PoissonBehavior((long)(60000), {  // avg time between events in ms
                 // choose destination randomly (excluding self)
             def source = rnditem(nodes)
             if(flag == true){
+                txcount++
                 link << new DatagramReq(to: source,data: [0,0,0,0,0],shortcircuit:false,reliability: false,protocol:37)
 
             }

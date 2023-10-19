@@ -2,9 +2,10 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Replace 'your_file.csv' with the path to your CSV file
-csv_file_path = 'result_reactive'
-proactive = 'result_proactive'
-proactiveAll = 'result_proactive_all'
+path = "doublemsg/"
+csv_file_path = f'{path}result_reactive'
+proactive = f'{path}result_proactive'
+proactiveAll = f'{path}result_proactive_all'
 
 # Read the CSV file using pandas
 data = pd.read_csv(csv_file_path)
@@ -38,4 +39,4 @@ plt.xticks(x_values,label)
 plt.legend()
 
 # Display the plot
-plt.savefig("reactive.pdf")
+plt.savefig(f"{path}result.pdf")
