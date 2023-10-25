@@ -26,12 +26,14 @@ txcount,rxcount,offeredload,througput
 '''
 def i = 1
 
-for ( i = 10; i<16; i++){
+for ( i = 3; i<13; i++){
     def nodes = 2..i
     def txcount = 0
     def rxcount = 0
+    def ctrtxcount = 0
+    def ctrrxcount = 0
     def reliabilities = [true,false]
-    def protocols = 40..50
+    def protocols = 40..42
     def flag = false
     simulate 20.minutes, {
         def cont = node "1", address: 1,stack: "$home/etc/setup"
@@ -40,10 +42,12 @@ for ( i = 10; i<16; i++){
         def y = rnditem(0..1500)
         def z = rnditem(0..1500)
         def myNode = node "${myAddr}", address: myAddr, location: [0, 0, 0], stack: "$home/etc/pstack"
-        myNode.startup = {                      // startup script to run on each node
+        myNode.startup = {  
+        // startup script to run on each node
           def phy = agentForService(Services.PHYSICAL)
           def link = agentForService org.arl.unet.Services.LINK
           def kernel = agentForService(org.arl.unet.Services.ROUTING)
+          kernel.address = myAddr
           subscribe agentForService(Services.LINK)
           def cycl = 0
 
@@ -53,29 +57,39 @@ for ( i = 10; i<16; i++){
                     def dst = rnditem(nodes)
                     def r = new Random()
                     def reliability = reliabilities.get(r.nextInt(2))
-                    def protocol = protocols.get(r.nextInt(10))
+                    def protocol = protocols.get(r.nextInt(3))
                     
                     while(dst == myAddr){
                         dst = rnditem(nodes)
                     }
                     
-                    
                     kernel << new DatagramReq(to: dst,data: new byte[8],shortcircuit:false,reliability: reliability, protocol: protocol)
-               
+                
                 }
-                 print("$myAddr $kernel.flow_table ")
-                //print("$myAddr $kernel.cached_flows ")
+                //print("$myAddr $kernel.flow_table ")
+                //print("$myAddr $kernel.buffer ")
             
             
                
             })
-          add new TickerBehavior((long)(60000), {  // avg time between events in ms
-            if(flag == true){
-                link << new DatagramReq(to: 1,data: new byte[8],shortcircuit:false,reliability: false)
-            }
-          })
+          
 
-       
+       add new MessageBehavior(Message, { msg ->
+             
+
+           if(msg instanceof DatagramNtf ){
+               if(msg.from != 1){
+                    rxcount++
+               }else{
+                   ctrrxcount++
+               }
+              
+               
+           }
+               
+           
+               
+            })
         
       }
       }
@@ -93,14 +107,17 @@ for ( i = 10; i<16; i++){
           
            add new MessageBehavior(Message, { msg ->
              
-
+           if(msg instanceof DatagramNtf){
+               rxcount++
+           }
            if(msg instanceof TxFrameStartNtf){
                 
-               tx++
-               if(tx == nodes.size() && flag == false)
+               ctrtxcount++
+               if(ctrtxcount == nodes.size() && flag == false)
                {
                    flag = true
                }
+               
            }
                
            
@@ -120,7 +137,12 @@ for ( i = 10; i<16; i++){
                    }
                }
                
-               link << new DatagramReq(to:j,data:payload,protocol:33)
+               //print(pay)
+             
+                  link << new DatagramReq(to:j,data:payload,protocol:33)
+
+               
+               //link << new DatagramReq(to:j,data:payload,protocol:33)
            }
 
           
@@ -129,7 +151,7 @@ for ( i = 10; i<16; i++){
            
       }
     }
-    println sprintf('%6d,%6d,%7.3f,%7.3f,%6d ',
-    [trace.txCount, trace.rxCount, trace.offeredLoad, trace.throughput,txcount])
+    println sprintf('%6d,%6d,%7.3f,%7.3f,%6d',
+    [trace.txCount, trace.rxCount, trace.offeredLoad, trace.throughput,rxcount])
     
 }

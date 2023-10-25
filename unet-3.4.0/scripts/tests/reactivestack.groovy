@@ -33,16 +33,18 @@ modem.txDelay = 0 // don't simulate hardware delays
                           // list with 4 nodes
 // collect statistics after a while
 println '''
-txcount,rxcount,offeredload,througput
+ttxcount,trxcount,offeredload,througput,txcount,rxcount,ctrtxcount,ctrrxcount
 '''
 def i = 1
 
-for ( i = 3; i<16; i++){
+for ( i = 3; i<13; i++){
     def nodes = 2..i
     def txcount = 0
     def rxcount = 0
+    def ctrtxcount = 0
+    def ctrrxcount = 0
     def reliabilities = [true,false]
-    def protocols = 40..50
+    def protocols = 40..42
     simulate 20.minutes, {
         def cont = node "1", address: 1,stack: "$home/etc/setup"
       nodes.each { myAddr ->
@@ -64,7 +66,7 @@ for ( i = 3; i<16; i++){
             def dst = rnditem(nodes)
             def r = new Random()
             def reliability = reliabilities.get(r.nextInt(2))
-            def protocol = protocols.get(r.nextInt(10))
+            def protocol = protocols.get(r.nextInt(3))
             
             while(dst == myAddr){
                 dst = rnditem(nodes)
@@ -72,15 +74,26 @@ for ( i = 3; i<16; i++){
             
             
             kernel << new DatagramReq(to: dst,data: new byte[8],shortcircuit:false,reliability: reliability, protocol: protocol)
-            //print(kernel.buffer)
+            txcount++
+               
+            })
+            add new MessageBehavior(Message, { msg ->
+            
+            if(msg instanceof DatagramNtf){
+                if(msg.from != 1){
+                   rxcount++ 
+                }else{
+                    ctrrxcount++
+                   
+                }
+                
+                //print("$myAddr $txcount $rxcount")
+            }
+               
            
                
             })
-          add new TickerBehavior((long)(60000), {  // avg time between events in ms
-                // choose destination randomly (excluding self)
-            //phy << new ClearReq()
-            link << new DatagramReq(to: 1,data: new byte[8],shortcircuit:false,reliability: false)
-          })
+         
            
          
         }
@@ -100,7 +113,7 @@ for ( i = 3; i<16; i++){
                 //print("received from $from $data")
                 def id = data[0]
                 def act = data[2]
-                def resp = [id,act,0,0,0]
+                def resp = [id,act]
 
                 link << new DatagramReq(to: from,data: resp,protocol:35,shortcircuit:false,reliability: false)
            }
@@ -108,10 +121,21 @@ for ( i = 3; i<16; i++){
            
                
             })
+            add new MessageBehavior(Message, { msg ->
+            
+            if(msg instanceof TxFrameStartNtf){
+                //print(msg)
+                ctrtxcount++
+                
+            }
+               
+           
+               
+            })
            
       }
     }
-    println sprintf('%6d,%6d,%7.3f,%7.3f',
-    [trace.txCount, trace.rxCount, trace.offeredLoad, trace.throughput])
+    println sprintf('%6d,%6d,%7.3f,%7.3f,%6d,%6d,%6d,%6d ',
+    [trace.txCount, trace.rxCount, (txcount+ctrtxcount)*0.125 / 1200 , (rxcount+ctrrxcount)*0.125 /1200,txcount,rxcount,ctrtxcount,ctrrxcount])
     
 }

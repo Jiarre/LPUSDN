@@ -12,7 +12,8 @@ class USDNKernel extends UnetAgent {
         cached_flows,
         quarantine_flowtable,
         buffer,
-        aliases
+        aliases,
+        address
         }
 
     final String title = 'Underwater SDN Kernel'        
@@ -78,7 +79,7 @@ class USDNKernel extends UnetAgent {
       //print("\n\n")
       for(flow in flow_table){
           int count = 0
-          if((mask[0] != flow[1] && flow[1]!=-1  && mask[0]!=-1) || (mask[1] != flow[2] && flow[2]!=-1) || (mask[2] != flow[3] && flow[3]!=-1) || (mask[3] != flow[4] && flow[4]!=-1)){
+          if((mask[0] != flow[1] && flow[1]!=-1 ) || (mask[1] != flow[2] && flow[2]!=-1) || (mask[2] != flow[3] && flow[3]!=-1) || (mask[3] != flow[4] && flow[4]!=-1)){
               continue
           }
           if(flow[1] == -1){
@@ -228,7 +229,6 @@ class USDNKernel extends UnetAgent {
         cached_flows.remove(flow)
         flow.add(action)
         flow_table.add(flow)
-        print("New flow $flow")
         if(buffer.containsKey(id)){
           
             for(datagram in buffer[id]){
@@ -247,6 +247,7 @@ class USDNKernel extends UnetAgent {
         print(mask)
         int id = isInCache(mask)
         int action = reply[4]
+    
         if(id==-1){
             ID++
             mask.add(0,ID)
