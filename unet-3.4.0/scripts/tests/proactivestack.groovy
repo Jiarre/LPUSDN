@@ -9,7 +9,6 @@ import org.arl.unet.sim.channels.*
 channel.model = ProtocolChannelModel        // use the protocol channel model
 modem.dataRate = [1024, 1024].bps           // arbitrary data rate
 modem.frameLength = [16,16].bytes  // 1 second worth of data per frame
-modem.headerLength = 5                      // no overhead from header
 modem.preambleDuration = 0                  // no overhead from preamble
 modem.txDelay = 0 // don't simulate hardware delays
 
@@ -22,7 +21,7 @@ modem.txDelay = 0 // don't simulate hardware delays
                           // list with 4 nodes
 // collect statistics after a while
 println '''
-txcount,rxcount,offeredload,througput
+ttxcount,trxcount,offeredload,txcount,rxcount,ctrtxcount,ctrrxcount
 '''
 def i = 1
 
@@ -32,9 +31,10 @@ for ( i = 3; i<13; i++){
     def rxcount = 0
     def ctrtxcount = 0
     def ctrrxcount = 0
+    def sum = 0
     def reliabilities = [true,false]
     def protocols = 40..42
-    def flag = false
+    def flag = true
     simulate 20.minutes, {
         def cont = node "1", address: 1,stack: "$home/etc/setup"
       nodes.each { myAddr ->
@@ -42,15 +42,14 @@ for ( i = 3; i<13; i++){
         def y = rnditem(0..1500)
         def z = rnditem(0..1500)
         def myNode = node "${myAddr}", address: myAddr, location: [0, 0, 0], stack: "$home/etc/pstack"
-        myNode.startup = {  
-        // startup script to run on each node
+        myNode.startup = {                      // startup script to run on each node
           def phy = agentForService(Services.PHYSICAL)
           def link = agentForService org.arl.unet.Services.LINK
           def kernel = agentForService(org.arl.unet.Services.ROUTING)
-          kernel.address = myAddr
           subscribe agentForService(Services.LINK)
-          def cycl = 0
-
+          subscribe agentForService(Services.PHYSICAL)
+          
+           
           add new PoissonBehavior((long)(1000), {  // avg time between events in ms
                 // choose destination randomly (excluding self)
                 if(flag == true){
@@ -63,33 +62,37 @@ for ( i = 3; i<13; i++){
                         dst = rnditem(nodes)
                     }
                     
-                    kernel << new DatagramReq(to: dst,data: new byte[8],shortcircuit:false,reliability: reliability, protocol: protocol)
-                
+                    
+                    kernel << new DatagramReq(to: dst,data: new byte[1],shortcircuit:false,reliability: reliability, protocol: protocol)
+                    txcount++
+                    //print("TX $txcount")
                 }
-                //print("$myAddr $kernel.flow_table ")
-                //print("$myAddr $kernel.buffer ")
+                 //print("$myAddr $kernel.flow_table ")
+                //print("$myAddr $kernel.cached_flows ")
             
             
                
             })
-          
-
-       add new MessageBehavior(Message, { msg ->
-             
-
-           if(msg instanceof DatagramNtf ){
-               if(msg.from != 1){
-                    rxcount++
-               }else{
-                   ctrrxcount++
-               }
-              
-               
-           }
+            add new MessageBehavior(Message, { msg ->
+            
+            if(msg instanceof RxFrameNtf){
+                if(msg.from != 1){
+                   //print(msg)
+                   rxcount++ 
+                   //print("RX $rxcount")
+                }else{
+                    ctrrxcount++
+                   
+                }
+            }
+            
                
            
                
             })
+          
+
+       
         
       }
       }
@@ -104,21 +107,19 @@ for ( i = 3; i<13; i++){
            def count = 0
            def tx = 0
            def payload = []
+           def goal = 0
+           def c = 0
           
            add new MessageBehavior(Message, { msg ->
-             
-           if(msg instanceof DatagramNtf){
-               rxcount++
-           }
-           if(msg instanceof TxFrameStartNtf){
-                
-               ctrtxcount++
-               if(ctrtxcount == nodes.size() && flag == false)
-               {
-                   flag = true
-               }
-               
-           }
+            
+            if(msg instanceof TxFrameStartNtf){
+                //print(msg)
+                ctrtxcount++
+                if(ctrtxcount >= goal && flag == false){
+                    //print("FLAG")
+                    flag = true
+                }
+            }
                
            
                
@@ -128,22 +129,34 @@ for ( i = 3; i<13; i++){
                payload= []
                count = 0
                for(def k = 0; k<nodes.size();k++){
-                   if(nodes[k]!=j){
-                       payload << -1
-                       payload << nodes[k]
-                       payload << -1
-                       payload << -1
-                       payload << nodes[k]
+                   
+                       if(nodes[k]!=j){
+                           
+                                payload << -1
+                                payload << nodes[k]
+                                payload << -1
+                                payload << -1
+                                payload << nodes[k]
+                               
+                                
+                           
+                          
+                   
                    }
+                   
                }
+               pay = payload.collate(5)
+               goal+=pay.size()
                
-               //print(pay)
-             
-                  link << new DatagramReq(to:j,data:payload,protocol:33)
-
                
-               //link << new DatagramReq(to:j,data:payload,protocol:33)
+               for(p in pay){
+                  link << new DatagramReq(to:j,data:p,shortcircuit:false,protocol:33)
+                  
+               }
+               //print(payload)
            }
+           
+           
 
           
            
@@ -151,7 +164,7 @@ for ( i = 3; i<13; i++){
            
       }
     }
-    println sprintf('%6d,%6d,%7.3f,%7.3f,%6d',
-    [trace.txCount, trace.rxCount, trace.offeredLoad, trace.throughput,rxcount])
+    println sprintf('%6d,%6d,%7.3f,%7.3f,%6d,%6d,%6d,%6d ',
+    [trace.txCount, trace.rxCount, (txcount+ctrtxcount)*0.125 / 1200 , (rxcount+ctrrxcount)*0.125 /1200,txcount,rxcount,ctrtxcount,ctrrxcount])
     
 }

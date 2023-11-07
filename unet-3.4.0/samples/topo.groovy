@@ -1,4 +1,10 @@
 import org.arl.fjage.*
+import org.arl.unet.*
+import org.arl.unet.net.*
+import org.arl.unet.Services.*
+import org.arl.unet.phy.*
+import org.arl.unet.sim.*
+import org.arl.unet.sim.channels.*
 
 ///////////////////////////////////////////////////////////////////////////////
 // display documentation
@@ -19,6 +25,9 @@ Controller
 // simulator configuration
 
 platform = RealTimePlatform   // use real-time mode
+channel.model = ProtocolChannelModel        // use the protocol channel model
+modem.dataRate = [1024, 1024].bps           // arbitrary data rate
+modem.frameLength = [32,64].bytes  // 1 second worth of data per frame
 
 // run the simulation forever
 simulate {

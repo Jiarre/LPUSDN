@@ -21,7 +21,7 @@ modem.txDelay = 0 // don't simulate hardware delays
                           // list with 4 nodes
 // collect statistics after a while
 println '''
-ttxcount,trxcount,offeredload,txcount,rxcount,ctrtxcount,ctrrxcount
+ttxcount,trxcount,offeredload,througput,txcount,rxcount,ctrtxcount,ctrrxcount
 '''
 def i = 1
 
@@ -46,6 +46,7 @@ for ( i = 3; i<13; i++){
           def link = agentForService org.arl.unet.Services.LINK
           def kernel = agentForService(org.arl.unet.Services.ROUTING)
           subscribe agentForService(Services.LINK)
+          subscribe agentForService(Services.PHYSICAL)
           def cycl = 0
            
           add new PoissonBehavior((long)(1000), {  // avg time between events in ms
@@ -61,7 +62,7 @@ for ( i = 3; i<13; i++){
                     }
                     
                     
-                    kernel << new DatagramReq(to: dst,data: new byte[8],shortcircuit:false,reliability: reliability, protocol: protocol)
+                    kernel << new DatagramReq(to: dst,data: new byte[1],shortcircuit:false,reliability: reliability, protocol: protocol)
                     txcount++
                 }
                  //print("$myAddr $kernel.flow_table ")
@@ -72,7 +73,7 @@ for ( i = 3; i<13; i++){
             })
             add new MessageBehavior(Message, { msg ->
             
-            if(msg instanceof DatagramNtf){
+            if(msg instanceof RxFrameNtf){
                 if(msg.from != 1){
                    rxcount++ 
                 }else{

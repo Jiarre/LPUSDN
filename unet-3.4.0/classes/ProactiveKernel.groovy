@@ -78,7 +78,7 @@ class ProactiveKernel extends UnetAgent {
       //print("\n\n")
       for(flow in flow_table){
           int count = 0
-          if((mask[0] != flow[1] && flow[1]!=-1 && mask[0]!=-1) || (mask[1] != flow[2] && flow[2]!=-1) || (mask[2] != flow[3] && flow[3]!=-1) || (mask[3] != flow[4] && flow[4]!=-1)){
+          if((mask[0] != flow[1] && flow[1]!=-1 && mask[0]!=-1 ) || (mask[1] != flow[2] && flow[2]!=-1) || (mask[2] != flow[3] && flow[3]!=-1) || (mask[3] != flow[4] && flow[4]!=-1)){
               continue
           }
           if(flow[1] == -1){
@@ -97,7 +97,7 @@ class ProactiveKernel extends UnetAgent {
       }
       int minkey = elegible.min{it.value}.key
       int action = getAction(minkey)
-      //print(action)
+      //print("$action \n")
       return action
       
   }
@@ -175,6 +175,7 @@ class ProactiveKernel extends UnetAgent {
             header.addAll(data)
             msg.data = header
             msg.reliability = false
+            msg.shortcircuit = false
         }else{
             def data = msg.data.toList()
             mask = data[0..3]
@@ -207,7 +208,7 @@ class ProactiveKernel extends UnetAgent {
             //link << new DatagramReq(to:controller_address,protocol:33,shortcircuit:false,reliability:false,data:cached)
         }else{
             msg.to = action
-            print(action)
+            //print(action)
             link << msg
         }
         return new Message(msg,Performative.AGREE)
