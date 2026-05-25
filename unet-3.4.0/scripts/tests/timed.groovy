@@ -12,8 +12,8 @@ modem.dataRate = [1024, 1024].bps           // arbitrary data rate
 modem.frameLength = [32,64].bytes  // 1 second worth of data per frame
 modem.preambleDuration = 0                  // no overhead from preamble
 modem.txDelay = 0 // don't simulate hardware delays
-channel.pDetection = 0.95
-channel.pDecoding = 0.95
+channel.pDetection = 0.9
+channel.pDecoding = 0.9
 modem.powerLevel = [0,-10,-10]
 modem.headerLength = 0  
 
@@ -29,7 +29,7 @@ println '''
 nodes,txcount,offeredload,througput,rxcount,ctrtxcount,ctrrxcount,txdup,rxdup
 '''
 def i = 1
-for ( i = 3; i<12; i++){
+for ( i = 10; i<12; i++){
     def mean = [0,0,0,0,0,0]
     for (ep = 0; ep < 20; ep++){
     def nodes = 2..i
@@ -72,7 +72,7 @@ for ( i = 3; i<12; i++){
                     }
                     
                     
-                    kernel << new DatagramReq(to: dst,data: new byte[25],shortcircuit:false,reliability:false, protocol: protocol)
+                    kernel << new DatagramReq(to: dst,data: new byte[56],shortcircuit:false,reliability:false, protocol: protocol)
                     txcount++
                     //print("$myAddr $kernel.flow_table ")
                     //print("$myAddr $kernel.buffer ")
@@ -130,6 +130,7 @@ for ( i = 3; i<12; i++){
            def payload = []
            def goal = 0
            def c = 0
+           def base_flows = []
           
            add new MessageBehavior(Message, { msg ->
             
@@ -169,6 +170,7 @@ for ( i = 3; i<12; i++){
                 mac << new ReservationReq(duration:pay.size()*250,to:from)
 
                for(p in pay2){
+                  
                   phy << new TxFrameReq(to:from,data:p,protocol:33,type: 1)
                   txdup++
                }
@@ -181,20 +183,21 @@ for ( i = 3; i<12; i++){
            
                
             })
-           
+           base_flows = []
            payload= []
            count = 0
            for(def k = 0; k<nodes.size();k++){
                //for(def q = 0; q<nodes.size();q++){
                    
                        for(rel in [-1]){
-                           for(proto in protocols){
+                           for(proto in [40,41,42]){
                             //payload << nodes[q]
                             payload << -1
                             payload << nodes[k]
                             payload << proto
                             payload << rel
                             payload << nodes[k]
+                            base_flows.add([-1,nodes[k],proto,rel,nodes[k]])
                            }
                             
                        
@@ -236,8 +239,8 @@ for ( i = 3; i<12; i++){
     
     /*println sprintf('%7.3f, %7.3f, %7.3f, %7.3f, %7.3f, %7.3f, %7.3f ',
     [nodes.size(),txcount,(txcount)*0.5 / 1200 ,(rxcount)*0.5 /1200 ,rxcount ,ctrtxcount ,ctrrxcount])*/
-    def off = ((txcount)*0.250 / 600)
-    def thr = ((rxcount)*0.250 / 600)
+    def off = ((txcount)*0.5 / 600)
+    def thr = ((rxcount)*0.5 / 600)
     def num = nodes.size()
     print("$num, $txcount, $off, $thr, $rxcount, $ctrtxcount, $ctrrxcount, $txdup, $rxdup")
     }

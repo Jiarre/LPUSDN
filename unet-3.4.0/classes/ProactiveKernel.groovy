@@ -2,6 +2,7 @@ import org.arl.fjage.*
 import org.arl.unet.*
 import org.arl.unet.net.*
 import org.arl.unet.link.*
+import org.arl.unet.phy.*
 import org.arl.fjage.param.Parameter
 
 class ProactiveKernel extends UnetAgent {
@@ -110,6 +111,8 @@ class ProactiveKernel extends UnetAgent {
     @Override
   void startup() {
     subscribeForService(Services.DATAGRAM)
+    subscribeForService(Services.PHYSICAL)
+
     subscribeForService(Services.LINK)
     
     //node = agentForService(org.arl.unet.Services.NODE_INFO)
@@ -133,6 +136,7 @@ class ProactiveKernel extends UnetAgent {
   @Override
   void processMessage(Message msg) {
     def link = agentForService(org.arl.unet.Services.LINK)
+
     //Protocols:
     //  33: proactive flow
     //. 34: update controller on a link situation
@@ -144,10 +148,10 @@ class ProactiveKernel extends UnetAgent {
     //  40: ping
     
  
-    if (msg instanceof DatagramNtf && msg.protocol == 33) {
+    if (msg instanceof RxFrameNtf && msg.protocol == 33) {
          newFlowProactive(msg)
     }
-    if (msg instanceof DatagramNtf && msg.protocol == 35) {
+    if (msg instanceof RxFrameNtf && msg.protocol == 35) {
          newFlow(msg)
     }
     if (msg instanceof DatagramNtf && msg.protocol == 36) {
@@ -166,6 +170,8 @@ class ProactiveKernel extends UnetAgent {
  
   Message sendDatagram(msg){
         def link = agentForService(org.arl.unet.Services.LINK)
+        def phy = agentForService(org.arl.unet.Services.PHYSICAL)
+
         ArrayList mask = []
         if(msg instanceof DatagramReq){
             mask = getMask(msg)
@@ -208,7 +214,7 @@ class ProactiveKernel extends UnetAgent {
             //link << new DatagramReq(to:controller_address,protocol:33,shortcircuit:false,reliability:false,data:cached)
         }else{
             msg.to = action
-            //print(action)
+            //def msg_tmp = new TxFrameReq(msg)
             link << msg
         }
         return new Message(msg,Performative.AGREE)
@@ -244,6 +250,8 @@ class ProactiveKernel extends UnetAgent {
   
   void newFlowProactive(msg){
         def link = agentForService(org.arl.unet.Services.LINK)
+        def phy = agentForService(org.arl.unet.Services.PHYSICAL)
+
         def reply = msg.data.toList()
         def size = reply.size()
         def d = 0
@@ -276,7 +284,7 @@ class ProactiveKernel extends UnetAgent {
               
                     for(datagram in buffer[id]){
                         datagram.to = action
-                        link << datagram
+                        phy << new TxFrameReq(datagram)
                     }
                         buffer.remove(id)
                 }

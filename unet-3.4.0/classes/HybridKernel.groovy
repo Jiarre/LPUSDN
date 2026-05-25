@@ -6,7 +6,7 @@ import org.arl.unet.phy.*
 import org.arl.fjage.param.Parameter
 import org.arl.unet.mac.*
 
-class USDNKernel extends UnetAgent {
+class HybridKernel extends UnetAgent {
     
     enum Params implements Parameter {        
         controller_address,
@@ -14,8 +14,7 @@ class USDNKernel extends UnetAgent {
         cached_flows,
         quarantine_flowtable,
         buffer,
-        aliases,
-        address
+        aliases
         }
 
     final String title = 'Underwater SDN Kernel'        
@@ -34,13 +33,12 @@ class USDNKernel extends UnetAgent {
     
     
     //flow_table.add(default_entry);
- Integer getAction(Integer id){
+ int getAction(int id){
      for(e in flow_table){
          if(id==e[0]){
              return e[5]
          }
      }
-     return -1
  }
  
  
@@ -82,7 +80,7 @@ class USDNKernel extends UnetAgent {
       //print("\n\n")
       for(flow in flow_table){
           int count = 0
-          if((mask[0] != flow[1] && flow[1]!=-1 ) || (mask[1] != flow[2] && flow[2]!=-1) || (mask[2] != flow[3] && flow[3]!=-1) || (mask[3] != flow[4] && flow[4]!=-1)){
+          if((mask[0] != flow[1] && flow[1]!=-1 && mask[0]!=-1 ) || (mask[1] != flow[2] && flow[2]!=-1) || (mask[2] != flow[3] && flow[3]!=-1) || (mask[3] != flow[4] && flow[4]!=-1)){
               continue
           }
           if(flow[1] == -1){
@@ -99,8 +97,9 @@ class USDNKernel extends UnetAgent {
           }
           elegible[flow[0]] = count
       }
-      Integer minkey = elegible.min{it.value}.key
-      Integer action = getAction(minkey)
+      int minkey = elegible.min{it.value}.key
+      int action = getAction(minkey)
+      //print("$action \n")
       return action
       
   }
@@ -112,12 +111,14 @@ class USDNKernel extends UnetAgent {
   }
     @Override
   void startup() {
-    subscribeForService(Services.PHYSICAL)
     subscribeForService(Services.DATAGRAM)
-    subscribeForService(Services.LINK)
+    subscribeForService(Services.PHYSICAL)
+    
     def phy = agentForService(org.arl.unet.Services.PHYSICAL)
+    def link = agentForService(org.arl.unet.Services.LINK)
     def mac = agentForService(org.arl.unet.Services.MAC)
 
+    subscribeForService(Services.LINK)
     add new PoissonBehavior(10000, {
         if(cached_flows.size > 0){
             
@@ -141,15 +142,13 @@ class USDNKernel extends UnetAgent {
             
         }
     })
+    
     //node = agentForService(org.arl.unet.Services.NODE_INFO)
   }
 
   @Override
   Message processRequest(Message msg) {
     if(msg instanceof DatagramReq){
-        return sendDatagram(msg)
-    }
-    if(msg instanceof TxFrameReq){
         return sendDatagram(msg)
     }
     if(msg instanceof DatagramTraceReq){
@@ -165,6 +164,7 @@ class USDNKernel extends UnetAgent {
   @Override
   void processMessage(Message msg) {
     def link = agentForService(org.arl.unet.Services.LINK)
+
     //Protocols:
     //  33: proactive flow
     //. 34: update controller on a link situation
@@ -192,32 +192,45 @@ class USDNKernel extends UnetAgent {
          updateFlow(msg)
     }
    
+    
     return null
   }
  
   Message sendDatagram(msg){
         def link = agentForService(org.arl.unet.Services.LINK)
         def phy = agentForService(org.arl.unet.Services.PHYSICAL)
-        def mac = agentForService(org.arl.unet.Services.PHYSICAL)
-        ArrayList mask = []
-        mask = getMask(msg)
-        
 
+        ArrayList mask = []
+        if(msg instanceof DatagramReq){
+            mask = getMask(msg)
+            ArrayList header = getMask(msg)
+            def data = msg.data.toList()
+            header[0] = address
+            header.addAll(data)
+            msg.data = header
+            msg.reliability = false
+            msg.shortcircuit = false
+        }else{
+            def data = msg.data.toList()
+            mask = data[0..3]
+            msg = new DatagramReq()
+            msg.to = mask[1]
+            msg.protocol = mask[2]
+            msg.reliability = false //avoiding per-hop acks
+            msg.data = data
+
+        }
         
         
-        
-        Integer id = isInCache(mask)
+        int id = isInCache(mask)
         if(id != -1){
             if(buffer[id]){
                 buffer[id].add(msg)
             }
-            //def k = new TxFrameReq(new DatagramReq(to:controller_address,protocol:33,data:cached_flows[id],shortcircuit:false))
-            //k.type = 1
-            //phy << k
             
             return new Message(msg,Performative.REFUSE)
         }
-        Integer action = match(mask)
+        def action = match(mask)
         if(action == controller_address){
             ID++
             if(id == -1){
@@ -226,29 +239,18 @@ class USDNKernel extends UnetAgent {
             }
             ArrayList cached = mask.plus(0,ID)
             cached_flows.add(cached)
-            mac << new ReservationReq(duration: 250,to:controller_address)
-
-            def k = new TxFrameReq(to:controller_address,protocol:35,data:cached)
-            k.type = 1
-            phy << k
-
-            //link << new DatagramReq(to:controller_address,protocol:33,data:cached,shortcircuit:false, reliability: true)
-            
+            //link << new DatagramReq(to:controller_address,protocol:33,shortcircuit:false,reliability:false,data:cached)
         }else{
             msg.to = action
             //def msg_tmp = new TxFrameReq(msg)
-            //phy << msg_tmp
             link << msg
         }
         return new Message(msg,Performative.AGREE)
-
   }
 
   
   void newFlow(msg){
         def link = agentForService(org.arl.unet.Services.LINK)
-                def phy = agentForService(org.arl.unet.Services.PHYSICAL)
-
         def reply = msg.data.toList()
         def flow = []
         int id = reply[0]
@@ -260,17 +262,14 @@ class USDNKernel extends UnetAgent {
             }
                  
         }
-        if(!flow){
-            return
-        }
         cached_flows.remove(flow)
         flow.add(action)
         flow_table.add(flow)
+        
         if(buffer.containsKey(id)){
           
             for(datagram in buffer[id]){
                 datagram.to = action
-                //phy << new TxFrameReq(datagram)
                 link << datagram
             }
             buffer.remove(id)
